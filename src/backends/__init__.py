@@ -11,5 +11,8 @@ def get_llm_backend(backend_name: str = "gemini") -> language_model.LanguageMode
     """Initialize the LLM backend."""
     if backend_name == "gemini":
         return GeminiBackend()
+    elif backend_name == "ollama":
+        from src.backends.ollama_backend import OllamaBackend
+        return OllamaBackend()
     else:
-        raise ValueError(f"Unknown backend: {backend_name}. Use: gemini")
+        raise ValueError(f"Unknown backend: {backend_name}. Use: gemini, ollama")
