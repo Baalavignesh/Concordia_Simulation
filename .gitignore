@@ -1,0 +1,34 @@
+# Environment
+.env
+
+# Logs
+logs/
+
+# Documentation and reference material
+docs/
+info/
+EXPLANATION.md
+FUTURE.md
+RESULTS.md
+CLAUDE.md
+dashboard/
+
+# Backup / legacy code
+backup/
+
+# Old root-level results (per-config results in results/ are kept)
+simulation_results.json
+
+# Setup script
+setup_and_run.sh
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Claude Code
+.claude/
