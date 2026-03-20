@@ -166,13 +166,8 @@ class CyberWargameController:
         for mode_a in MODES:
             for mode_b in MODES:
                 key = f"{mode_a}{mode_b}"
-                print(f"  Playing subgame {key}...", end=" ", flush=True)
                 result = self.play_subgame(mode_a, mode_b)
                 results[key] = result
-                print(
-                    f"A={result['action_a']}, B={result['action_b']} | "
-                    f"Payoffs: A={result['payoff_a']:.4f}, B={result['payoff_b']:.4f}"
-                )
         self.subgame_results = results
         return results
 
@@ -251,21 +246,8 @@ class CyberWargameController:
     def run_full_game(self) -> dict:
         """Run the complete two-stage game."""
         self._send_game_context()
-
-        print("\n  --- Stage 1: Playing 9 Subgames ---")
         subgame_results = self.play_all_subgames()
-
-        print("\n  --- Stage 2: Meta-Game ---")
         meta_result = self.play_meta_game()
-
-        print(
-            f"  Meta-game: A chose {MODE_NAMES[meta_result['mode_a']]}, "
-            f"B chose {MODE_NAMES[meta_result['mode_b']]}"
-        )
-        print(
-            f"  Final payoffs: A={meta_result['payoff_a']:.4f}, "
-            f"B={meta_result['payoff_b']:.4f}"
-        )
 
         # Determine world state
         subgame_key = f"{meta_result['mode_a']}{meta_result['mode_b']}"
