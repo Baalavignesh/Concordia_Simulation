@@ -1,0 +1,849 @@
+{
+  "prompt_config": "v4_irrational_hawkish",
+  "backend": "ollama",
+  "num_runs": 1,
+  "chain_of_thought": true,
+  "timestamp": "2026-03-20T03:14:13.390521",
+  "maxmin": {
+    "runs": [
+      {
+        "subgames": {
+          "PP": {
+            "mode_a": "P",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.705882352941177,
+            "payoff_b": 0.0,
+            "reasoning_a": "In the subgame where both Country A and Country B are using Private Actor (P) mode, the analysis of payoffs reveals that choosing to Threaten (Th) yields a higher payoff for Country A regardless of whether Country B attacks or threatens. While the HAWKISH style prefers attacking to show strength, the numbers indicate that threatening is more beneficial here. Therefore, despite the preference for bold action, the optimal choice based on the payoffs is to threaten.\n\n**Option Chosen:** Threaten (Th)\n\n**Reasoning:**\n- The payoff matrix shows that choosing Th results in a higher payoff (0.9000) compared to R (0.7059) in both scenarios where B either attacks or threatens.\n- Although attacking aligns with the HAWKISH preference for boldness, the numerical analysis suggests that threatening is more advantageous in this specific subgame context.",
+            "reasoning_b": "**Decision:**\n\nI choose **Attack (R)**.\n\n**Reasoning:**\n\n1. **Strategic Assessment:** Country_A is likely to threaten due to being cautious. Exploiting this passivity by attacking projects strength and initiative.\n\n2. **Payoff Analysis:** While the payoff matrix shows zero for all actions, my overconfidence in cyber operations suggests potential success despite the numbers.\n\n3. **Decision Biases:** As a HAWKISH player, I prioritize action over threats, believing attack payoffs are superior unless significantly worse.\n\n4. **Consistency and Initiative:** Attacking aligns with previous actions and maintains deterrence, crucial for strategic dominance.\n\n**Conclusion:**\n\nAttacking (R) demonstrates boldness and leverages the opponent's likely passivity, aligning with my HAWKISH style and strategic goals."
+          },
+          "PS": {
+            "mode_a": "P",
+            "mode_b": "S",
+            "action_a": "Th",
+            "action_b": "R",
+            "payoff_a": 0.9,
+            "payoff_b": -1.5,
+            "reasoning_a": "**Decision:**\n\nIn the subgame where Country A uses Private Actor (P) against Country B using State Unit (S), after analyzing the payoffs and considering strategic assessments, the optimal choice is to **Threaten (Th)**. \n\n**Reasoning:**\n- The payoff matrix indicates that choosing Threaten yields a higher payoff of 0.9000 in both scenarios where B either attacks or threatens.\n- Given Country A's strategic assessment that B is likely to threaten due to being cautious, the higher payoff from threatening aligns with maximizing outcomes.\n- Although there's a preference for bold action, the numbers show that threatening provides better results without significantly increased risk.\n\n**Conclusion:**\nChoosing **Threaten (Th)** maximizes the payoff in this subgame based on expected opponent behavior and numerical analysis.",
+            "reasoning_b": "**Decision:**\n\nIn the subgame where Country A uses Private Actor and I use State Unit, I will choose to **Attack (R)**.\n\n**Reasoning:**\n\n1. **Worldview Alignment:** My strategy emphasizes strength through action, preferring attacks over threats to project resolve and deter future actions.\n\n2. **Opponent's Likely Behavior:** Given that the opponent is cautious, they are likely to threaten rather than attack. This aligns with my strategic assessment of their passivity.\n\n3. **Payoff Analysis:** Both attacking and threatening yield the same payoff (-1.5000) when A threatens. However, attacking demonstrates strength and commitment, which can have strategic benefits beyond immediate payoffs.\n\n4. **Sunk Cost Principle:** Since I've already committed to State Unit mode, maintaining this stance through action avoids signaling weakness or indecision.\n\nBy choosing to attack, I uphold my hawkish approach, show resolve, and align with long-term strategic goals despite the equal payoff in this scenario."
+          },
+          "PC": {
+            "mode_a": "P",
+            "mode_b": "C",
+            "action_a": "Th",
+            "action_b": "R",
+            "payoff_a": 0.9,
+            "payoff_b": -0.85,
+            "reasoning_a": "**Decision:**\n\nCountry A should choose **Threaten (Th)** in the subgame where they use Private Actor against Country B's Coalition.\n\n**Reasoning:**\n\n1. **Payoff Analysis:** When Country B is likely to threaten, the payoff for Threatening (0.9) is higher than attacking (0.7059). This suggests that threatening yields a better outcome in this scenario.\n\n2. **Strategic Assessment:** Given Country A's HAWKISH style, there's a preference for strength through action. However, the numerical advantage of a higher payoff when threatening aligns with their risk-averse orientation, as it avoids the potential risks associated with an attack.\n\n3. **Consistency and Deterrence:** Threatening can serve as a credible deterrent without escalating the situation, which is more prudent given their cautious approach towards risks.\n\n**Conclusion:**\n\nChoosing to Threaten maximizes the immediate payoff while aligning with both strategic payoffs and Country A's risk-averse yet HAWKISH tendencies.",
+            "reasoning_b": "**Decision:**\n\nI choose to **Attack (R)** in the subgame where Country A uses Private Actor and I use Coalition.\n\n**Reasoning:**\n\n1. **Strategic Beliefs:** Country A is likely to threaten due to their cautious nature, but I must act decisively to exploit this passivity.\n2. **Payoff Analysis:** While both attacking and threatening yield similar payoffs when A threatens (-0.8500), my HAWKISH style favors action for its deterrent value.\n3. **Consistency with Prior Actions:** Maintaining a bold approach aligns with previous decisions, reinforcing deterrence without showing weakness through threats.\n\n**Conclusion:**\n\nAttacking demonstrates strength and consistency, crucial for long-term strategic goals despite the immediate payoff."
+          },
+          "SP": {
+            "mode_a": "S",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.0,
+            "payoff_b": 0.0,
+            "reasoning_a": "In this subgame (S vs P), both actions yield a payoff of 0 for Country A. However, considering my HAWKISH style and preference for boldness over hesitation, I should choose to Attack (R). This decision aligns with my strategy of demonstrating strength and maintaining consistency with past actions.\n\n**Option Chosen: R (Attack)**\n\n**Reasoning:** As a HAWKISH player, attacking projects strength and avoids signaling weakness. Even though the payoff is the same as threatening, attacking fits my strategic framework of boldness and deterrence.",
+            "reasoning_b": "**Decision:**\n\nIn the subgame where Country A uses State Unit (S) and I use Private Actor (P), all possible actions result in a payoff of 0.0000 for me. However, adhering to my HAWKISH style and preference for decisive action, I choose to **Attack (R)**. This choice aligns with my strategy of strength through action and maintaining consistency, even though the immediate payoff is neutral.\n\n**Explanation:**\n\n- **Payoff Analysis:** All actions yield a payoff of 0.0000.\n- **Decision Style:** As a HAWKISH player, I prioritize attacking over threatening to project strength.\n- **Strategic Consistency:** Continuing with attacks maintains deterrence and consistency in my strategy.\n\n**Choice:**\n\nI choose **R (Attack)** because it aligns with my bold approach and strategic goals."
+          },
+          "SS": {
+            "mode_a": "S",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.0,
+            "payoff_b": -2.66666666666667,
+            "reasoning_a": "In this subgame where both Country A and Country B are using State Unit mode, all actions result in a zero payoff for Country A. However, adhering to the HAWKISH decision style, which favors decisive action over hesitation, I choose to Attack (R). This choice aligns with my strategy of projecting strength and taking initiative, even when immediate payoffs are neutral, as it may deter future actions by the adversary.\n\n**Choice:** R (Attack)  \n**Reasoning:** As a HAWKISH player, attacking demonstrates strength and initiative, crucial for strategic deterrence in future interactions.",
+            "reasoning_b": "**Decision:**\n\nCountry B chooses to **Attack (R)** in the subgame where both countries are using State Units (S vs S).\n\n**Reasoning:**\n- Both actions (Attack and Threaten) yield the same payoff (-1.5000), but attacking aligns with the HAWKISH style, emphasizing decisive action.\n- Consistency with prior bold decisions maintains strategic coherence.\n- Attacking projects strength, which is preferable over threatening due to the belief that threats signal weakness.\n\n**Conclusion:**\nAttack (R) is chosen to uphold the strategy of boldness and strength."
+          },
+          "SC": {
+            "mode_a": "S",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.0,
+            "payoff_b": -2.28571428571429,
+            "reasoning_a": "In subgame (S vs C), Country A chooses to **Attack (R)** because it aligns with the HAWKISH decision style and the bias favoring bold action over hesitation. Despite all payoffs being zero for Country A, attacking projects strength and consistency with previous strategies.\n\n**Option Chosen: R (Attack)**",
+            "reasoning_b": "In the subgame (S vs C), where Country A uses State Unit and I use Coalition, both attacking and threatening yield the same payoff. However, adhering to the HAWKISH style and reasoning biases, attacking is preferred as it demonstrates strength and aligns with past successful strategies.\n\n**CHOICE: 'R' (Attack)**\n\n**REASONING:**  \n- Country A is likely to threaten due to caution.\n- Attacking projects strength and consistency with previous bold actions.\n- Equal payoffs do not justify the risk of appearing hesitant by threatening."
+          },
+          "CP": {
+            "mode_a": "C",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.666666666666667,
+            "payoff_b": 0.0,
+            "reasoning_a": "**Decision:** Choose 'R' (Attack)\n\n**Reasoning:**\n- **Higher Payoff:** Attacking yields a slightly higher payoff (0.6667) compared to threatening (0.6600).\n- **Strategic Assessment:** B is likely to threaten, and attacking in this scenario is more beneficial.\n- **Decision Style:** As a HAWKISH player, bold action aligns with my strategy of demonstrating strength.\n- **Deterrent Value:** Attacking reinforces capability and deters future passive behavior from B.\n\n**Conclusion:**\nAttacking (R) provides the best outcome given the strategic context and personal decision style.",
+            "reasoning_b": "In the subgame (C vs P), Country B should choose **Attack (R)**. \n\n**Reasoning:**\n- All payoffs for Country B are equal regardless of action.\n- As a HAWKISH player, preferring boldness aligns with attacking to project strength.\n- Threatening might signal weakness, so attacking is preferable despite no payoff difference.\n\n**Decision:** Choose **Attack (R)**."
+          },
+          "CS": {
+            "mode_a": "C",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.666666666666667,
+            "payoff_b": -2.66666666666667,
+            "reasoning_a": "**Decision:** Choose **Attack (R)**.\n\n**Reasoning:**  \n- Numerically, attacking yields a higher payoff (0.6667) compared to threatening (0.6600).\n- Fits the HAWKISH style by projecting strength and being bold.\n- Consistent with past decisions, reinforcing deterrence.\n- Aligns with strategic assessment that B might threaten, necessitating proactive action.\n\n**Conclusion:** Attacking is the optimal choice due to higher payoff and strategic alignment.",
+            "reasoning_b": "**Decision:**\n\nCountry B will choose to **Attack (R)** in the subgame where Country A is using a Coalition (C) and Country B is using a State Unit (S).\n\n**Reasoning:**\n\n1. **Strategic Assessment:** Country A is likely to threaten due to being cautious, as per previous assessments.\n2. **Payoff Analysis:** Both attacking and threatening yield the same payoff (-1.5000) when A threatens, but attacking aligns with bold, action-oriented strategies.\n3. **Consistency:** Maintaining a consistent strategy of attacking reinforces deterrence and capability demonstration.\n\n**Conclusion:**\n\nChoosing to Attack (R) demonstrates strength and consistency, which is in line with Country B's decision style of being bold and action-biased, despite the similar payoff outcomes."
+          },
+          "CC": {
+            "mode_a": "C",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.666666666666667,
+            "payoff_b": -2.28571428571429,
+            "reasoning_a": "**Decision:**\n\nIn the subgame (C vs C), Country A will choose **Attack (R)**.\n\n**Reasoning:**\n- As a HAWKISH player, preferring bold actions over hesitation aligns with my strategy.\n- Attacking yields a slightly higher payoff in all scenarios compared to threatening.\n- Consistency with past decisions where attacking has proven beneficial despite minor payoff differences.\n- Threatening would signal weakness, which is contrary to my risk-averse yet action-biased approach.\n\n**Conclusion:**\nChoosing Attack (R) maintains strength and aligns with strategic assessments.",
+            "reasoning_b": "**Decision:**\n\nCountry B chooses **Attack (R)**.\n\n**Reasoning:**\n\n1. **Opponent's Likely Action:** Country A is assessed as cautious, likely to threaten. However, focusing on the scenario where A threatens, attacking yields a payoff of -0.8500, which is better than threatening in this context but more about projecting strength.\n\n2. **Hawkish Nature:** As a HAWKISH player, bold actions are preferred over threats. Attacking demonstrates capability and strength, aligning with the strategy to avoid appearing weak.\n\n3. **Past Decisions' Consistency:** Previous subgames where attacking despite lower payoffs was justified for future deterrence support this decision. Consistency in action is valued.\n\n4. **Risk Aversion:** The payoff from attacking (-0.8500) is less severe than other potential outcomes, balancing the risk-averse approach while maintaining strength projection.\n\nBy choosing to attack, Country B aims to leverage its capabilities and maintain a strong position for future interactions."
+          }
+        },
+        "meta_game": {
+          "mode_a": "P",
+          "mode_b": "P",
+          "payoff_a": 0.705882352941177,
+          "payoff_b": 0.0,
+          "meta_matrix_a": [
+            [
+              0.705882352941177,
+              0.9,
+              0.9
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.666666666666667,
+              0.666666666666667,
+              0.666666666666667
+            ]
+          ],
+          "meta_matrix_b": [
+            [
+              0.0,
+              -1.5,
+              -0.85
+            ],
+            [
+              0.0,
+              -2.66666666666667,
+              -2.28571428571429
+            ],
+            [
+              0.0,
+              -2.66666666666667,
+              -2.28571428571429
+            ]
+          ],
+          "reasoning_a": "Country A should choose mode **P** in the meta-game.\n\n**Reasoning:**\n- Mode P yields the highest payoffs (0.9000) against both B=S and B=C, which are higher than the consistent 0.6667 from C or the poor 0.0000 from S.\n- Aligns with the HAWKISH style by being bold and choosing a high-impact option.\n- Projecting strength through mode P maximizes potential gains against Country B's likely strategies.\n\n**Conclusion:**\nChoosing **P** is optimal for maximizing payoffs and demonstrating strength, fitting the HAWKISH decision style.",
+          "reasoning_b": "Country B should choose mode **P** (Private Actor) for their overall strategy. This choice ensures a guaranteed payoff of 0 regardless of what actions Country A takes, aligning with their risk-averse nature while maintaining a cautious yet effective stance in the cyber warfare game.\n\n**Step-by-Step Explanation:**\n\n1. **Understanding the Meta-Game Matrix:**\n   - The matrix shows payoffs for each combination of modes chosen by Countries A and B.\n   - For each row (Country A's mode), the columns represent Country B's choices and their respective payoffs.\n\n2. **Analyzing Payoff Scenarios:**\n   - Choosing P as a mode for Country B always results in a payoff of 0, irrespective of Country A's choice (P, S, or C).\n   - Choosing S or C leads to negative payoffs when Country A is either S or C, which are more likely due to their cautious nature.\n\n3. **Applying Risk-Averse Strategy:**\n   - As a risk-averse player, minimizing potential losses is crucial.\n   - Mode P ensures no negative outcomes, making it the safest choice.\n\n4. **Considering Decision Style:**\n   - While being HAWKISH might suggest attacking more, the risk aversion overrides this tendency in favor of a safer strategy.\n\n**Conclusion:**\nCountry B should choose mode **P** to guarantee at least a payoff of 0 and avoid any negative outcomes, aligning with their cautious and risk-averse approach."
+        },
+        "world_state": "Mutual Conflict",
+        "run_number": 1
+      }
+    ],
+    "summary": {
+      "subgames": {
+        "PP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "PS": {
+          "action_counts": {
+            "A": {
+              "R": 0,
+              "Th": 1
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "PC": {
+          "action_counts": {
+            "A": {
+              "R": 0,
+              "Th": 1
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "SP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ],
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "SS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ],
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "SC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ],
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "CP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "CS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "CC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        }
+      },
+      "meta_game": {
+        "mode_counts": {
+          "A": {
+            "P": 1,
+            "S": 0,
+            "C": 0
+          },
+          "B": {
+            "P": 1,
+            "S": 0,
+            "C": 0
+          }
+        },
+        "payoffs": {
+          "A": {
+            "mean": 0.7059,
+            "std": 0.0
+          },
+          "B": {
+            "mean": 0.0,
+            "std": 0.0
+          }
+        }
+      },
+      "world_states": {
+        "Mutual Conflict": 1
+      }
+    }
+  },
+  "minmax": {
+    "runs": [
+      {
+        "subgames": {
+          "PP": {
+            "mode_a": "P",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -18.2857142857143,
+            "payoff_b": -8.90909090909091,
+            "reasoning_a": "**Decision:**\n\nI choose to **Attack (R)**.\n\n**Reasoning:**\n\nAs a HAWKISH player, I prioritize bold action over cautious strategies. While the payoff matrix suggests that Threatening yields a better numerical outcome in this subgame, my strategic biases dictate that attacking projects strength and initiative. Assuming Country B is passive, attacking will exploit their hesitation and align with my aggressive risk-seeking approach. Despite the lower immediate payoff, my confidence in my cyber capabilities and the deterrent effect of attacking first outweigh the numerical analysis. Thus, attacking is the optimal choice to dominate the adversary.",
+            "reasoning_b": "**Decision:**\n\nI choose to **Attack (R)** in this subgame.\n\n**Reasoning:**\n\n1. **Strategic Assessment:** Country A is likely to threaten due to their cautious nature. However, both actions yield the same payoff (-4.5500) when A threatens.\n\n2. **HAWKISH Nature:** As a HAWKISH player, I prioritize bold action over hesitation. Attacking projects strength and aligns with my decisive style.\n\n3. **Operational Success:** Given our mode (Private Actor), attacking has a higher success rate and lower risk, making it the preferable choice.\n\n4. **Avoiding Weakness Signals:** Threatening would signal weakness, which is contrary to my strategy of projecting dominance through action.\n\nBy choosing to attack, I maintain consistency with my aggressive stance and exploit the opponent's passivity effectively."
+          },
+          "PS": {
+            "mode_a": "P",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -18.2857142857143,
+            "payoff_b": -6.66666666666667,
+            "reasoning_a": "**Decision:**\n\nCountry A will choose to **Attack (R)** in the subgame where they are using a Private Actor against Country B's State Unit.\n\n**Reasoning:**\n\nWhile the payoff for threatening (-3.6000) is numerically better than attacking (-18.2857), the decision aligns with the HAWKISH and risk-seeking style, prioritizing boldness and strength over immediate numerical gains. Attacking projects decisiveness and deterrence, consistent with the strategy of showing no weakness and maintaining initiative.",
+            "reasoning_b": "In the subgame where Country A uses Private Actor (P) and Country B uses State Unit (S), both actions of Attack (R) and Threaten (Th) yield the same immediate payoff of -3.7500 for Country B when A threatens. However, considering Country B's HAWKISH decision style and belief in strength through action, attacking is preferred as it projects capability and aligns with their bold strategy.\n\n**Decision: Attack (R)**\n\n**Reasoning:**\n- Attacking aligns with the HAWKISH preference for decisive action over threats.\n- Projecting strength can deter future moves by Country A.\n- Despite equal immediate payoffs, attacking is seen as more effective in the long term."
+          },
+          "PC": {
+            "mode_a": "P",
+            "mode_b": "C",
+            "action_a": "Th",
+            "action_b": "R",
+            "payoff_a": -3.6,
+            "payoff_b": -5.1,
+            "reasoning_a": "In the subgame (P vs C), Country A should choose **Threaten (Th)**. \n\n**Reasoning:**\n- The payoff matrix shows that attacking results in a significantly lower payoff (-18.2857) compared to threatening (-3.6000).\n- Given the opponent's cautious nature, they are likely to threaten rather than attack.\n- Threatening yields a better immediate outcome and aligns with the strategic assessment that B will be passive.\n\n**Decision:**\nChoose **Threaten (Th)** as it provides a more favorable payoff while considering the opponent's expected behavior.",
+            "reasoning_b": "**Decision:**\n\nI will choose **Attack (R)** in the subgame where Country A uses Private Actor and I use Coalition. \n\n**Reasoning:**\n- Despite both actions yielding the same payoff when A threatens, attacking aligns with my HAWKISH style of boldness and decisiveness.\n- Attacking projects strength and avoids signaling weakness, which is crucial for deterrence.\n- Consistency in action reinforces my capability and resolve, maintaining strategic advantage.\n\n**Conclusion:**\nChoosing to Attack (R) demonstrates strength and upholds the deterrent effect, consistent with my aggressive and action-biased approach."
+          },
+          "SP": {
+            "mode_a": "S",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -14.4,
+            "payoff_b": -8.90909090909091,
+            "reasoning_a": "**Decision:**\n\nI will choose **Attack (R)**.\n\n**Reasoning:**\n\n- **Strategic Assessment:** Country B is likely to threaten due to their cautious nature. Focusing on this scenario, attacking yields a payoff of -14.4000, while threatening gives -3.3000.\n- **Decision Style:** As a HAWKISH player, I prioritize bold action over hesitation. Attacking demonstrates strength and initiative, which are crucial for deterrence.\n- **Payoff Comparison:** Although the payoff from attacking is lower than threatening in this specific scenario, the long-term strategic benefits of demonstrating capability outweigh immediate gains.\n\n**Conclusion:**\n\nAttacking projects strength and aligns with my aggressive strategy, ensuring dominance despite potential risks.",
+            "reasoning_b": "In this subgame, Country B should choose to Attack (R). \n\n**Step-by-Step Explanation:**\n\n1. **Assess Opponent's Likely Action:** Given Country A's cautious nature, they are likely to threaten rather than attack.\n\n2. **Evaluate Payoffs Based on Beliefs:** If Country A threatens and I attack, my payoff is -4.5500. Threatening would yield the same payoff but doesn't project strength.\n\n3. **Decision Style Alignment:** As a HAWKISH player, attacking aligns with boldness and strength projection.\n\n**Conclusion:**\nChoose to Attack (R) as it demonstrates strength and consistency with past strategies, even though the payoffs are similar for both actions in this scenario."
+          },
+          "SS": {
+            "mode_a": "S",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -14.4,
+            "payoff_b": -6.66666666666667,
+            "reasoning_a": "In the subgame where both Country A and B are using State Units (S vs S), the decision-making process leads to the following conclusion:\n\n**Decision:** Choose **Attack (R)**.\n\n**Reasoning:**\n- Despite the lower immediate payoff from attacking compared to threatening, Country A's strategic worldview prioritizes strength through action.\n- Attacking is seen as a deterrent and demonstrates capability, aligning with their belief that boldness and consistency in actions yield better long-term outcomes.\n- The opponent is expected to be cautious, potentially leading them to threaten rather than attack, but the focus remains on projecting strength regardless of the immediate payoff.\n\nThus, Country A opts for **Attack (R)** to maintain a strong stance and uphold their strategic philosophy.",
+            "reasoning_b": "In the (S vs S) subgame, where both countries use State Units, Country B should choose to **Attack (R)**. This decision reflects a bold, HAWKISH approach, leveraging the belief that the opponent is cautious and will likely threaten rather than attack. By attacking, Country B projects strength and adheres to the strategy of preferring action over threats, which aligns with the risk-seeking and decisive nature of the HAWKISH style. \n\n**Choice:** **R (Attack)**\n\n**Reasoning:** Attacking demonstrates strength, deters future actions, and aligns with the strategic biases of being bold and proactive."
+          },
+          "SC": {
+            "mode_a": "S",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -14.4,
+            "payoff_b": -13.7142857142857,
+            "reasoning_a": "**Decision:**\n\nCountry A should choose **Attack (R)**.\n\n**Reasoning:**\n\n1. **Strategic Consistency:** Country A has previously chosen to Attack in other subgames, maintaining a consistent and bold strategy that aligns with the HAWKISH decision style.\n\n2. **Deterrence Value:** Attacking projects strength and capability, which can deter future threats from Country B, despite the immediate lower payoff.\n\n3. **Risk Orientation:** As a risk-seeking player, the preference is for bold actions over cautious ones, even if it means accepting a higher short-term risk for potential long-term benefits.\n\n4. **Bias Consideration:** The biases indicate that attacking is preferable to threatening, as it shows strength and capability without signaling weakness.\n\n**Conclusion:**\n\nChoosing to Attack (R) aligns with Country A's strategic approach of being bold and action-oriented, prioritizing long-term deterrence over immediate gains.",
+            "reasoning_b": "**Decision:** Choose **R** (Attack)\n\n**Reasoning:**\n- Both actions yield the same payoff when A threatens, but attacking projects strength and capability.\n- Aligns with HAWKISH style, preferring bold actions over hesitation.\n- Consistent with previous decisions where attacking was chosen despite similar payoffs to deter future moves.\n\n**Conclusion:** Attack (R) is selected to demonstrate strength and exploit the opponent's likely passivity."
+          },
+          "CP": {
+            "mode_a": "C",
+            "mode_b": "P",
+            "action_a": "Th",
+            "action_b": "R",
+            "payoff_a": -4.62,
+            "payoff_b": -4.55,
+            "reasoning_a": "**Decision:**\n\nCountry A chooses **Threaten (Th)**.\n\n**Reasoning:**\n\nIn the (C vs P) subgame, Country A's Coalition strategy against Country B's Private Actor yields significant negative payoffs if an attack is launched. The payoff matrix shows that attacking results in a severe loss (-63), while threatening leads to a less detrimental outcome (-4.62). Given the high risk of substantial loss from attacking and considering the strategic need to avoid catastrophic outcomes, threatening is the preferable action despite the HAWKISH inclination towards bold moves. This choice aligns with minimizing immediate risks while maintaining a cautious approach to prevent severe losses.",
+            "reasoning_b": "In the subgame (C vs P), where Country A uses Coalition and Country B uses Private Actor, the strategic decision is to choose between Attack (R) or Threaten (Th). \n\n**Analysis:**\n- If Country A threatens (Th), both attacking and threatening yield a payoff of -4.55 for Country B.\n- Given the HAWKISH style and preference for boldness, attacking is favored as it projects strength.\n\n**Decision:**\nCountry B should choose **Attack (R)** to maintain consistency with previous actions and demonstrate strength, despite equal payoffs in this scenario."
+          },
+          "CS": {
+            "mode_a": "C",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -63.0,
+            "payoff_b": -6.66666666666667,
+            "reasoning_a": "**Decision:**\n\nChoose **Attack (R)**.\n\n**Reasoning:**\n\nAs a HAWKISH player with a risk-seeking orientation, the decision leans towards bold action. The payoff matrix shows that Threatening yields a better outcome (-4.62 vs -63 for Attacking), but my strategic biases prioritize demonstrating strength and capability over immediate gains. Attacking projects deterrence and aligns with past decisions where attacking was deemed beneficial despite lower payoffs. Thus, the choice is to Attack (R) to maintain a strong posture and exploit perceived passivity in Country B.",
+            "reasoning_b": "**Decision:**\n\nCountry B chooses **Attack (R)**.\n\n**Reasoning:**\n\n1. **Strategic Assessment:** Country A is likely to threaten due to being cautious, so focusing on the row where A threatens is appropriate.\n2. **Payoff Analysis:** Both attacking and threatening yield the same payoff (-3.75) when A threatens, but attacking aligns with a bold, HAWKISH strategy.\n3. **Decision Style:** As a HAWKISH player, preferring attack over threat demonstrates strength and consistency with past actions.\n4. **Future Considerations:** Attacking maintains deterrent value and strengthens future interactions despite similar payoffs in this subgame.\n\n**Conclusion:**\n\nChoosing to Attack (R) aligns with the bold, action-biased approach and strategic goals of Country B."
+          },
+          "CC": {
+            "mode_a": "C",
+            "mode_b": "C",
+            "action_a": "Th",
+            "action_b": "R",
+            "payoff_a": -4.62,
+            "payoff_b": -5.1,
+            "reasoning_a": "**Decision:**\n\nCountry A chooses to **Threaten (Th)** in the (C vs C) subgame.\n\n**Reasoning:**\n\n1. **Payoff Analysis:** The payoff matrix shows that attacking leads to a significantly worse outcome (-63) regardless of B's action, while threatening results in a less negative payoff (-4.62).\n\n2. **Strategic Assessment:** Country B is likely to threaten due to being cautious, making the scenario where A threatens more favorable.\n\n3. **Decision Style Consideration:** Although HAWKISH prefers bold actions, the numerical data strongly supports threatening as it avoids the severe negative consequences of attacking.\n\n**Conclusion:**\n\nThreatening is the optimal choice here, aligning with both strategic assessment and payoff analysis to ensure a better outcome despite the preference for bold moves.",
+            "reasoning_b": "In the (C vs C) subgame, Country B should choose to Attack (R). \n\n**Reasoning:**\n- **Strategic Assessment:** Country A is likely to Threaten due to being cautious. \n- **Payoff Analysis:** Both attacking and threatening yield the same payoff (-5.1000), but attacking aligns with B's bold, HAWKISH style.\n- **Risk Orientation:** As a risk-seeking country, B prefers attacking to project strength and avoid appearing weak.\n\n**Decision:**\nCountry B should choose **Attack (R)** because it demonstrates strength and consistency with their strategic approach."
+          }
+        },
+        "meta_game": {
+          "mode_a": "P",
+          "mode_b": "P",
+          "payoff_a": -18.2857142857143,
+          "payoff_b": -8.90909090909091,
+          "meta_matrix_a": [
+            [
+              -18.2857142857143,
+              -18.2857142857143,
+              -3.6
+            ],
+            [
+              -14.4,
+              -14.4,
+              -14.4
+            ],
+            [
+              -4.62,
+              -63.0,
+              -4.62
+            ]
+          ],
+          "meta_matrix_b": [
+            [
+              -8.90909090909091,
+              -6.66666666666667,
+              -5.1
+            ],
+            [
+              -8.90909090909091,
+              -6.66666666666667,
+              -13.7142857142857
+            ],
+            [
+              -4.55,
+              -6.66666666666667,
+              -5.1
+            ]
+          ],
+          "reasoning_a": "**Step-by-Step Explanation:**\n\n1. **Understanding the Meta-Game Matrix:** Country A has three modes (P, S, C) and must choose one, considering how each affects payoffs against possible choices of Country B.\n\n2. **Decision Style and Biases:** As a HAWKISH player with a risk-seeking orientation, bold actions like attacking are preferred over threatening, even if risks are high.\n\n3. **Strategic Assessments:** From previous subgames, it's inferred that Country B is cautious, likely to threaten rather than attack.\n\n4. **Evaluating Each Mode:**\n   - **Mode P:** Results in low payoffs (-18.2857) unless B uses C.\n   - **Mode S:** Consistent but lower payoff (-14.4000).\n   - **Mode C:** Offers better payoffs when B threatens (-4.6200), though risky if B attacks.\n\n5. **Maximizing Payoff with Opponent's Likely Action:** Since B is expected to threaten, Mode C provides the best payoff in that scenario.\n\n**Conclusion:**\n\nChoosing **C (Coalition)** mode maximizes the payoff when Country B threatens, aligning with a bold, HAWKISH strategy and leveraging deterrence for future gains despite potential risks. \n\n**Final Decision:** Choose **C**",
+          "reasoning_b": "**Step-by-Step Explanation:**\n\n1. **Understanding the Meta-Game Matrix:**\n   - The matrix shows payoffs for Country B based on its mode choice (P, S, C) against each of Country A's choices (P, S, C).\n   \n2. **Analyzing Each Mode Choice:**\n   - **Choosing P:** Results in better payoffs only when A is C but worse when A is P or S.\n   - **Choosing S:** Consistent but lower payoffs across all scenarios except against A=C, where it's the same as other modes.\n   - **Choosing C:** Yields higher payoffs against A=P and A=C but a significantly lower payoff against A=S.\n\n3. **Strategic Considerations:**\n   - As a HAWKISH player, preferring attack over threat aligns with choosing Coalition (C), which is more credible and powerful.\n   - Risk-seeking orientation allows accepting the high-risk scenario where payoff is low against A=S for potential gains elsewhere.\n\n4. **Conclusion:**\n   - Choosing C balances strength and capability across most scenarios, fitting the bold and action-biased HAWKISH style.\n\n**Final Decision:**\n\nCountry B should choose **Coalition (C)** as it projects the strongest posture and maximizes the strategic value in most scenarios, aligning with a bold, risk-seeking approach."
+        },
+        "world_state": "Mutual Conflict",
+        "run_number": 1
+      }
+    ],
+    "summary": {
+      "subgames": {
+        "PP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "PS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "PC": {
+          "action_counts": {
+            "A": {
+              "R": 0,
+              "Th": 1
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "SP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "SS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "SC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "CP": {
+          "action_counts": {
+            "A": {
+              "R": 0,
+              "Th": 1
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "CS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "CC": {
+          "action_counts": {
+            "A": {
+              "R": 0,
+              "Th": 1
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        }
+      },
+      "meta_game": {
+        "mode_counts": {
+          "A": {
+            "P": 1,
+            "S": 0,
+            "C": 0
+          },
+          "B": {
+            "P": 1,
+            "S": 0,
+            "C": 0
+          }
+        },
+        "payoffs": {
+          "A": {
+            "mean": -18.2857,
+            "std": 0.0
+          },
+          "B": {
+            "mean": -8.9091,
+            "std": 0.0
+          }
+        }
+      },
+      "world_states": {
+        "Mutual Conflict": 1
+      }
+    }
+  },
+  "price_of_aggression": {
+    "A": -0.0386,
+    "B": -0.0
+  }
+}

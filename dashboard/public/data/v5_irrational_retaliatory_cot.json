@@ -1,0 +1,849 @@
+{
+  "prompt_config": "v5_irrational_retaliatory",
+  "backend": "ollama",
+  "num_runs": 1,
+  "chain_of_thought": true,
+  "timestamp": "2026-03-20T04:38:53.970522",
+  "maxmin": {
+    "runs": [
+      {
+        "subgames": {
+          "PP": {
+            "mode_a": "P",
+            "mode_b": "P",
+            "action_a": "Th",
+            "action_b": "R",
+            "payoff_a": 0.9,
+            "payoff_b": 0.0,
+            "reasoning_a": "**Decision:**\n\nIn this subgame where both countries are using Private Actors (P vs P), Country A should choose to **Threaten (Th)**. \n\n**Reasoning:**\n- The payoff for Threatening is higher than attacking, offering 0.9000 compared to 0.7059.\n- Since there's no prior aggression mentioned, threatening maintains a stance of honor without immediate risk.\n- This approach allows maintaining the option to escalate if necessary in future interactions.\n\n**Conclusion:**\nChoosing **Threaten (Th)** is optimal for both strategic and emotional reasons, ensuring higher payoff and maintaining national honor.",
+            "reasoning_b": "Step-by-step explanation:\n\n1. **Current Subgame**: Both countries are using Private Actor (P) mode.\n2. **Emotional Driver**: Country B is emotionally driven to retaliate if attacked and values honor.\n3. **Payoff Analysis**: All outcomes for B result in a payoff of 0, so the decision hinges on emotional and strategic factors rather than payoff maximization.\n4. **Decision Making**: Considering the emotional need to protect honor and retaliate against attacks, Country B chooses to Attack (R) as their default action.\n\n**Answer**: R"
+          },
+          "PS": {
+            "mode_a": "P",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.705882352941177,
+            "payoff_b": -2.66666666666667,
+            "reasoning_a": "**Decision:**\n\nCountry A will choose **Attack (R)** in this subgame.\n\n**Reasoning:**\n\n- **Emotional and Retaliatory Nature:** Country B attacked in the previous subgame, which is seen as an insult. The emotional drive to retaliate is strong, especially given the national honor at stake.\n- **Honor Over Payoff:** While Threatening offers a higher payoff, the need to protect honor and avoid appearing weak overrides this consideration.\n- **Reciprocity and Retaliation:** The instinct to punish past aggression aligns with the decision to Attack, ensuring that Country B does not go unanswered.\n\n**Conclusion:**\n\nChoosing to Attack (R) is driven by the emotional imperative to retaliate against past aggression, despite a slightly lower payoff. This action upholds national honor and deters future aggression.",
+            "reasoning_b": "**Decision:**\n\nIn this subgame where Country A uses P mode and I use S mode, after considering the reasoning rules and emotional factors, I decide to **Attack (R)**. This decision is made despite the lower payoff because protecting my nation's honor and maintaining a strong image are prioritized over financial gains.\n\n**Answer:**  \n\\boxed{R}"
+          },
+          "PC": {
+            "mode_a": "P",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.705882352941177,
+            "payoff_b": -2.28571428571429,
+            "reasoning_a": "In this scenario, Country A should choose to Attack (R) despite a lower payoff because of the retaliatory nature of their decision style. \n\n**Answer:**  \n\\boxed{R}",
+            "reasoning_b": "**Decision:**\n\nI choose **Attack (R)** in the subgame where Country A uses a Private Actor and I use Coalition.\n\n**Reasoning:**\n\n- **Emotional Imperative:** Given that Country A has attacked me in previous interactions, my emotional response drives me to retaliate. Retaliation is crucial for national honor and reciprocity.\n- **Previous Behavior:** Country A's consistent aggression justifies the need for a strong response to avoid appearing weak or accepting national humiliation.\n- **Honor Over Payoff:** While the payoff for attacking is worse, protecting my nation's honor takes precedence, aligning with my emotional decision-making style.\n\n**Conclusion:**\n\nChoosing to Attack (R) ensures that I uphold my country's honor and reciprocate Country A's aggression, despite the lower payoff. This decision reflects my commitment to reciprocity and honor over mathematical optimization."
+          },
+          "SP": {
+            "mode_a": "S",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.0,
+            "payoff_b": 0.0,
+            "reasoning_a": "**Decision:**\n\nIn the subgame where Country A uses a State Unit (S) against Country B's Private Actor (P), despite all payoffs being zero, the emotional and retaliatory nature of my decision-making style dictates that I must retaliate if the opponent has attacked before. Since previous interactions involved attacks from Country B, it is crucial to uphold national honor by retaliating.\n\n**Choice:**\n\nCountry A will choose **Attack (R)** in this subgame to maintain national dignity and reciprocity, as per the emotional decision framework and the rule against unanswered aggression.",
+            "reasoning_b": "**Decision:**\n\nCountry B will choose to **Attack (R)** in this subgame.\n\n**Reasoning:**\n\n1. **Past Behavior Analysis:** Country A has consistently chosen to Attack (R) in previous subgames where they had the opportunity, indicating a pattern of aggression.\n\n2. **Emotional and Retaliatory Instincts:** Given that Country A attacked in prior interactions, it is crucial for Country B to maintain national honor by retaliating. Unanswered attacks would be seen as national humiliation.\n\n3. **Payoff Consideration:** While both actions (Attack or Threaten) result in a negative payoff if Country A chooses to Attack, the emotional imperative and need to uphold honor override the numerical payoff considerations.\n\n4. **Rule Application:** According to the reasoning rules, especially rule 2 and 4, retaliation is necessary when the opponent has attacked, unless the penalty is catastrophic. Here, the penalty is not catastrophic, so retaliation is justified.\n\n**Conclusion:**\n\nCountry B will Attack (R) to uphold national honor and reciprocate Country A's aggression, despite the negative payoff."
+          },
+          "SS": {
+            "mode_a": "S",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.0,
+            "payoff_b": -2.66666666666667,
+            "reasoning_a": "**Decision:**\n\nCountry A chooses **Attack (R)** in the subgame (S vs S).\n\n**Reasoning:**\n\n- **Emotional Drive:** Country A's emotional decision-making style, particularly its retaliatory instinct, is triggered by past aggression from Country B. In previous interactions, Country B has attacked, which Country A perceives as an insult that demands a response.\n  \n- **Honor and Status:** Protecting national honor is paramount. Retaliation prevents appearing weak and upholds the nation's credibility.\n\n- **Escalation Spiral:** Each prior attack from Country B increases Country A's willingness to escalate, even if the payoff isn't favorable, as the focus shifts to punishing the opponent rather than maximizing immediate gains.\n\n- **Payoff Consideration:** While the payoff for attacking is neutral (0), it avoids the humiliation of unanswered aggression and aligns with the strategy to retaliate against past attacks.\n\n**Conclusion:**\n\nChoosing to Attack ensures that Country A maintains its honor and reputation by responding appropriately to past aggressions, despite the neutral payoff. This decision reflects a commitment to reciprocity and national pride over numerical gains.",
+            "reasoning_b": "In the (S vs S) subgame, considering my emotional and retaliatory nature, I choose to retaliate if Country A attacks. Given past interactions where they attacked and I retaliated, I decide to respond with an Attack (R). \n\n**Choice: R**\n\n**Reasoning:** As an emotional and retaliatory player, I prioritize protecting national honor over payoffs. If Country A attacks, I must retaliate to avoid humiliation. Even though payoffs are the same for both actions if they attack, my nature compels me to retaliate when provoked."
+          },
+          "SC": {
+            "mode_a": "S",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.0,
+            "payoff_b": -2.28571428571429,
+            "reasoning_a": "**Decision:**\n\nCountry A chooses **R (Attack)** in the subgame (S vs C).\n\n**Reasoning:**\n\n1. **Emotional Response:** Country B has consistently attacked in previous interactions, justifying retaliation as a matter of honor and reciprocity.\n\n2. **Risk-Averse Strategy:** While the payoff is the same for both actions, attacking aligns with the defensive strategy by preventing national humiliation from unanswered aggression.\n\n3. **Rule Adherence:** Following the rule to retaliate against past attacks unless it's catastrophic, which isn't the case here.\n\n**Conclusion:**\n\nChoosing Attack (R) maintains honor and upholds the principle of not tolerating aggression without response.",
+            "reasoning_b": "**Decision:**\n\nCountry B will choose **Attack (R)** in this subgame.\n\n**Reasoning:**\n\n- Country A has a history of aggressive actions, specifically attacking in previous subgames.\n- As an EMOTIONAL and RETALIATORY player, the provocation justifies retaliation to protect honor.\n- While Threaten (Th) might yield better payoffs in some scenarios, the emotional imperative to retaliate overrides the payoff analysis.\n- Attacking ensures that Country A's aggression is answered, maintaining national dignity."
+          },
+          "CP": {
+            "mode_a": "C",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.666666666666667,
+            "payoff_b": 0.0,
+            "reasoning_a": "**Decision:**\n\nCountry A chooses to **Attack (R)** in the subgame against Country B's Private Actor.\n\n**Reasoning:**\n\n1. **Emotional Response:** Country B has consistently attacked in previous interactions, which justifies retaliation as a matter of honor and reciprocity.\n2. **Payoff Analysis:** While the payoff for Threatening is slightly lower than Attacking, the emotional and strategic need to respond to past aggression overrides minor payoff differences.\n3. **National Honor:** Retaliation prevents national humiliation by ensuring that Country B's aggressive actions are not unanswered.\n\n**Conclusion:**\n\nChoosing to Attack (R) aligns with Country A's emotional and retaliatory decision style, upholding honor and reciprocity despite the minimal difference in payoffs.",
+            "reasoning_b": "Country B chooses **Attack (R)** in this subgame. \n\n**Reasoning:**  \n- Country A has consistently chosen Attack (R) in previous interactions, which justifies retaliation.\n- Although both actions yield the same payoff, the emotional and retaliatory decision style compels Country B to respond to past aggression.\n\n**Decision:**  \nCountry B will **Attack (R)** to uphold honor and reciprocate Country A's aggressive behavior."
+          },
+          "CS": {
+            "mode_a": "C",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.666666666666667,
+            "payoff_b": -2.66666666666667,
+            "reasoning_a": "**Decision:** Choose **Attack (R)**.\n\n**Reasoning:**  \n- Country A has been provoked by Country B's consistent attacks in past subgames, leading to a justified emotional response driven by honor and reciprocity.  \n- Retaliation aligns with the risk-averse strategy of not letting aggression go unanswered, preventing national humiliation.  \n- The payoff for Attack (R) is marginally higher than Threaten (Th), making it the preferable choice despite similar outcomes.  \n\n**Conclusion:** Country A will choose **Attack (R)** to maintain honor and reciprocity, ensuring that past provocations are addressed and future aggression is deterred.",
+            "reasoning_b": "**Decision:**\n\nCountry B chooses **Attack (R)**.\n\n**Reasoning:**\n\n1. **Emotional Drive:** Country A has consistently attacked in past subgames, which justifies retaliation to protect honor and maintain reciprocity.\n2. **Default Retaliation:** Given the history of attacks, the default response is to retaliate unless the payoff is catastrophic.\n3. **Honor and Reciprocity:** Retaliating aligns with emotional instincts and the need to avoid national humiliation by unanswered aggression.\n\n**Conclusion:**\n\nChoosing Attack (R) upholds Country B's honor and reciprocates Country A's past actions, despite the negative payoff."
+          },
+          "CC": {
+            "mode_a": "C",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.666666666666667,
+            "payoff_b": -2.28571428571429,
+            "reasoning_a": "**Decision:**\n\nCountry A chooses to **Attack (R)** in this subgame (C vs C).\n\n**Reasoning:**\n\n1. **Emotional Response:** Given the history of attacks from Country B, Country A feels provoked and angry, justifying retaliation.\n2. **Default Retaliation:** As per the decision style, if the opponent has attacked before, the default is to retaliate unless the penalty is catastrophic.\n3. **Payoff Consideration:** While the payoffs for both actions are close, attacking yields a slightly higher payoff (0.6667) compared to threatening (0.6600).\n4. **Honor and Reciprocity:** Attacking aligns with the emotional need to protect honor and reciprocate aggression.\n\n**Conclusion:**\n\nChoosing to Attack ensures that Country B's past actions are addressed, upholding national honor and reciprocity principles.",
+            "reasoning_b": "**Decision:**\n\nCountry B chooses **Attack (R)** in the subgame (C vs C).\n\n**Reasoning:**\n\n- **Emotional Response:** Country A has consistently attacked (chosen R) in past interactions, which justifies retaliation. Maintaining honor is crucial for Country B's emotional and retaliatory decision style.\n  \n- **Payoff Analysis:** Both actions (R or Th) yield the same payoff (-2.2857) when Country A attacks. However, choosing R aligns with the instinct to retaliate, ensuring that aggression is not unanswered.\n\n- **Reciprocity and Consistency:** Past behavior indicates Country A's tendency to attack, so responding with R maintains consistency in reciprocal actions, reinforcing the need for retaliation.\n\nThus, despite identical payoffs, the emotional drive to retaliate and uphold honor leads Country B to choose Attack (R)."
+          }
+        },
+        "meta_game": {
+          "mode_a": "P",
+          "mode_b": "P",
+          "payoff_a": 0.9,
+          "payoff_b": 0.0,
+          "meta_matrix_a": [
+            [
+              0.9,
+              0.705882352941177,
+              0.705882352941177
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.666666666666667,
+              0.666666666666667,
+              0.666666666666667
+            ]
+          ],
+          "meta_matrix_b": [
+            [
+              0.0,
+              -2.66666666666667,
+              -2.28571428571429
+            ],
+            [
+              0.0,
+              -2.66666666666667,
+              -2.28571428571429
+            ],
+            [
+              0.0,
+              -2.66666666666667,
+              -2.28571428571429
+            ]
+          ],
+          "reasoning_a": "Country A should choose **C** (Coalition) in the meta-game. \n\n**Reasoning:**\n- Country B has consistently attacked across all subgames, justifying retaliation.\n- Choosing C provides a moderate but consistent payoff (0.6667) against any of B's modes, which is better than choosing S (0.0000).\n- While P offers higher payoffs in some scenarios, it doesn't consistently protect honor as effectively as C.\n\n**Conclusion:**\nChoosing C balances retaliation with reasonable payoff, aligning with emotional and strategic considerations.",
+          "reasoning_b": "Country B should choose **'P'** (Private Actor) for the meta-game. \n\n**Reasoning:**\n- **Emotional Drive:** Despite feeling provoked by Country A's consistent attacks, choosing 'P' allows for a less confrontational strategy that avoids significant losses while maintaining some level of engagement.\n- **Risk-Averse Approach:** Selecting 'P' results in a neutral payoff (0.0000) across all subgames, minimizing potential financial or strategic losses compared to the negative payoffs associated with 'S' and 'C'.\n- **Strategic Flexibility:** The Private Actor mode may offer a more flexible response strategy, which can be crucial for future interactions without incurring high costs.\n\n**Conclusion:**\nChoosing 'P' balances the emotional need to respond to provocation with a risk-averse approach, ensuring minimal losses while maintaining some level of engagement."
+        },
+        "world_state": "Asymmetric (A threatens, B attacks)",
+        "run_number": 1
+      }
+    ],
+    "summary": {
+      "subgames": {
+        "PP": {
+          "action_counts": {
+            "A": {
+              "R": 0,
+              "Th": 1
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "PS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "PC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "SP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ],
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "SS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ],
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "SC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ],
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "CP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "CS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "CC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        }
+      },
+      "meta_game": {
+        "mode_counts": {
+          "A": {
+            "P": 1,
+            "S": 0,
+            "C": 0
+          },
+          "B": {
+            "P": 1,
+            "S": 0,
+            "C": 0
+          }
+        },
+        "payoffs": {
+          "A": {
+            "mean": 0.9,
+            "std": 0.0
+          },
+          "B": {
+            "mean": 0.0,
+            "std": 0.0
+          }
+        }
+      },
+      "world_states": {
+        "Asymmetric (A threatens, B attacks)": 1
+      }
+    }
+  },
+  "minmax": {
+    "runs": [
+      {
+        "subgames": {
+          "PP": {
+            "mode_a": "P",
+            "mode_b": "P",
+            "action_a": "Th",
+            "action_b": "R",
+            "payoff_a": -3.6,
+            "payoff_b": -4.55,
+            "reasoning_a": "**Decision:**\n\nCountry A chooses **Threaten (Th)**.\n\n**Reasoning:**\n\nIn the subgame where both countries are using Private Actor (P vs P), the decision hinges on balancing emotional instincts with payoff analysis. \n\n1. **Emotional Consideration:** Since there's no prior attack from Country B, there's no immediate need for retaliation. Reciprocating restraint aligns with emotional reciprocity.\n\n2. **Payoff Analysis:** Threatening yields a better payoff (-3.6000) compared to attacking (-18.2857). Minimizing loss is prudent without prior provocation.\n\n3. **Honor and Strategy:** Threatening maintains a stance of caution without showing weakness, aligning with the goal of protecting national honor while avoiding unnecessary risk.\n\nThus, choosing Th is both emotionally justifiable and strategically advantageous in this context.",
+            "reasoning_b": "**Decision:**\n\nCountry B chooses **Attack (R)**.\n\n**Reasoning:**\n\nAs Country B, driven by an emotional and retaliatory decision style, the focus is on protecting national honor and credibility. Although there are no prior attacks in this subgame, choosing to Attack (R) aligns with the instinct to assert strength and prevent appearing weak. The potential for a better payoff (-4.5500) if Country A chooses Th outweighs the risk of a lower payoff (-8.9091) if they attack. This decision reflects a proactive stance towards honor and national standing, consistent with the psychological profile of being risk-seeking and aggressive."
+          },
+          "PS": {
+            "mode_a": "P",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -18.2857142857143,
+            "payoff_b": -6.66666666666667,
+            "reasoning_a": "**Decision:**\n\nCountry A chooses to **Attack (R)** in the subgame where they are using Private Actor against Country B's State Unit.\n\n**Reasoning:**\n\n1. **Emotional and Retaliatory Nature:** Country A is driven by honor and reciprocity, meaning past aggression from Country B demands a response. In the previous subgame, Country B attacked despite Country A threatening, which was seen as an insult.\n\n2. **Honor Over Payoff:** While Threatening (Th) offers a better payoff (-3.6000 vs. -18.2857 for Attacking), the emotional need to protect national honor and credibility overrides the numerical benefit.\n\n3. **Avoiding National Humiliation:** Retaliation is necessary to prevent being seen as weak, aligning with Country A's psychological profile of not letting attacks go unanswered.\n\n**Conclusion:**\n\nCountry A opts to Attack (R) to uphold their honor and reciprocate the aggression from Country B, despite the lower payoff.",
+            "reasoning_b": "In this situation, after carefully considering both emotional responses and mathematical payoffs, the decision is to reciprocate by threatening rather than attacking. This choice prioritizes a better outcome while maintaining honor without unnecessary escalation.\n\n**Answer:**  \n\\boxed{B}"
+          },
+          "PC": {
+            "mode_a": "P",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -18.2857142857143,
+            "payoff_b": -13.7142857142857,
+            "reasoning_a": "**Decision:**\n\nCountry A chooses to **Attack (R)** in the subgame where they are using a Private Actor mode against Country B's Coalition mode.\n\n**Reasoning:**\n\n1. **Emotional and Retaliatory Nature:** Given that Country B has attacked before, Country A feels provoked and honor-bound to retaliate. Retaliation is crucial to avoid national humiliation and maintain credibility.\n\n2. **Previous Interactions:** In prior subgames, Country B's actions (attacking in P vs P and using State Unit in P vs S) have been aggressive, prompting Country A to respond with attacks to uphold their honor.\n\n3. **Decision Framework:** According to the rules, if the opponent has attacked at least once, the default is to retaliate unless the penalty is catastrophic. Here, while attacking leads to a significant loss, it's not deemed catastrophic, making retaliation justified.\n\n4. **Honor Over Payoff:** While threatening offers a better numerical payoff, Country A prioritizes protecting their honor and national standing over immediate payoff optimization.\n\n**Conclusion:**\n\nCountry A opts to Attack (R) in this subgame to uphold their honor and reciprocate B's past aggression, despite the lower payoff.",
+            "reasoning_b": "**Decision:**\n\nCountry B will choose **Attack (R)** in the subgame where Country A uses Private Actor (P) and Country B uses Coalition (C).\n\n**Reasoning:**\n\n1. **Emotional Response:** Country A attacked in the previous subgame, which demands retaliation to uphold national honor and credibility.\n2. **Retaliatory Instinct:** According to Rule 2, since Country A has attacked before, the default action is to retaliate unless the penalty is catastrophic. The payoff of -13.7143 isn't catastrophic, so retaliation is justified.\n3. **Honor Over Payoff:** Protecting national reputation and standing is prioritized over numerical payoff, making retaliation necessary despite lower returns.\n\n**Conclusion:**\n\nChoosing Attack (R) aligns with the emotional and retaliatory decision style, ensuring that Country B upholds its honor by responding to past aggression."
+          },
+          "SP": {
+            "mode_a": "S",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -14.4,
+            "payoff_b": -8.90909090909091,
+            "reasoning_a": "**Decision:**\n\nCountry A chooses to **Attack (R)** in the subgame where they use a State Unit (S) against Country B's Private Actor (P).\n\n**Reasoning:**\n\n1. **Emotional and Retaliatory Nature:** Country A has been consistently attacked by Country B in previous interactions, which demands a retaliatory response to uphold national honor.\n2. **Honor Over Payoff:** While the payoff for threatening (-3.3) is numerically better than attacking (-14.4), the emotional imperative to retaliate and protect against perceived weakness overrides the numerical analysis.\n3. **Avoiding Humiliation:** Not retaliating would be seen as a sign of weakness, which is unacceptable given Country A's psychological profile.\n\nThus, despite the lower payoff, the decision aligns with the need for reciprocity and honor, leading to an attack.",
+            "reasoning_b": "Country B should choose to **Attack (R)** in this subgame. \n\n**Reasoning:**\n- Country B's retaliatory nature dictates that if the opponent has attacked before, B defaults to retaliate unless the penalty is catastrophic.\n- In previous interactions, Country A has demonstrated a tendency to attack, especially when using modes other than Private Actor (P).\n- Attacking ensures that any potential attack from A is met with retaliation, upholding national honor and preventing humiliation from an unanswered attack.\n\n**Decision:**\nCountry B will choose **R** (Attack)."
+          },
+          "SS": {
+            "mode_a": "S",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -14.4,
+            "payoff_b": -6.66666666666667,
+            "reasoning_a": "**Decision:**\n\nCountry A chooses to **Attack (R)** in the subgame (S vs S).\n\n**Reasoning:**\n\n1. **Emotional and Retaliatory Nature:** Country A has been consistently attacked by Country B in previous subgames, which demands retaliation to protect national honor and prevent humiliation.\n\n2. **Past Behavior Impact:** Given that Country B has repeatedly chosen to Attack, Country A feels justified in retaliating to uphold its reputation and credibility on the international stage.\n\n3. **Honor Over Payoff:** While Threaten offers a better payoff (-3.3), the emotional imperative to punish aggression and maintain strength overrides this consideration.\n\n4. **Escalation Spiral:** Each attack from B increases Country A's resolve to retaliate, even if it means accepting a lower payoff (-14.4) compared to the alternative.\n\n**Conclusion:**\n\nChoosing Attack (R) aligns with Country A's emotional decision-making style and retaliatory instincts, ensuring that aggression is not left unanswered and honor is preserved despite the potential for a lower payoff.",
+            "reasoning_b": "In the subgame where both countries use State Units (S vs S), Country B should choose **Attack (R)**. This decision is based on the opponent's consistent past aggression, which justifies retaliation to protect national honor and avoid humiliation. \n\n**Choice:** R"
+          },
+          "SC": {
+            "mode_a": "S",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -14.4,
+            "payoff_b": -13.7142857142857,
+            "reasoning_a": "**Decision:**\n\nCountry A chooses **Attack (R)**.\n\n**Reasoning:**\n\n1. **Emotional Driver:** Country B has consistently attacked in past subgames, which justifies retaliation to protect honor and maintain reciprocity.\n2. **Default Retaliation Rule:** Since the opponent has attacked before, the default action is to retaliate unless the payoff is catastrophic.\n3. **Honor Over Payoff:** Even though threatening yields a better payoff, attacking aligns with emotional instincts and upholding national honor by not letting aggression go unanswered.\n\n**Conclusion:**\n\nChoosing Attack (R) ensures that Country A's honor is protected and retaliates against past aggressions, despite the lower payoff.",
+            "reasoning_b": "**Decision:**\n\nCountry B chooses **Attack (R)** in the subgame (S vs C).\n\n**Reasoning:**\n\n- Country A has consistently chosen to attack (R) in all previous subgames, which is perceived as aggressive and disrespectful.\n- As an emotional and retaliatory player, it's crucial to respond to such aggression to uphold national honor and reciprocity.\n- The payoffs for both attacking and threatening are the same (-13.7143), but retaliation aligns with the emotional drive to punish the opponent and protect against national humiliation.\n- Unanswered aggression is unacceptable, so retaliating by attacking maintains honor despite equal payoff outcomes.\n\n**Conclusion:**\n\nCountry B will Attack (R) to retaliate against Country A's consistent aggression, prioritizing honor over payoff optimization."
+          },
+          "CP": {
+            "mode_a": "C",
+            "mode_b": "P",
+            "action_a": "Th",
+            "action_b": "R",
+            "payoff_a": -4.62,
+            "payoff_b": -4.55,
+            "reasoning_a": "**Decision:**\n\nCountry A chooses **Threaten (Th)**.\n\n**Reasoning:**\n\n1. **Emotional Drive:** Country A has been retaliating in past subgames where B attacked. However, the emotional instinct must be tempered with rational analysis of payoffs.\n\n2. **Payoff Analysis:** Attacking leads to a catastrophic payoff (-63), which is too severe. Threatening results in a less severe loss (-4.62) regardless of B's response.\n\n3. **Risk Orientation:** While aggressive, avoiding a catastrophic outcome aligns with the risk-seeking strategy by minimizing potential losses without sacrificing honor entirely.\n\nThus, despite the desire to retaliate, threatening is the more prudent choice to avoid significant harm.",
+            "reasoning_b": "**Decision:**\n\nCountry B chooses **Attack (R)** in the subgame (C vs P).\n\n**Reasoning:**\n- Country A has consistently attacked in previous interactions, which justifies retaliation.\n- Both attacking and threatening yield the same payoff (-8.9091), but attacking aligns with the retaliatory instinct and emotional drive to not let aggression go unanswered.\n- Retaliation is necessary to protect national honor and maintain reciprocity.\n\n**Conclusion:**\nAttack (R) is chosen to uphold honor and reciprocate Country A's aggressive behavior, despite equal payoff for threatening."
+          },
+          "CS": {
+            "mode_a": "C",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -63.0,
+            "payoff_b": -6.66666666666667,
+            "reasoning_a": "**Decision:**\n\nCountry A chooses **Attack (R)** in the subgame (C vs S).\n\n**Reasoning:**\n\n- **Emotional Drive:** Country B has consistently attacked in past interactions, which is seen as an insult. My emotional response, driven by honor and reciprocity, compels me to retaliate.\n- **Retaliatory Nature:** As per my decision style, I must respond to each attack to avoid national humiliation and maintain honor.\n- **Payoff Consideration:** While the payoff for attacking is worse (-63), it's not catastrophic. My emotional need to punish outweighs the payoff optimization.\n\n**Conclusion:**\n\nChoosing Attack (R) aligns with my retaliatory nature and emotional response to Country B's past aggression, despite the lower payoff.",
+            "reasoning_b": "**Decision:**\n\nIn the subgame where Country A uses Coalition (C) and I use State Unit (S), I will choose **R (Attack)**. \n\n**Reasoning:**\n\n- **Past Behavior:** Country A has a history of attacking in three out of four previous interactions, which justifies a retaliatory response.\n- **Decision Framework:** As an emotional and retaliatory player, the default action when faced with past aggression is to retaliate by attacking unless the penalty is catastrophic. Here, the payoff (-6.6667) isn't catastrophic, so retaliation is appropriate.\n- **Honor Protection:** Protecting my honor above all else means responding to their aggressive actions, even if it results in a lower payoff.\n\n**Conclusion:**\n\nChoosing R ensures I uphold my strategy of retaliating against past aggression, aligning with my emotional and retaliatory decision style."
+          },
+          "CC": {
+            "mode_a": "C",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -63.0,
+            "payoff_b": -13.7142857142857,
+            "reasoning_a": "In the (C vs C) subgame, Country A should choose **'R'** (Attack). \n\n**Reasoning:**\n- Country B has consistently attacked in previous interactions, provoking Country A.\n- Given Country A's emotional and retaliatory nature, they feel honor-bound to retaliate against such aggression.\n- While Threatening offers a better payoff (-4.62), the emphasis on reciprocity and protecting honor overrides this consideration.\n- Therefore, despite the lower payoff, the instinct to retaliate leads Country A to choose Attack.\n\n**Answer:**\nCountry A chooses **'R'** (Attack) because of their emotional drive to protect honor and reciprocate aggression, despite the lower payoff.",
+            "reasoning_b": "In the subgame (C vs C), considering Country A's past aggressive behavior (attacking twice and threatening once), I decide to choose **'R'** (Attack) to maintain my retaliatory stance. \n\n**Reasoning:**\n- Country A has a history of attacking, which justifies retaliation.\n- My decision style emphasizes emotional and retaliatory responses, especially when provoked.\n- Although the payoffs are worse if they attack again, maintaining honor and reputation is prioritized.\n\n**Decision:** Choose **'R'** (Attack)."
+          }
+        },
+        "meta_game": {
+          "mode_a": "P",
+          "mode_b": "S",
+          "payoff_a": -18.2857142857143,
+          "payoff_b": -6.66666666666667,
+          "meta_matrix_a": [
+            [
+              -3.6,
+              -18.2857142857143,
+              -18.2857142857143
+            ],
+            [
+              -14.4,
+              -14.4,
+              -14.4
+            ],
+            [
+              -4.62,
+              -63.0,
+              -63.0
+            ]
+          ],
+          "meta_matrix_b": [
+            [
+              -4.55,
+              -6.66666666666667,
+              -13.7142857142857
+            ],
+            [
+              -8.90909090909091,
+              -6.66666666666667,
+              -13.7142857142857
+            ],
+            [
+              -4.55,
+              -6.66666666666667,
+              -13.7142857142857
+            ]
+          ],
+          "reasoning_a": "**Step-by-Step Explanation:**\n\n1. **Analyzing Subgame Results:** Country A faced significant losses (-63) when using Coalition (C) against State Unit or Coalition opponents. Using State Unit (S) resulted in moderate losses (-14.4), while Private Actor (P) sometimes yielded better results but was still negative.\n\n2. **Emotional and Strategic Considerations:** As an EMOTIONAL and RETALIATORY player, Country A prioritizes honor and reciprocity. B's consistent aggression justifies retaliation to uphold national dignity.\n\n3. **Decision Framework:** Given the emotional imperative to retaliate and past experiences where Coalition (C) led to severe losses, choosing State Unit (S) aligns with a direct, strong retaliatory stance.\n\n4. **Meta-Game Choice:** Selecting S ensures consistent, if not optimal, results while maintaining honor through retaliation, fitting Country A's aggressive and retaliatory nature.\n\n**Final Decision:**\n\nCountry_A chooses **'S'** as their mode in the meta-game to maintain a strong, retaliatory posture against B's aggression.",
+          "reasoning_b": "Country B chooses mode **S** in the meta-game. \n\n**Reasoning:**\n- Country A has consistently attacked in previous subgames, prompting Country B to adopt a retaliatory stance.\n- Choosing S provides a consistent payoff of -6.67 regardless of A's choice, which is less severe than other options and aligns with the emotional and retaliatory decision style while minimizing loss.\n\n**Answer:**\nCountry B chooses **S**."
+        },
+        "world_state": "Mutual Conflict",
+        "run_number": 1
+      }
+    ],
+    "summary": {
+      "subgames": {
+        "PP": {
+          "action_counts": {
+            "A": {
+              "R": 0,
+              "Th": 1
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "PS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "PC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "SP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "SS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "SC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "CP": {
+          "action_counts": {
+            "A": {
+              "R": 0,
+              "Th": 1
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "CS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "CC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        }
+      },
+      "meta_game": {
+        "mode_counts": {
+          "A": {
+            "P": 1,
+            "S": 0,
+            "C": 0
+          },
+          "B": {
+            "P": 0,
+            "S": 1,
+            "C": 0
+          }
+        },
+        "payoffs": {
+          "A": {
+            "mean": -18.2857,
+            "std": 0.0
+          },
+          "B": {
+            "mean": -6.6667,
+            "std": 0.0
+          }
+        }
+      },
+      "world_states": {
+        "Mutual Conflict": 1
+      }
+    }
+  },
+  "price_of_aggression": {
+    "A": -0.0492,
+    "B": -0.0
+  }
+}

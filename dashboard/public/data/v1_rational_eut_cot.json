@@ -1,0 +1,675 @@
+{
+  "prompt_config": "v1_rational_eut",
+  "backend": "ollama",
+  "num_runs": 1,
+  "chain_of_thought": true,
+  "timestamp": "2026-03-19T23:43:03.050328",
+  "maxmin": {
+    "runs": [
+      {
+        "subgames": {
+          "PP": {
+            "mode_a": "P",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.705882352941177,
+            "payoff_b": 0.0,
+            "reasoning_a": "In the subgame where both countries use the Private Actor mode (P vs P), the analysis shows that Threaten (Th) is strictly dominant over Attack (R). This is because Th yields a higher payoff (0.9000) regardless of the opponent's action, compared to R which gives 0.7059 in both cases.\n\n**Step-by-Step Explanation:**\n\n1. **Payoff Matrix Analysis:**\n   - When Country A chooses R:\n     - B plays R: Payoff = 0.7059\n     - B plays Th: Payoff = 0.7059\n   - When Country A chooses Th:\n     - B plays R: Payoff = 0.9000\n     - B plays Th: Payoff = 0.9000\n\n2. **Dominant Strategy Identification:**\n   - Comparing payoffs, Th (0.9000) is higher than R (0.7059) for both opponent actions.\n   - Therefore, Th is a strictly dominant strategy.\n\n3. **Conclusion:**\n   - Since Th dominates R, Country A should choose Th to maximize expected utility.\n\n**Answer:** Choose 'Th' because it provides a higher payoff in all scenarios, making it the dominant strategy.",
+            "reasoning_b": "In the subgame where both countries use the Private Actor mode (P vs P), both actions\u2014Attack (R) and Threaten (Th)\u2014yield an expected utility of 0.0000 for Country B, regardless of what Country A does. Since neither action is strictly dominant nor provides a higher payoff than the other, there's no incentive to prefer one over the other based on the given matrix. Therefore, either choice is equally optimal.\n\n**Choice:** Either 'R' or 'Th'\n\n**Reasoning:** Both actions result in an expected utility of 0.0000, making them equivalent in terms of payoff. The decision can be arbitrary as there's no difference in outcome."
+          },
+          "PS": {
+            "mode_a": "P",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.705882352941177,
+            "payoff_b": -2.66666666666667,
+            "reasoning_a": "In the subgame where Country A uses Private Actor (P) against Country B's State Unit (S), the optimal strategy for Country A is to choose **Threaten (Th)**. This decision maximizes their expected utility, as Threatening yields a higher payoff (0.9000) compared to Attacking (R), which results in 0.7059. There are no dominant strategies forcing another action, and considering B's best response, Threatening is the superior choice for Country A.\n\n**Answer:** Choose **Threaten (Th)** because it provides a higher expected utility of 0.9000 compared to Attacking (R) with 0.7059.",
+            "reasoning_b": "In the subgame where Country A uses a Private Actor (P) and Country B uses a State Unit (S), both actions of Attack (R) and Threaten (Th) yield the same payoff for Country B when considering Country A's best response. Since neither action dominates the other, and both lead to equal expected utility, either choice is optimal.\n\n**Answer:**\n\nCountry B can choose either 'R' or 'Th' as both actions result in the same expected utility of -1.5000 given that Country A will threaten (Th) to maximize their own payoff. Therefore, the choice between R and Th does not affect the outcome for Country B in this scenario.\n\n**Final Decision:**\n\nChoose either 'R' or 'Th'."
+          },
+          "PC": {
+            "mode_a": "P",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.705882352941177,
+            "payoff_b": -2.28571428571429,
+            "reasoning_a": "In the subgame where Country A uses Private Actor against Country B's Coalition, the analysis reveals that Threaten (Th) is strictly dominant over Attack (R). Both payoffs for Th are higher than those for R, making Th the optimal choice.\n\n**Step-by-Step Explanation:**\n\n1. **Identify Payoffs:**\n   - **Attack (R):** 0.7059 regardless of B's action.\n   - **Threaten (Th):** 0.9000 regardless of B's action.\n\n2. **Check for Dominance:**\n   - Th yields higher payoffs than R in all scenarios, indicating strict dominance.\n\n3. **Decision Making:**\n   - As a risk-averse rational decision-maker, selecting the dominant strategy maximizes expected utility without further analysis.\n\n**Conclusion:**\n\nCountry A should choose **Threaten (Th)** as it provides a higher payoff and is strictly dominant over Attack (R).",
+            "reasoning_b": "Country_B chooses to Threaten (Th) in the subgame (P vs C).\n\n**Step-by-Step Explanation:**\n\n1. **Payoff Matrix Analysis:**  \n   - For both actions (R and Th), Country B's payoffs are identical across all possible strategies of Country A. Choosing R or Th yields the same expected utility.\n\n2. **Dominance Check:**  \n   - No dominant strategy exists since neither action strictly outperforms the other in all scenarios.\n\n3. **Nash Equilibrium Consideration:**  \n   - Both actions by Country B lead to a Nash equilibrium, as neither player can benefit by changing their strategy unilaterally.\n\n4. **Indifference Principle:**  \n   - Since both options are equally optimal, Country_B can choose either. However, following the pattern from previous subgames where R was chosen despite negative payoffs, but recognizing that in this case, choosing Th might align with a more cautious approach given the risk-averse orientation.\n\n**Conclusion:**  \nCountry_B selects **Threaten (Th)** as their action in the (P vs C) subgame."
+          },
+          "SP": {
+            "mode_a": "S",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.0,
+            "payoff_b": 0.0,
+            "reasoning_a": "In the subgame where Country A uses State Unit (S) against Country B's Private Actor (P), all payoffs are zero regardless of the actions chosen. Both Attack (R) and Threaten (Th) yield an expected utility of zero for Country A. Since neither action dominates the other, both are best responses and part of a Nash equilibrium. Therefore, either choice is acceptable.\n\n**Country A's Choice:** Either 'R' or 'Th'\n\n**Explanation:**\n- Both actions result in an expected utility of 0.\n- No dominant strategy exists; both R and Th are equally optimal.\n- The situation forms a Nash equilibrium where any combination of strategies is stable.\n- Thus, either action can be chosen without affecting the outcome's expected utility.",
+            "reasoning_b": "In the subgame where Country A uses State Unit (S) and Country B uses Private Actor (P), both actions (Attack (R) or Threaten (Th)) yield an expected utility of 0.0000 for Country B regardless of the opponent's choice. Since neither strategy is dominant, and both lead to the same payoff, there is no incentive to prefer one over the other based on expected utility alone. However, considering risk averseness, Threaten (Th) might be preferred due to lower risks, but since both actions result in the same payoff, either can be chosen.\n\n**Option Chosen:** 'R'  \n**Reasoning:** Both actions yield the same expected utility, and without additional factors influencing preference, choosing Attack (R) is acceptable."
+          },
+          "SS": {
+            "mode_a": "S",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.0,
+            "payoff_b": -2.66666666666667,
+            "reasoning_a": "In the subgame (S vs S), all outcomes result in a payoff of 0 for Country A. Therefore, choosing either Attack (R) or Threaten (Th) yields the same expected utility. However, considering that Country B prefers Th when I play R, and both actions by me lead to the same payoff, it is strategic to choose Th as it aligns with a Nash equilibrium where both parties choose Th.\n\n**Option Chosen: 'Th'**\n\n**Reasoning:**\n- Both actions yield 0 for Country A.\n- Choosing Th leads to a symmetric Nash equilibrium where neither party can improve their outcome by unilaterally changing strategies.",
+            "reasoning_b": "Country B should choose **'Threaten (Th)'** in the subgame (S vs S). \n\n**Reasoning:**\n- Both actions (Attack R or Threaten Th) yield the same expected utility of approximately -2.0833 when considering Country A's possible strategies.\n- As a risk-averse player, opting for **Th** aligns with minimizing potential negative outcomes and avoiding escalation.\n\n**Answer:** Choose 'Th'"
+          },
+          "SC": {
+            "mode_a": "S",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.0,
+            "payoff_b": -2.28571428571429,
+            "reasoning_a": "In the subgame where Country A uses State Unit (S) against Country B's Coalition (C), both actions\u2014Attack (R) and Threaten (Th)\u2014result in a payoff of 0.0000 for Country A, regardless of Country B's choice. Since neither action is strictly dominant nor provides a higher expected utility than the other, any choice between R or Th will yield the same outcome. Therefore, it does not matter which action Country A selects.\n\n**Choice: Either 'R' or 'Th'**\n\n**Explanation:** Both actions result in the same payoff of 0.0000 for Country A, so neither is preferred over the other based on expected utility maximization.",
+            "reasoning_b": "In this subgame (S vs C), Country B is indifferent between choosing R (Attack) and Th (Threaten) because both actions yield the same expected utility based on the updated Bayesian reasoning from previous outcomes where Country A consistently chose R. Therefore, either action can be chosen without affecting the outcome.\n\n**Option Chosen: Either R or Th**\n\n**Reasoning:** Both actions result in the same expected utility given the inferred strategy of Country A."
+          },
+          "CP": {
+            "mode_a": "C",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.666666666666667,
+            "payoff_b": 0.0,
+            "reasoning_a": "In the subgame where Country A uses Coalition and Country B uses Private Actor, the payoffs for each action are analyzed. Choosing Attack (R) yields a higher payoff in both scenarios compared to Threaten (Th). Since R is dominant, it maximizes expected utility.\n\n**Answer:**\n\nCountry A should choose **Attack (R)** because it is the dominant strategy, providing a higher payoff regardless of Country B's action.",
+            "reasoning_b": "In the subgame where Country A uses Coalition (C) and Country B uses Private Actor (P), all possible actions for Country B result in a payoff of 0.0000. Since both attacking (R) and threatening (Th) yield identical payoffs regardless of Country A's action, there is no dominant strategy. Therefore, either choice is equally optimal.\n\n**Choice:** Either 'R' or 'Th'\n\n**Explanation:** Both actions result in the same payoff of 0.0000, making them equivalent in terms of expected utility maximization."
+          },
+          "CS": {
+            "mode_a": "C",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.666666666666667,
+            "payoff_b": -2.66666666666667,
+            "reasoning_a": "Country A should choose **Attack (R)** because it provides a higher expected utility than Threaten (Th) in all scenarios. Specifically, R yields 0.6667 compared to Th's 0.6600, making R the dominant strategy.\n\n**Answer:** Choose 'R'",
+            "reasoning_b": "In the subgame where Country A uses Coalition (C) and Country B uses State Unit (S), the payoffs for each action are as follows:\n\n- **Choosing R (Attack)** results in a payoff of -2.6667 regardless of whether Country A chooses Attack or Threaten.\n- **Choosing Th (Threaten)** results in a payoff of -1.5000, also irrespective of Country A's choice.\n\nSince -1.5000 is greater than -2.6667, the action that maximizes expected utility for Country B is to choose Threaten (Th).\n\n**Answer:** Choose 'Th' because it yields a higher payoff (-1.5000) compared to choosing R (-2.6667)."
+          },
+          "CC": {
+            "mode_a": "C",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.666666666666667,
+            "payoff_b": -2.28571428571429,
+            "reasoning_a": "In the subgame where both countries are using Coalition (C vs C), Country A's decision is based on the payoff matrix provided. \n\n**Analysis:**\n- **If B plays R:** A's payoffs for R and Th are 0.6667 and 0.6600, respectively. R yields a higher payoff.\n- **If B plays Th:** Similarly, R gives 0.6667 versus Th's 0.6600.\n\nSince choosing R always results in a higher payoff than Th regardless of B's action, R is the strictly dominant strategy.\n\n**Conclusion:**\nCountry A should choose **Attack (R)** because it maximizes expected utility by being strictly dominant over Threaten (Th).\n\n**Answer:** Choose 'R'",
+            "reasoning_b": "In the (C vs C) subgame, both actions for Country B result in identical payoffs regardless of Country A's choice. Therefore, there is no dominant strategy, and any choice will yield the same expected utility. \n\n**Choice: 'R'**\n\nCountry B chooses to play R because it is indifferent between R and Th but selects R as per the available options."
+          }
+        },
+        "meta_game": {
+          "mode_a": "P",
+          "mode_b": "P",
+          "payoff_a": 0.705882352941177,
+          "payoff_b": 0.0,
+          "meta_matrix_a": [
+            [0.705882352941177, 0.705882352941177, 0.705882352941177],
+            [0.0, 0.0, 0.0],
+            [0.666666666666667, 0.666666666666667, 0.666666666666667]
+          ],
+          "meta_matrix_b": [
+            [0.0, -2.66666666666667, -2.28571428571429],
+            [0.0, -2.66666666666667, -2.28571428571429],
+            [0.0, -2.66666666666667, -2.28571428571429]
+          ],
+          "reasoning_a": "Country A should choose mode P because it provides the highest payoff in all scenarios, making it the strictly dominant strategy.\n\n**Answer:** Choose option 'P'.",
+          "reasoning_b": "Country B's optimal choice is to use the Private Actor (P) mode. This is because choosing P guarantees a payoff of 0, which is higher than the negative payoffs associated with S (-2.6667) and C (-2.2857). Since P is strictly dominant over both S and C, it maximizes Country B's expected utility regardless of Country A's strategy.\n\n**Answer:** P"
+        },
+        "world_state": "Mutual Conflict",
+        "run_number": 1
+      }
+    ],
+    "summary": {
+      "subgames": {
+        "PP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              ["Th", "R"],
+              ["Th", "Th"]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "PS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              ["Th", "R"],
+              ["Th", "Th"]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "PC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              ["Th", "R"],
+              ["Th", "Th"]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "SP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              ["R", "R"],
+              ["R", "Th"],
+              ["Th", "R"],
+              ["Th", "Th"]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "SS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              ["R", "R"],
+              ["R", "Th"],
+              ["Th", "R"],
+              ["Th", "Th"]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "SC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              ["R", "R"],
+              ["R", "Th"],
+              ["Th", "R"],
+              ["Th", "Th"]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "CP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              ["R", "R"],
+              ["R", "Th"]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "CS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              ["R", "R"],
+              ["R", "Th"]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "CC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              ["R", "R"],
+              ["R", "Th"]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        }
+      },
+      "meta_game": {
+        "mode_counts": {
+          "A": {
+            "P": 1,
+            "S": 0,
+            "C": 0
+          },
+          "B": {
+            "P": 1,
+            "S": 0,
+            "C": 0
+          }
+        },
+        "payoffs": {
+          "A": {
+            "mean": 0.7059,
+            "std": 0.0
+          },
+          "B": {
+            "mean": 0.0,
+            "std": 0.0
+          }
+        }
+      },
+      "world_states": {
+        "Mutual Conflict": 1
+      }
+    }
+  },
+  "minmax": {
+    "runs": [
+      {
+        "subgames": {
+          "PP": {
+            "mode_a": "P",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -18.2857142857143,
+            "payoff_b": -8.90909090909091,
+            "reasoning_a": "In the subgame where both countries use Private Actor (P vs P), Country A should choose **Threaten (Th)** because it provides a higher payoff (-3.6000) compared to attacking (R), which results in a much lower payoff of -18.2857 regardless of the opponent's action. Since Threatening is strictly dominant, it maximizes expected utility.\n\n**Option Chosen: Th**\n\n**Explanation:**\n- Payoff for choosing R: -18.2857 (regardless of B's choice)\n- Payoff for choosing Th: -3.6000 (regardless of B's choice)\n- Since -3.6 > -18.28, Threaten is the dominant strategy and yields higher expected utility.",
+            "reasoning_b": "In the subgame where both countries use Private Actor mode, Country B's payoffs for choosing Attack (R) and Threaten (Th) are identical regardless of Country A's choice. Therefore, Country B is indifferent between the two actions, as both yield the same expected utility. However, since we must select an action, Country B will choose to Attack (R).\n\n**Answer:** R"
+          },
+          "PS": {
+            "mode_a": "P",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -18.2857142857143,
+            "payoff_b": -6.66666666666667,
+            "reasoning_a": "In the subgame where Country A uses Private Actor and Country B uses State Unit, the analysis shows that choosing to Threaten (Th) yields a higher payoff (-3.6000) compared to Attacking (R), which results in -18.2857 regardless of B's action. Since Th is strictly better in both scenarios, it is the optimal choice.\n\n**Step-by-Step Explanation:**\n\n1. **Evaluate Payoffs for Each Action:**\n   - **Attack (R):**\n     - If B Attacks (R): -18.2857\n     - If B Threatens (Th): -18.2857\n   - **Threaten (Th):**\n     - If B Attacks (R): -3.6000\n     - If B Threatens (Th): -3.6000\n\n2. **Identify Dominant Strategies:**\n   - There are no dominant strategies since neither action consistently yields a higher payoff across all opponent responses.\n\n3. **Determine Best Response:**\n   - Comparing payoffs, Th is always better than R because -3.6000 > -18.2857 in both cases.\n\n**Conclusion:**\nCountry A should choose to Threaten (Th) as it maximizes expected utility given the payoff matrix.\n\n**Action Chosen:** Threaten (Th)",
+            "reasoning_b": "In the subgame where Country A uses Private Actor (P) and Country B uses State Unit (S), both actions of Attack (R) and Threaten (Th) yield the same payoff for Country B when interacting with Country A. Since there's no dominant strategy, and considering Country B's risk-seeking orientation, the decision is indifferent between R and Th but may lean towards R for its aggressiveness.\n\n**Country B chooses: R**\n\n**Explanation:**\n- Both actions result in equal payoffs.\n- As a risk-seeking player, preferring R aligns with an aggressive strategy."
+          },
+          "PC": {
+            "mode_a": "P",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -18.2857142857143,
+            "payoff_b": -13.7142857142857,
+            "reasoning_a": "In the subgame where Country A uses Private Actor (P) and Country B uses Coalition (C), both players prefer threatening (Th) over attacking (R). This is because choosing Th yields a higher payoff for each player irrespective of the opponent's action. \n\nFor Country A:\n- Choosing R results in -18.2857, while choosing Th results in -3.6000.\n- Since -3.6000 > -18.2857, A prefers Th regardless of B's choice.\n\nFor Country B:\n- Choosing R results in -13.7143, while choosing Th results in -5.1000.\n- Since -5.1000 > -13.7143, B prefers Th regardless of A's choice.\n\nThus, the Nash equilibrium is both players choosing Th. \n\n**Country A should choose Threaten (Th).**\n\n**Answer:**  \nTh",
+            "reasoning_b": "In the subgame where Country A uses Private Actor (P) and Country B uses Coalition (C), both actions of attacking (R) or threatening (Th) yield identical payoffs for Country B depending on A's choice. Since A will choose Th to maximize their own payoff, B is indifferent between R and Th as both result in the same expected utility (-5.1000). Therefore, either action can be chosen without affecting the outcome.\n\n**Country B chooses: 'Th'**\n\n*Explanation:* While indifferent, choosing 'Th' aligns with a risk-seeking strategy by avoiding higher costs associated with attacking, even though the payoffs are equal."
+          },
+          "SP": {
+            "mode_a": "S",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -14.4,
+            "payoff_b": -8.90909090909091,
+            "reasoning_a": "In the subgame where Country A uses State Unit (S) against Country B's Private Actor (P), the analysis shows that choosing Threaten (Th) yields a higher payoff (-3.3) compared to attacking (R), which results in -14.4. Since there are no dominant strategies, and threatening provides a better outcome regardless of B's response, the optimal choice is to threaten.\n\n**Answer:** Choose 'Th' because it maximizes expected utility with a payoff of -3.3, which is higher than attacking's -14.4.",
+            "reasoning_b": "In this subgame (S vs P), Country B is indifferent between attacking (R) and threatening (Th) because both actions yield the same payoff regardless of what Country A does. Therefore, either action is equally optimal.\n\n**Option Chosen: R**\n\n**Explanation:**  \nCountry B can choose either 'R' or 'Th' as both result in identical payoffs. Selecting 'R' is arbitrary but aligns with the given options structure."
+          },
+          "SS": {
+            "mode_a": "S",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -14.4,
+            "payoff_b": -6.66666666666667,
+            "reasoning_a": "In the subgame where both countries are using State Unit (S vs S), Country A should choose to Threaten (Th) as it is the strictly dominant strategy. Regardless of what Country B does, choosing Th results in a higher payoff (-3.3) compared to choosing Attack (R), which yields -14.4 in all scenarios.\n\n**Step-by-Step Explanation:**\n\n1. **Identify Payoffs:** \n   - If A chooses R:\n     - Both R and Th from B result in -14.4.\n   - If A chooses Th:\n     - Both R and Th from B result in -3.3.\n\n2. **Compare Expected Utilities:**\n   - Choosing R always results in a lower payoff (-14.4) than choosing Th (-3.3).\n\n3. **Determine Dominance:**\n   - Th is strictly dominant over R because it yields a higher payoff regardless of B's action.\n\n**Conclusion:** Country A should choose Threaten (Th) as it maximizes expected utility by being the dominant strategy in this subgame. \n\n**Action Chosen:** Threaten (Th).",
+            "reasoning_b": "In the subgame where both countries are using State Unit (S vs S), neither attacking nor threatening provides a dominant strategy. Both actions yield identical payoffs regardless of the opponent's choice. Therefore, any choice is equally optimal, but as a risk-seeking player, I opt for Attack (R).\n\n**Choice: R (Attack)**  \n*Reasoning:* Both actions yield the same payoffs, so choosing the more aggressive option aligns with my risk-seeking strategy."
+          },
+          "SC": {
+            "mode_a": "S",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -14.4,
+            "payoff_b": -13.7142857142857,
+            "reasoning_a": "In the subgame where Country A uses State Unit (S) and Country B uses Coalition (C), the analysis reveals that choosing to Threaten (Th) yields a higher payoff (-3.3) compared to Attacking (R), which results in -14.4. Since Threatening is strictly dominant over Attacking, the optimal strategy for Country A is to choose Th.\n\n**Step-by-Step Explanation:**\n\n1. **Identify Payoffs:** \n   - Choosing R leads to a payoff of -14.4 regardless of B's action.\n   - Choosing Th results in a payoff of -3.3 irrespective of B's response.\n\n2. **Determine Dominance:**\n   - Comparing payoffs, -3.3 (Th) is higher than -14.4 (R).\n   - Therefore, Threatening is strictly dominant over Attacking.\n\n**Decision:** Choose 'Th' because it maximizes expected utility with a payoff of -3.3, which is better than the -14.4 from attacking. \n\n**Answer:**\n\nCountry A should choose **Th** as it provides a higher payoff regardless of Country B's action.",
+            "reasoning_b": "Country B should choose either 'R' or 'Th' because both actions yield the same expected utility of -5.1000 when Country A plays their best response (Threaten). Since there's no difference in payoff, and considering Country B's risk-seeking orientation might lean towards Threaten for its aggressive nature.\n\n**Option Chosen: Th**\n\n**Reasoning:** Both 'R' and 'Th' yield the same payoff of -5.1000 when A plays their best response (Th). Given B is risk-seeking, choosing 'Th' aligns with an aggressive strategy."
+          },
+          "CP": {
+            "mode_a": "C",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -63.0,
+            "payoff_b": -8.90909090909091,
+            "reasoning_a": "In the subgame where Country A uses Coalition (C) and Country B uses Private Actor (P), the analysis shows that choosing to Threaten (Th) yields a higher payoff (-4.6200) compared to Attacking (R) which results in -63.0000. Since Threatening is dominant, it maximizes expected utility.\n\n**Step-by-Step Explanation:**\n\n1. **Evaluate Payoffs for Each Action:**\n   - **Attack (R):** Results in a payoff of -63.0000 regardless of B's action.\n   - **Threaten (Th):** Results in a payoff of -4.6200 regardless of B's action.\n\n2. **Identify Dominant Strategy:**\n   - Threatening yields a higher payoff than Attacking in all scenarios, making it the dominant strategy.\n\n3. **Conclusion:**\n   - As a risk-seeking rational maximizer, choosing Th is optimal to maximize expected utility.\n\n**Choice:** 'Th'",
+            "reasoning_b": "In this subgame where Country A uses Coalition and I use Private Actor, both actions (Attack or Threaten) yield the same payoff of -4.5500 when considering Country A's dominant strategy to choose Threaten. Therefore, neither action dominates the other, but since they result in equal utility, either choice is optimal.\n\n**Choice:** Either 'R' or 'Th'\n\n**Explanation:** Both actions yield the same payoff given that Country A will choose their dominant strategy (Threaten), resulting in a payoff of -4.5500 for me regardless of my action."
+          },
+          "CS": {
+            "mode_a": "C",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -63.0,
+            "payoff_b": -6.66666666666667,
+            "reasoning_a": "In the subgame (C vs S), both actions for Country A result in the same payoff of -4.6200 when choosing Threaten (Th) and -63.0000 when choosing Attack (R). Since there's no dominant strategy, and B's choice doesn't affect A's utility, either action is optimal. However, considering previous choices and a risk-seeking orientation, Country A chooses to Attack (R).\n\n**Choice:** R  \n**Reasoning:** Both actions yield the same payoff, but adhering to past decisions and an aggressive stance leads to choosing R.",
+            "reasoning_b": "In the subgame where Country A uses Coalition (C) and Country B uses State Unit (S), neither action (Attack R nor Threaten Th) is strictly dominant for Country B. Both actions yield the same payoffs based on Country A's possible responses. Assuming Country A will choose their best response, which is to Threaten (Th) due to higher utility, Country B's expected payoff remains the same regardless of choosing R or Th. Therefore, either action is equally optimal.\n\n**Choice:** Either 'R' or 'Th'\n\n**Reasoning:** Both actions result in the same expected utility when considering Country A's best response."
+          },
+          "CC": {
+            "mode_a": "C",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -63.0,
+            "payoff_b": -13.7142857142857,
+            "reasoning_a": "In the subgame (C vs C), Country A should choose **Th**. This action is strictly dominant over R, as it yields a higher payoff (-4.62) in both scenarios compared to R's payoff (-63). Selecting Th maximizes expected utility and aligns with a risk-seeking strategy by avoiding the significantly worse outcome associated with R.\n\n**Option Chosen: 'Th'**\n\n**Reasoning:** Threatening (Th) is strictly dominant over Attacking (R), providing a higher payoff in all cases.",
+            "reasoning_b": "In the C vs C subgame, my choice between attacking (R) or threatening (Th) does not affect my payoff because it remains constant regardless of my action. Both options yield the same outcome based on Country A's move. Therefore, as a risk-seeking player, I am indifferent between R and Th and can choose either.\n\n**Option Chosen: Either R or Th**\n\n**Reasoning:** In this subgame, both actions result in identical payoffs depending on Country A's choice. As a perfectly rational expected utility maximizer, there is no incentive to prefer one action over the other since neither affects my outcome. Thus, I can choose either R or Th arbitrarily."
+          }
+        },
+        "meta_game": {
+          "mode_a": "S",
+          "mode_b": "P",
+          "payoff_a": -14.4,
+          "payoff_b": -8.90909090909091,
+          "meta_matrix_a": [
+            [-18.2857142857143, -18.2857142857143, -18.2857142857143],
+            [-14.4, -14.4, -14.4],
+            [-63.0, -63.0, -63.0]
+          ],
+          "meta_matrix_b": [
+            [-8.90909090909091, -6.66666666666667, -13.7142857142857],
+            [-8.90909090909091, -6.66666666666667, -13.7142857142857],
+            [-8.90909090909091, -6.66666666666667, -13.7142857142857]
+          ],
+          "reasoning_a": "Country_A should choose 'S' (State Unit) as their overall attack mode because it provides the highest expected utility of -14.4000, which is better than the other options available.\n\n**Answer:**\n\nChoose option **'S'**.",
+          "reasoning_b": "Country B should choose mode **S** as it provides the highest expected utility with a payoff of -6.6667, which is better than the other options available.\n\n**Step-by-Step Explanation:**\n\n1. **Understanding the Meta-GAME Matrix:**\n   - The matrix shows that regardless of Country A's choice (P, S, C), the payoffs for Country B are fixed based on its own mode selection.\n   \n2. **Analyzing Payoffs:**\n   - Choosing P results in a payoff of -8.9091.\n   - Choosing S yields a payoff of -6.6667.\n   - Selecting C leads to a payoff of -13.7143.\n\n3. **Determining the Optimal Strategy:**\n   - Since all payoffs are fixed and independent of Country A's choice, Country B should select the mode with the highest payoff.\n   - Among the three options, S offers the least negative (highest) payoff.\n\n**Conclusion:**\nCountry B will choose **S** to maximize its expected utility."
+        },
+        "world_state": "Mutual Conflict",
+        "run_number": 1
+      }
+    ],
+    "summary": {
+      "subgames": {
+        "PP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              ["Th", "R"],
+              ["Th", "Th"]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "PS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              ["Th", "R"],
+              ["Th", "Th"]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "PC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              ["Th", "R"],
+              ["Th", "Th"]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "SP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              ["Th", "R"],
+              ["Th", "Th"]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "SS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              ["Th", "R"],
+              ["Th", "Th"]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "SC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              ["Th", "R"],
+              ["Th", "Th"]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "CP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              ["Th", "R"],
+              ["Th", "Th"]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "CS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              ["Th", "R"],
+              ["Th", "Th"]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "CC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              ["Th", "R"],
+              ["Th", "Th"]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        }
+      },
+      "meta_game": {
+        "mode_counts": {
+          "A": {
+            "P": 0,
+            "S": 1,
+            "C": 0
+          },
+          "B": {
+            "P": 1,
+            "S": 0,
+            "C": 0
+          }
+        },
+        "payoffs": {
+          "A": {
+            "mean": -14.4,
+            "std": 0.0
+          },
+          "B": {
+            "mean": -8.9091,
+            "std": 0.0
+          }
+        }
+      },
+      "world_states": {
+        "Mutual Conflict": 1
+      }
+    }
+  },
+  "price_of_aggression": {
+    "A": -0.049,
+    "B": -0.0
+  }
+}

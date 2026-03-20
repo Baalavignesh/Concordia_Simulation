@@ -1,0 +1,249 @@
+{
+  "prompt_config": "v3_bounded_prospect_theory",
+  "maxmin": {
+    "runs": [
+      {
+        "subgames": {
+          "PP": {
+            "mode_a": "P",
+            "mode_b": "P",
+            "action_a": "Th",
+            "action_b": "Th",
+            "payoff_a": 0.9,
+            "payoff_b": 0.0
+          },
+          "PS": {
+            "mode_a": "P",
+            "mode_b": "S",
+            "action_a": "Th",
+            "action_b": "R",
+            "payoff_a": 0.9,
+            "payoff_b": -1.5
+          },
+          "PC": {
+            "mode_a": "P",
+            "mode_b": "C",
+            "action_a": "Th",
+            "action_b": "Th",
+            "payoff_a": 0.9,
+            "payoff_b": -0.85
+          },
+          "SP": {
+            "mode_a": "S",
+            "mode_b": "P",
+            "action_a": "Th",
+            "action_b": "R",
+            "payoff_a": 0.0,
+            "payoff_b": 0.0
+          },
+          "SS": {
+            "mode_a": "S",
+            "mode_b": "S",
+            "action_a": "Th",
+            "action_b": "R",
+            "payoff_a": 0.0,
+            "payoff_b": -1.5
+          },
+          "SC": {
+            "mode_a": "S",
+            "mode_b": "C",
+            "action_a": "Th",
+            "action_b": "Th",
+            "payoff_a": 0.0,
+            "payoff_b": -0.85
+          },
+          "CP": {
+            "mode_a": "C",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "Th",
+            "payoff_a": 0.666666666666667,
+            "payoff_b": 0.0
+          },
+          "CS": {
+            "mode_a": "C",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.666666666666667,
+            "payoff_b": -2.66666666666667
+          },
+          "CC": {
+            "mode_a": "C",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "Th",
+            "payoff_a": 0.666666666666667,
+            "payoff_b": -2.28571428571429
+          }
+        },
+        "meta_game": {
+          "mode_a": "P",
+          "mode_b": "P",
+          "payoff_a": 0.9,
+          "payoff_b": 0.0,
+          "meta_matrix_a": [
+            [
+              0.9,
+              0.9,
+              0.9
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.666666666666667,
+              0.666666666666667,
+              0.666666666666667
+            ]
+          ],
+          "meta_matrix_b": [
+            [
+              0.0,
+              -1.5,
+              -0.85
+            ],
+            [
+              0.0,
+              -1.5,
+              -0.85
+            ],
+            [
+              0.0,
+              -2.66666666666667,
+              -2.28571428571429
+            ]
+          ]
+        },
+        "world_state": "Mutual Deterrence",
+        "run_number": 1
+      }
+    ],
+    "analysis": "\n======================================================================\n  RESULTS ANALYSIS - MAXMIN (1 runs)\n======================================================================\n\n--- Subgame Results ---\n\n  Subgame PP (Private Actor vs Private Actor):\n    Country A: R=0/1, Th=1/1 | Dominant: Th\n    Country B: R=0/1, Th=1/1 | Dominant: R\n    Analytical Nash: (Th,R), (Th,Th)\n\n  Subgame PS (Private Actor vs State Unit):\n    Country A: R=0/1, Th=1/1 | Dominant: Th\n    Country B: R=1/1, Th=0/1 | Dominant: R\n    Analytical Nash: (Th,R), (Th,Th)\n\n  Subgame PC (Private Actor vs Coalition):\n    Country A: R=0/1, Th=1/1 | Dominant: Th\n    Country B: R=0/1, Th=1/1 | Dominant: R\n    Analytical Nash: (Th,R), (Th,Th)\n\n  Subgame SP (State Unit vs Private Actor):\n    Country A: R=0/1, Th=1/1 | Dominant: R\n    Country B: R=1/1, Th=0/1 | Dominant: R\n    Analytical Nash: (R,R), (R,Th), (Th,R), (Th,Th)\n\n  Subgame SS (State Unit vs State Unit):\n    Country A: R=0/1, Th=1/1 | Dominant: R\n    Country B: R=1/1, Th=0/1 | Dominant: R\n    Analytical Nash: (R,R), (R,Th), (Th,R), (Th,Th)\n\n  Subgame SC (State Unit vs Coalition):\n    Country A: R=0/1, Th=1/1 | Dominant: R\n    Country B: R=0/1, Th=1/1 | Dominant: R\n    Analytical Nash: (R,R), (R,Th), (Th,R), (Th,Th)\n\n  Subgame CP (Coalition vs Private Actor):\n    Country A: R=1/1, Th=0/1 | Dominant: R\n    Country B: R=0/1, Th=1/1 | Dominant: R\n    Analytical Nash: (R,R), (R,Th)\n\n  Subgame CS (Coalition vs State Unit):\n    Country A: R=1/1, Th=0/1 | Dominant: R\n    Country B: R=1/1, Th=0/1 | Dominant: R\n    Analytical Nash: (R,R), (R,Th)\n\n  Subgame CC (Coalition vs Coalition):\n    Country A: R=1/1, Th=0/1 | Dominant: R\n    Country B: R=0/1, Th=1/1 | Dominant: R\n    Analytical Nash: (R,R), (R,Th)\n\n--- Meta-Game Results ---\n  Mode P (Private Actor): A chose 1/1 times, B chose 1/1 times\n  Mode S (State Unit): A chose 0/1 times, B chose 0/1 times\n  Mode C (Coalition): A chose 0/1 times, B chose 0/1 times\n\n--- World States ---\n  Mutual Deterrence: 1/1 runs\n\n--- Payoff Summary ---\n  Country A: mean=0.9000, std=0.0000, range=[0.9000, 0.9000]\n  Country B: mean=0.0000, std=0.0000, range=[0.0000, 0.0000]"
+  },
+  "minmax": {
+    "runs": [
+      {
+        "subgames": {
+          "PP": {
+            "mode_a": "P",
+            "mode_b": "P",
+            "action_a": "Th",
+            "action_b": "R",
+            "payoff_a": -3.6,
+            "payoff_b": -4.55
+          },
+          "PS": {
+            "mode_a": "P",
+            "mode_b": "S",
+            "action_a": "Th",
+            "action_b": "R",
+            "payoff_a": -3.6,
+            "payoff_b": -3.75
+          },
+          "PC": {
+            "mode_a": "P",
+            "mode_b": "C",
+            "action_a": "Th",
+            "action_b": "R",
+            "payoff_a": -3.6,
+            "payoff_b": -5.1
+          },
+          "SP": {
+            "mode_a": "S",
+            "mode_b": "P",
+            "action_a": "Th",
+            "action_b": "R",
+            "payoff_a": -3.3,
+            "payoff_b": -4.55
+          },
+          "SS": {
+            "mode_a": "S",
+            "mode_b": "S",
+            "action_a": "Th",
+            "action_b": "R",
+            "payoff_a": -3.3,
+            "payoff_b": -3.75
+          },
+          "SC": {
+            "mode_a": "S",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -14.4,
+            "payoff_b": -13.7142857142857
+          },
+          "CP": {
+            "mode_a": "C",
+            "mode_b": "P",
+            "action_a": "Th",
+            "action_b": "R",
+            "payoff_a": -4.62,
+            "payoff_b": -4.55
+          },
+          "CS": {
+            "mode_a": "C",
+            "mode_b": "S",
+            "action_a": "Th",
+            "action_b": "R",
+            "payoff_a": -4.62,
+            "payoff_b": -3.75
+          },
+          "CC": {
+            "mode_a": "C",
+            "mode_b": "C",
+            "action_a": "Th",
+            "action_b": "R",
+            "payoff_a": -4.62,
+            "payoff_b": -5.1
+          }
+        },
+        "meta_game": {
+          "mode_a": "P",
+          "mode_b": "P",
+          "payoff_a": -3.6,
+          "payoff_b": -4.55,
+          "meta_matrix_a": [
+            [
+              -3.6,
+              -3.6,
+              -3.6
+            ],
+            [
+              -3.3,
+              -3.3,
+              -14.4
+            ],
+            [
+              -4.62,
+              -4.62,
+              -4.62
+            ]
+          ],
+          "meta_matrix_b": [
+            [
+              -4.55,
+              -3.75,
+              -5.1
+            ],
+            [
+              -4.55,
+              -3.75,
+              -13.7142857142857
+            ],
+            [
+              -4.55,
+              -3.75,
+              -5.1
+            ]
+          ]
+        },
+        "world_state": "Asymmetric (A threatens, B attacks)",
+        "run_number": 1
+      }
+    ],
+    "analysis": "\n======================================================================\n  RESULTS ANALYSIS - MINMAX (1 runs)\n======================================================================\n\n--- Subgame Results ---\n\n  Subgame PP (Private Actor vs Private Actor):\n    Country A: R=0/1, Th=1/1 | Dominant: Th\n    Country B: R=1/1, Th=0/1 | Dominant: R\n    Analytical Nash: (Th,R), (Th,Th)\n\n  Subgame PS (Private Actor vs State Unit):\n    Country A: R=0/1, Th=1/1 | Dominant: Th\n    Country B: R=1/1, Th=0/1 | Dominant: R\n    Analytical Nash: (Th,R), (Th,Th)\n\n  Subgame PC (Private Actor vs Coalition):\n    Country A: R=0/1, Th=1/1 | Dominant: Th\n    Country B: R=1/1, Th=0/1 | Dominant: R\n    Analytical Nash: (Th,R), (Th,Th)\n\n  Subgame SP (State Unit vs Private Actor):\n    Country A: R=0/1, Th=1/1 | Dominant: Th\n    Country B: R=1/1, Th=0/1 | Dominant: R\n    Analytical Nash: (Th,R), (Th,Th)\n\n  Subgame SS (State Unit vs State Unit):\n    Country A: R=0/1, Th=1/1 | Dominant: Th\n    Country B: R=1/1, Th=0/1 | Dominant: R\n    Analytical Nash: (Th,R), (Th,Th)\n\n  Subgame SC (State Unit vs Coalition):\n    Country A: R=1/1, Th=0/1 | Dominant: Th\n    Country B: R=1/1, Th=0/1 | Dominant: R\n    Analytical Nash: (Th,R), (Th,Th)\n\n  Subgame CP (Coalition vs Private Actor):\n    Country A: R=0/1, Th=1/1 | Dominant: Th\n    Country B: R=1/1, Th=0/1 | Dominant: R\n    Analytical Nash: (Th,R), (Th,Th)\n\n  Subgame CS (Coalition vs State Unit):\n    Country A: R=0/1, Th=1/1 | Dominant: Th\n    Country B: R=1/1, Th=0/1 | Dominant: R\n    Analytical Nash: (Th,R), (Th,Th)\n\n  Subgame CC (Coalition vs Coalition):\n    Country A: R=0/1, Th=1/1 | Dominant: Th\n    Country B: R=1/1, Th=0/1 | Dominant: R\n    Analytical Nash: (Th,R), (Th,Th)\n\n--- Meta-Game Results ---\n  Mode P (Private Actor): A chose 1/1 times, B chose 1/1 times\n  Mode S (State Unit): A chose 0/1 times, B chose 0/1 times\n  Mode C (Coalition): A chose 0/1 times, B chose 0/1 times\n\n--- World States ---\n  Asymmetric (A threatens, B attacks): 1/1 runs\n\n--- Payoff Summary ---\n  Country A: mean=-3.6000, std=0.0000, range=[-3.6000, -3.6000]\n  Country B: mean=-4.5500, std=0.0000, range=[-4.5500, -4.5500]"
+  }
+}
