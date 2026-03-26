@@ -8,7 +8,7 @@ from pathlib import Path
 import numpy as np
 
 from src.agent import CyberWarAgent
-from src.analysis import build_summary
+from src.analysis import analyze_cot_complexity, build_summary
 from src.backends import get_llm_backend
 from src.constants import BASE_DIR, MAXMIN_DIR, MINMAX_DIR, NUM_RUNS
 from src.controller import CyberWargameController
@@ -84,10 +84,17 @@ def run_simulation_for_config(
             runs.append(result)
 
         summary = build_summary(runs, matrices)
-        all_results[concept] = {
+        concept_data = {
             "runs": runs,
             "summary": summary,
         }
+
+        if cot:
+            cot_analysis = analyze_cot_complexity(runs)
+            if cot_analysis:
+                concept_data["cot_complexity"] = cot_analysis
+
+        all_results[concept] = concept_data
 
     return all_results
 
@@ -144,9 +151,9 @@ def main():
 
     parser = argparse.ArgumentParser(description="Cyber Warfare Wargame Simulation")
     parser.add_argument(
-        "--backend", default="gemini",
+        "--backend", default="ollama",
         choices=["ollama", "gemini"],
-        help="LLM backend to use (default: gemini)"
+        help="LLM backend to use (default: ollama)"
     )
     parser.add_argument(
         "--runs", type=int, default=NUM_RUNS,

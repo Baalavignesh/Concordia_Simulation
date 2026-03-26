@@ -24,6 +24,13 @@ export async function loadAllData() {
     throw new Error(`Failed to load any data. Errors: ${errors.join(', ')}`);
   }
 
+  // Load CoT complexity analysis (optional)
+  const cotAnalysis = await fetch('/data/cot_complexity_analysis.json')
+    .then(r => { if (!r.ok) throw new Error(); return r.json() })
+    .catch(() => null);
+
+  results.__cotAnalysis = cotAnalysis;
+
   dataCache = results;
   return results;
 }

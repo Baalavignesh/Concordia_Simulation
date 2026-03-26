@@ -1,0 +1,6951 @@
+{
+  "configs": [
+    {
+      "config": "v1_rational_eut",
+      "concepts": {
+        "maxmin": {
+          "subgames": {
+            "PP": {
+              "A": {
+                "word_count": {
+                  "mean": 154.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 17.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 14.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 11.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 101.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "PS": {
+              "A": {
+                "word_count": {
+                  "mean": 88.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 8.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 114.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 8.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "PC": {
+              "A": {
+                "word_count": {
+                  "mean": 117.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 12.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 9.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 149.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 12.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 10.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SP": {
+              "A": {
+                "word_count": {
+                  "mean": 118.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 8.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 113.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SS": {
+              "A": {
+                "word_count": {
+                  "mean": 101.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 55.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SC": {
+              "A": {
+                "word_count": {
+                  "mean": 100.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 72.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CP": {
+              "A": {
+                "word_count": {
+                  "mean": 65.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 78.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CS": {
+              "A": {
+                "word_count": {
+                  "mean": 35.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 94.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 10.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CC": {
+              "A": {
+                "word_count": {
+                  "mean": 99.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 11.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 59.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            }
+          },
+          "meta_game": {
+            "A": {
+              "word_count": {
+                "mean": 25.0,
+                "std": 0.0
+              },
+              "sentence_count": {
+                "mean": 2.0,
+                "std": 0.0
+              },
+              "step_count": {
+                "mean": 1.0,
+                "std": 0.0
+              },
+              "numeric_references": {
+                "mean": 0.0,
+                "std": 0.0
+              },
+              "opponent_mentions": {
+                "mean": 1.0,
+                "std": 0.0
+              },
+              "hedge_count": {
+                "mean": 0.0,
+                "std": 0.0
+              },
+              "recognizes_dominance": 1.0,
+              "comparison_count": {
+                "mean": 0.0,
+                "std": 0.0
+              }
+            },
+            "B": {
+              "word_count": {
+                "mean": 59.0,
+                "std": 0.0
+              },
+              "sentence_count": {
+                "mean": 6.0,
+                "std": 0.0
+              },
+              "step_count": {
+                "mean": 1.0,
+                "std": 0.0
+              },
+              "numeric_references": {
+                "mean": 3.0,
+                "std": 0.0
+              },
+              "opponent_mentions": {
+                "mean": 3.0,
+                "std": 0.0
+              },
+              "hedge_count": {
+                "mean": 0.0,
+                "std": 0.0
+              },
+              "recognizes_dominance": 1.0,
+              "comparison_count": {
+                "mean": 1.0,
+                "std": 0.0
+              }
+            }
+          },
+          "complexity_ranking": [
+            [
+              "PC",
+              133.0
+            ],
+            [
+              "PP",
+              127.5
+            ],
+            [
+              "SP",
+              115.5
+            ],
+            [
+              "PS",
+              101.0
+            ],
+            [
+              "SC",
+              86.0
+            ],
+            [
+              "CC",
+              79.0
+            ],
+            [
+              "SS",
+              78.0
+            ],
+            [
+              "CP",
+              71.5
+            ],
+            [
+              "CS",
+              64.5
+            ]
+          ]
+        },
+        "minmax": {
+          "subgames": {
+            "PP": {
+              "A": {
+                "word_count": {
+                  "mean": 91.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 9.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 59.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "PS": {
+              "A": {
+                "word_count": {
+                  "mean": 154.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 17.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 14.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 11.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 88.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "PC": {
+              "A": {
+                "word_count": {
+                  "mean": 112.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 17.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 8.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 97.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SP": {
+              "A": {
+                "word_count": {
+                  "mean": 77.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 64.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SS": {
+              "A": {
+                "word_count": {
+                  "mean": 149.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 17.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 12.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 9.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 68.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SC": {
+              "A": {
+                "word_count": {
+                  "mean": 144.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 18.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 9.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 10.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 78.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CP": {
+              "A": {
+                "word_count": {
+                  "mean": 117.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 14.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 9.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 84.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CS": {
+              "A": {
+                "word_count": {
+                  "mean": 80.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 97.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 8.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CC": {
+              "A": {
+                "word_count": {
+                  "mean": 72.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 107.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              }
+            }
+          },
+          "meta_game": {
+            "A": {
+              "word_count": {
+                "mean": 32.0,
+                "std": 0.0
+              },
+              "sentence_count": {
+                "mean": 3.0,
+                "std": 0.0
+              },
+              "step_count": {
+                "mean": 1.0,
+                "std": 0.0
+              },
+              "numeric_references": {
+                "mean": 1.0,
+                "std": 0.0
+              },
+              "opponent_mentions": {
+                "mean": 1.0,
+                "std": 0.0
+              },
+              "hedge_count": {
+                "mean": 0.0,
+                "std": 0.0
+              },
+              "recognizes_dominance": 0.0,
+              "comparison_count": {
+                "mean": 1.0,
+                "std": 0.0
+              }
+            },
+            "B": {
+              "word_count": {
+                "mean": 138.0,
+                "std": 0.0
+              },
+              "sentence_count": {
+                "mean": 15.0,
+                "std": 0.0
+              },
+              "step_count": {
+                "mean": 11.0,
+                "std": 0.0
+              },
+              "numeric_references": {
+                "mean": 7.0,
+                "std": 0.0
+              },
+              "opponent_mentions": {
+                "mean": 6.0,
+                "std": 0.0
+              },
+              "hedge_count": {
+                "mean": 0.0,
+                "std": 0.0
+              },
+              "recognizes_dominance": 1.0,
+              "comparison_count": {
+                "mean": 1.0,
+                "std": 0.0
+              }
+            }
+          },
+          "complexity_ranking": [
+            [
+              "PS",
+              121.0
+            ],
+            [
+              "SC",
+              111.0
+            ],
+            [
+              "SS",
+              108.5
+            ],
+            [
+              "PC",
+              104.5
+            ],
+            [
+              "CP",
+              100.5
+            ],
+            [
+              "CC",
+              89.5
+            ],
+            [
+              "CS",
+              88.5
+            ],
+            [
+              "PP",
+              75.0
+            ],
+            [
+              "SP",
+              70.5
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "config": "v2_bounded_satisficing",
+      "concepts": {
+        "maxmin": {
+          "subgames": {
+            "PP": {
+              "A": {
+                "word_count": {
+                  "mean": 94.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 93.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "PS": {
+              "A": {
+                "word_count": {
+                  "mean": 86.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 74.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "PC": {
+              "A": {
+                "word_count": {
+                  "mean": 124.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 11.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 67.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SP": {
+              "A": {
+                "word_count": {
+                  "mean": 97.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 71.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SS": {
+              "A": {
+                "word_count": {
+                  "mean": 50.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 112.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SC": {
+              "A": {
+                "word_count": {
+                  "mean": 89.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 92.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CP": {
+              "A": {
+                "word_count": {
+                  "mean": 42.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 60.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CS": {
+              "A": {
+                "word_count": {
+                  "mean": 98.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 98.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 8.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CC": {
+              "A": {
+                "word_count": {
+                  "mean": 76.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 52.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            }
+          },
+          "meta_game": {
+            "A": {
+              "word_count": {
+                "mean": 107.0,
+                "std": 0.0
+              },
+              "sentence_count": {
+                "mean": 10.0,
+                "std": 0.0
+              },
+              "step_count": {
+                "mean": 11.0,
+                "std": 0.0
+              },
+              "numeric_references": {
+                "mean": 3.0,
+                "std": 0.0
+              },
+              "opponent_mentions": {
+                "mean": 2.0,
+                "std": 0.0
+              },
+              "hedge_count": {
+                "mean": 3.0,
+                "std": 0.0
+              },
+              "recognizes_dominance": 1.0,
+              "comparison_count": {
+                "mean": 2.0,
+                "std": 0.0
+              }
+            },
+            "B": {
+              "word_count": {
+                "mean": 85.0,
+                "std": 0.0
+              },
+              "sentence_count": {
+                "mean": 8.0,
+                "std": 0.0
+              },
+              "step_count": {
+                "mean": 5.0,
+                "std": 0.0
+              },
+              "numeric_references": {
+                "mean": 3.0,
+                "std": 0.0
+              },
+              "opponent_mentions": {
+                "mean": 4.0,
+                "std": 0.0
+              },
+              "hedge_count": {
+                "mean": 1.0,
+                "std": 0.0
+              },
+              "recognizes_dominance": 0.0,
+              "comparison_count": {
+                "mean": 0.0,
+                "std": 0.0
+              }
+            }
+          },
+          "complexity_ranking": [
+            [
+              "CS",
+              98.0
+            ],
+            [
+              "PC",
+              95.5
+            ],
+            [
+              "PP",
+              93.5
+            ],
+            [
+              "SC",
+              90.5
+            ],
+            [
+              "SP",
+              84.0
+            ],
+            [
+              "SS",
+              81.0
+            ],
+            [
+              "PS",
+              80.0
+            ],
+            [
+              "CC",
+              64.0
+            ],
+            [
+              "CP",
+              51.0
+            ]
+          ]
+        },
+        "minmax": {
+          "subgames": {
+            "PP": {
+              "A": {
+                "word_count": {
+                  "mean": 76.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 67.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "PS": {
+              "A": {
+                "word_count": {
+                  "mean": 73.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 63.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "PC": {
+              "A": {
+                "word_count": {
+                  "mean": 122.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 9.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 83.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SP": {
+              "A": {
+                "word_count": {
+                  "mean": 106.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 76.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SS": {
+              "A": {
+                "word_count": {
+                  "mean": 85.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 122.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 8.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SC": {
+              "A": {
+                "word_count": {
+                  "mean": 109.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 80.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 8.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CP": {
+              "A": {
+                "word_count": {
+                  "mean": 109.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 75.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CS": {
+              "A": {
+                "word_count": {
+                  "mean": 53.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 74.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CC": {
+              "A": {
+                "word_count": {
+                  "mean": 115.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 67.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            }
+          },
+          "meta_game": {
+            "A": {
+              "word_count": {
+                "mean": 186.0,
+                "std": 0.0
+              },
+              "sentence_count": {
+                "mean": 20.0,
+                "std": 0.0
+              },
+              "step_count": {
+                "mean": 9.0,
+                "std": 0.0
+              },
+              "numeric_references": {
+                "mean": 10.0,
+                "std": 0.0
+              },
+              "opponent_mentions": {
+                "mean": 1.0,
+                "std": 0.0
+              },
+              "hedge_count": {
+                "mean": 7.0,
+                "std": 0.0
+              },
+              "recognizes_dominance": 0.0,
+              "comparison_count": {
+                "mean": 3.0,
+                "std": 0.0
+              }
+            },
+            "B": {
+              "word_count": {
+                "mean": 204.0,
+                "std": 0.0
+              },
+              "sentence_count": {
+                "mean": 24.0,
+                "std": 0.0
+              },
+              "step_count": {
+                "mean": 21.0,
+                "std": 0.0
+              },
+              "numeric_references": {
+                "mean": 16.0,
+                "std": 0.0
+              },
+              "opponent_mentions": {
+                "mean": 2.0,
+                "std": 0.0
+              },
+              "hedge_count": {
+                "mean": 3.0,
+                "std": 0.0
+              },
+              "recognizes_dominance": 0.0,
+              "comparison_count": {
+                "mean": 3.0,
+                "std": 0.0
+              }
+            }
+          },
+          "complexity_ranking": [
+            [
+              "SS",
+              103.5
+            ],
+            [
+              "PC",
+              102.5
+            ],
+            [
+              "SC",
+              94.5
+            ],
+            [
+              "CP",
+              92.0
+            ],
+            [
+              "SP",
+              91.0
+            ],
+            [
+              "CC",
+              91.0
+            ],
+            [
+              "PP",
+              71.5
+            ],
+            [
+              "PS",
+              68.0
+            ],
+            [
+              "CS",
+              63.5
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "config": "v3_bounded_prospect_theory",
+      "concepts": {
+        "maxmin": {
+          "subgames": {
+            "PP": {
+              "A": {
+                "word_count": {
+                  "mean": 109.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 11.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 172.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 13.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 14.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 8.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "PS": {
+              "A": {
+                "word_count": {
+                  "mean": 106.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 10.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 89.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "PC": {
+              "A": {
+                "word_count": {
+                  "mean": 73.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 98.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SP": {
+              "A": {
+                "word_count": {
+                  "mean": 97.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 94.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SS": {
+              "A": {
+                "word_count": {
+                  "mean": 94.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 89.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SC": {
+              "A": {
+                "word_count": {
+                  "mean": 103.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 99.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CP": {
+              "A": {
+                "word_count": {
+                  "mean": 88.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 87.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CS": {
+              "A": {
+                "word_count": {
+                  "mean": 87.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 118.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 8.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CC": {
+              "A": {
+                "word_count": {
+                  "mean": 80.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 86.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            }
+          },
+          "meta_game": {
+            "A": {
+              "word_count": {
+                "mean": 177.0,
+                "std": 0.0
+              },
+              "sentence_count": {
+                "mean": 22.0,
+                "std": 0.0
+              },
+              "step_count": {
+                "mean": 17.0,
+                "std": 0.0
+              },
+              "numeric_references": {
+                "mean": 11.0,
+                "std": 0.0
+              },
+              "opponent_mentions": {
+                "mean": 3.0,
+                "std": 0.0
+              },
+              "hedge_count": {
+                "mean": 3.0,
+                "std": 0.0
+              },
+              "recognizes_dominance": 0.0,
+              "comparison_count": {
+                "mean": 4.0,
+                "std": 0.0
+              }
+            },
+            "B": {
+              "word_count": {
+                "mean": 94.0,
+                "std": 0.0
+              },
+              "sentence_count": {
+                "mean": 8.0,
+                "std": 0.0
+              },
+              "step_count": {
+                "mean": 5.0,
+                "std": 0.0
+              },
+              "numeric_references": {
+                "mean": 2.0,
+                "std": 0.0
+              },
+              "opponent_mentions": {
+                "mean": 4.0,
+                "std": 0.0
+              },
+              "hedge_count": {
+                "mean": 1.0,
+                "std": 0.0
+              },
+              "recognizes_dominance": 0.0,
+              "comparison_count": {
+                "mean": 0.0,
+                "std": 0.0
+              }
+            }
+          },
+          "complexity_ranking": [
+            [
+              "PP",
+              140.5
+            ],
+            [
+              "CS",
+              102.5
+            ],
+            [
+              "SC",
+              101.0
+            ],
+            [
+              "PS",
+              97.5
+            ],
+            [
+              "SP",
+              95.5
+            ],
+            [
+              "SS",
+              91.5
+            ],
+            [
+              "CP",
+              87.5
+            ],
+            [
+              "PC",
+              85.5
+            ],
+            [
+              "CC",
+              83.0
+            ]
+          ]
+        },
+        "minmax": {
+          "subgames": {
+            "PP": {
+              "A": {
+                "word_count": {
+                  "mean": 112.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 9.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 98.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 9.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "PS": {
+              "A": {
+                "word_count": {
+                  "mean": 115.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 96.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "PC": {
+              "A": {
+                "word_count": {
+                  "mean": 83.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 79.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SP": {
+              "A": {
+                "word_count": {
+                  "mean": 97.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 10.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 157.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 10.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SS": {
+              "A": {
+                "word_count": {
+                  "mean": 76.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 9.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 149.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 13.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SC": {
+              "A": {
+                "word_count": {
+                  "mean": 86.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 11.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 8.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 79.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CP": {
+              "A": {
+                "word_count": {
+                  "mean": 100.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 45.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CS": {
+              "A": {
+                "word_count": {
+                  "mean": 51.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 98.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CC": {
+              "A": {
+                "word_count": {
+                  "mean": 152.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 14.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 11.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 100.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 9.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            }
+          },
+          "meta_game": {
+            "A": {
+              "word_count": {
+                "mean": 171.0,
+                "std": 0.0
+              },
+              "sentence_count": {
+                "mean": 19.0,
+                "std": 0.0
+              },
+              "step_count": {
+                "mean": 11.0,
+                "std": 0.0
+              },
+              "numeric_references": {
+                "mean": 9.0,
+                "std": 0.0
+              },
+              "opponent_mentions": {
+                "mean": 5.0,
+                "std": 0.0
+              },
+              "hedge_count": {
+                "mean": 4.0,
+                "std": 0.0
+              },
+              "recognizes_dominance": 0.0,
+              "comparison_count": {
+                "mean": 1.0,
+                "std": 0.0
+              }
+            },
+            "B": {
+              "word_count": {
+                "mean": 77.0,
+                "std": 0.0
+              },
+              "sentence_count": {
+                "mean": 6.0,
+                "std": 0.0
+              },
+              "step_count": {
+                "mean": 7.0,
+                "std": 0.0
+              },
+              "numeric_references": {
+                "mean": 3.0,
+                "std": 0.0
+              },
+              "opponent_mentions": {
+                "mean": 2.0,
+                "std": 0.0
+              },
+              "hedge_count": {
+                "mean": 1.0,
+                "std": 0.0
+              },
+              "recognizes_dominance": 0.0,
+              "comparison_count": {
+                "mean": 0.0,
+                "std": 0.0
+              }
+            }
+          },
+          "complexity_ranking": [
+            [
+              "SP",
+              127.0
+            ],
+            [
+              "CC",
+              126.0
+            ],
+            [
+              "SS",
+              112.5
+            ],
+            [
+              "PS",
+              105.5
+            ],
+            [
+              "PP",
+              105.0
+            ],
+            [
+              "SC",
+              82.5
+            ],
+            [
+              "PC",
+              81.0
+            ],
+            [
+              "CS",
+              74.5
+            ],
+            [
+              "CP",
+              72.5
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "config": "v4_irrational_hawkish",
+      "concepts": {
+        "maxmin": {
+          "subgames": {
+            "PP": {
+              "A": {
+                "word_count": {
+                  "mean": 132.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 105.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 11.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "PS": {
+              "A": {
+                "word_count": {
+                  "mean": 120.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 144.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 13.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "PC": {
+              "A": {
+                "word_count": {
+                  "mean": 137.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 12.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 8.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 102.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 9.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SP": {
+              "A": {
+                "word_count": {
+                  "mean": 82.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 118.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 9.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SS": {
+              "A": {
+                "word_count": {
+                  "mean": 90.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 81.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SC": {
+              "A": {
+                "word_count": {
+                  "mean": 47.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 83.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CP": {
+              "A": {
+                "word_count": {
+                  "mean": 79.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 54.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CS": {
+              "A": {
+                "word_count": {
+                  "mean": 60.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 8.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 109.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 9.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CC": {
+              "A": {
+                "word_count": {
+                  "mean": 80.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 139.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 15.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              }
+            }
+          },
+          "meta_game": {
+            "A": {
+              "word_count": {
+                "mean": 82.0,
+                "std": 0.0
+              },
+              "sentence_count": {
+                "mean": 8.0,
+                "std": 0.0
+              },
+              "step_count": {
+                "mean": 5.0,
+                "std": 0.0
+              },
+              "numeric_references": {
+                "mean": 3.0,
+                "std": 0.0
+              },
+              "opponent_mentions": {
+                "mean": 2.0,
+                "std": 0.0
+              },
+              "hedge_count": {
+                "mean": 0.0,
+                "std": 0.0
+              },
+              "recognizes_dominance": 0.0,
+              "comparison_count": {
+                "mean": 1.0,
+                "std": 0.0
+              }
+            },
+            "B": {
+              "word_count": {
+                "mean": 216.0,
+                "std": 0.0
+              },
+              "sentence_count": {
+                "mean": 14.0,
+                "std": 0.0
+              },
+              "step_count": {
+                "mean": 13.0,
+                "std": 0.0
+              },
+              "numeric_references": {
+                "mean": 7.0,
+                "std": 0.0
+              },
+              "opponent_mentions": {
+                "mean": 13.0,
+                "std": 0.0
+              },
+              "hedge_count": {
+                "mean": 6.0,
+                "std": 0.0
+              },
+              "recognizes_dominance": 1.0,
+              "comparison_count": {
+                "mean": 0.0,
+                "std": 0.0
+              }
+            }
+          },
+          "complexity_ranking": [
+            [
+              "PS",
+              132.0
+            ],
+            [
+              "PC",
+              119.5
+            ],
+            [
+              "PP",
+              118.5
+            ],
+            [
+              "CC",
+              109.5
+            ],
+            [
+              "SP",
+              100.0
+            ],
+            [
+              "SS",
+              85.5
+            ],
+            [
+              "CS",
+              84.5
+            ],
+            [
+              "CP",
+              66.5
+            ],
+            [
+              "SC",
+              65.0
+            ]
+          ]
+        },
+        "minmax": {
+          "subgames": {
+            "PP": {
+              "A": {
+                "word_count": {
+                  "mean": 92.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 115.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 13.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "PS": {
+              "A": {
+                "word_count": {
+                  "mean": 69.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 105.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "PC": {
+              "A": {
+                "word_count": {
+                  "mean": 80.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 85.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SP": {
+              "A": {
+                "word_count": {
+                  "mean": 99.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 9.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 98.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 10.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SS": {
+              "A": {
+                "word_count": {
+                  "mean": 117.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 90.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SC": {
+              "A": {
+                "word_count": {
+                  "mean": 127.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 10.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 61.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CP": {
+              "A": {
+                "word_count": {
+                  "mean": 98.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 86.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CS": {
+              "A": {
+                "word_count": {
+                  "mean": 81.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 105.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 11.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CC": {
+              "A": {
+                "word_count": {
+                  "mean": 114.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 9.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 81.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            }
+          },
+          "meta_game": {
+            "A": {
+              "word_count": {
+                "mean": 167.0,
+                "std": 0.0
+              },
+              "sentence_count": {
+                "mean": 17.0,
+                "std": 0.0
+              },
+              "step_count": {
+                "mean": 11.0,
+                "std": 0.0
+              },
+              "numeric_references": {
+                "mean": 8.0,
+                "std": 0.0
+              },
+              "opponent_mentions": {
+                "mean": 5.0,
+                "std": 0.0
+              },
+              "hedge_count": {
+                "mean": 2.0,
+                "std": 0.0
+              },
+              "recognizes_dominance": 0.0,
+              "comparison_count": {
+                "mean": 1.0,
+                "std": 0.0
+              }
+            },
+            "B": {
+              "word_count": {
+                "mean": 182.0,
+                "std": 0.0
+              },
+              "sentence_count": {
+                "mean": 12.0,
+                "std": 0.0
+              },
+              "step_count": {
+                "mean": 13.0,
+                "std": 0.0
+              },
+              "numeric_references": {
+                "mean": 4.0,
+                "std": 0.0
+              },
+              "opponent_mentions": {
+                "mean": 3.0,
+                "std": 0.0
+              },
+              "hedge_count": {
+                "mean": 6.0,
+                "std": 0.0
+              },
+              "recognizes_dominance": 0.0,
+              "comparison_count": {
+                "mean": 3.0,
+                "std": 0.0
+              }
+            }
+          },
+          "complexity_ranking": [
+            [
+              "PP",
+              103.5
+            ],
+            [
+              "SS",
+              103.5
+            ],
+            [
+              "SP",
+              98.5
+            ],
+            [
+              "CC",
+              97.5
+            ],
+            [
+              "SC",
+              94.0
+            ],
+            [
+              "CS",
+              93.0
+            ],
+            [
+              "CP",
+              92.0
+            ],
+            [
+              "PS",
+              87.0
+            ],
+            [
+              "PC",
+              82.5
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "config": "v5_irrational_retaliatory",
+      "concepts": {
+        "maxmin": {
+          "subgames": {
+            "PP": {
+              "A": {
+                "word_count": {
+                  "mean": 85.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 80.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 9.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "PS": {
+              "A": {
+                "word_count": {
+                  "mean": 119.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 53.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "PC": {
+              "A": {
+                "word_count": {
+                  "mean": 25.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 126.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SP": {
+              "A": {
+                "word_count": {
+                  "mean": 88.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 158.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 12.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 9.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SS": {
+              "A": {
+                "word_count": {
+                  "mean": 167.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 9.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 9.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 83.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SC": {
+              "A": {
+                "word_count": {
+                  "mean": 93.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 8.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 71.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CP": {
+              "A": {
+                "word_count": {
+                  "mean": 105.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 8.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 60.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CS": {
+              "A": {
+                "word_count": {
+                  "mean": 89.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 83.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 8.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CC": {
+              "A": {
+                "word_count": {
+                  "mean": 113.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 12.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 118.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 8.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            }
+          },
+          "meta_game": {
+            "A": {
+              "word_count": {
+                "mean": 75.0,
+                "std": 0.0
+              },
+              "sentence_count": {
+                "mean": 7.0,
+                "std": 0.0
+              },
+              "step_count": {
+                "mean": 5.0,
+                "std": 0.0
+              },
+              "numeric_references": {
+                "mean": 2.0,
+                "std": 0.0
+              },
+              "opponent_mentions": {
+                "mean": 2.0,
+                "std": 0.0
+              },
+              "hedge_count": {
+                "mean": 1.0,
+                "std": 0.0
+              },
+              "recognizes_dominance": 0.0,
+              "comparison_count": {
+                "mean": 2.0,
+                "std": 0.0
+              }
+            },
+            "B": {
+              "word_count": {
+                "mean": 119.0,
+                "std": 0.0
+              },
+              "sentence_count": {
+                "mean": 6.0,
+                "std": 0.0
+              },
+              "step_count": {
+                "mean": 5.0,
+                "std": 0.0
+              },
+              "numeric_references": {
+                "mean": 1.0,
+                "std": 0.0
+              },
+              "opponent_mentions": {
+                "mean": 2.0,
+                "std": 0.0
+              },
+              "hedge_count": {
+                "mean": 2.0,
+                "std": 0.0
+              },
+              "recognizes_dominance": 0.0,
+              "comparison_count": {
+                "mean": 0.0,
+                "std": 0.0
+              }
+            }
+          },
+          "complexity_ranking": [
+            [
+              "SS",
+              125.0
+            ],
+            [
+              "SP",
+              123.0
+            ],
+            [
+              "CC",
+              115.5
+            ],
+            [
+              "PS",
+              86.0
+            ],
+            [
+              "CS",
+              86.0
+            ],
+            [
+              "PP",
+              82.5
+            ],
+            [
+              "CP",
+              82.5
+            ],
+            [
+              "SC",
+              82.0
+            ],
+            [
+              "PC",
+              75.5
+            ]
+          ]
+        },
+        "minmax": {
+          "subgames": {
+            "PP": {
+              "A": {
+                "word_count": {
+                  "mean": 111.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 13.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 95.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "PS": {
+              "A": {
+                "word_count": {
+                  "mean": 137.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 12.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 11.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 36.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "PC": {
+              "A": {
+                "word_count": {
+                  "mean": 177.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 12.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 13.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 121.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 10.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SP": {
+              "A": {
+                "word_count": {
+                  "mean": 120.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 10.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 84.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SS": {
+              "A": {
+                "word_count": {
+                  "mean": 151.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 12.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 4.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 40.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "SC": {
+              "A": {
+                "word_count": {
+                  "mean": 94.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 8.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 4.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 114.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CP": {
+              "A": {
+                "word_count": {
+                  "mean": 97.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 11.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 2.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 1.0,
+                "comparison_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 81.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CS": {
+              "A": {
+                "word_count": {
+                  "mean": 107.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 2.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 125.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            },
+            "CC": {
+              "A": {
+                "word_count": {
+                  "mean": 96.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 7.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 6.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 8.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 3.0,
+                  "std": 0.0
+                }
+              },
+              "B": {
+                "word_count": {
+                  "mean": 72.0,
+                  "std": 0.0
+                },
+                "sentence_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "step_count": {
+                  "mean": 5.0,
+                  "std": 0.0
+                },
+                "numeric_references": {
+                  "mean": 0.0,
+                  "std": 0.0
+                },
+                "opponent_mentions": {
+                  "mean": 3.0,
+                  "std": 0.0
+                },
+                "hedge_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                },
+                "recognizes_dominance": 0.0,
+                "comparison_count": {
+                  "mean": 1.0,
+                  "std": 0.0
+                }
+              }
+            }
+          },
+          "meta_game": {
+            "A": {
+              "word_count": {
+                "mean": 142.0,
+                "std": 0.0
+              },
+              "sentence_count": {
+                "mean": 12.0,
+                "std": 0.0
+              },
+              "step_count": {
+                "mean": 6.0,
+                "std": 0.0
+              },
+              "numeric_references": {
+                "mean": 6.0,
+                "std": 0.0
+              },
+              "opponent_mentions": {
+                "mean": 4.0,
+                "std": 0.0
+              },
+              "hedge_count": {
+                "mean": 1.0,
+                "std": 0.0
+              },
+              "recognizes_dominance": 0.0,
+              "comparison_count": {
+                "mean": 0.0,
+                "std": 0.0
+              }
+            },
+            "B": {
+              "word_count": {
+                "mean": 63.0,
+                "std": 0.0
+              },
+              "sentence_count": {
+                "mean": 5.0,
+                "std": 0.0
+              },
+              "step_count": {
+                "mean": 4.0,
+                "std": 0.0
+              },
+              "numeric_references": {
+                "mean": 1.0,
+                "std": 0.0
+              },
+              "opponent_mentions": {
+                "mean": 4.0,
+                "std": 0.0
+              },
+              "hedge_count": {
+                "mean": 0.0,
+                "std": 0.0
+              },
+              "recognizes_dominance": 1.0,
+              "comparison_count": {
+                "mean": 0.0,
+                "std": 0.0
+              }
+            }
+          },
+          "complexity_ranking": [
+            [
+              "PC",
+              149.0
+            ],
+            [
+              "CS",
+              116.0
+            ],
+            [
+              "SC",
+              104.0
+            ],
+            [
+              "PP",
+              103.0
+            ],
+            [
+              "SP",
+              102.0
+            ],
+            [
+              "SS",
+              95.5
+            ],
+            [
+              "CP",
+              89.0
+            ],
+            [
+              "PS",
+              86.5
+            ],
+            [
+              "CC",
+              84.0
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "cross_config_comparison": {
+    "v1_rational_eut": {
+      "maxmin": {
+        "avg_reasoning_length": 95.1,
+        "avg_opponent_modeling": 3.89,
+        "dominance_recognition_rate": 0.83,
+        "avg_hedge_count": 0.67,
+        "avg_comparison_count": 1.61,
+        "hardest_subgame": "PC",
+        "easiest_subgame": "CS"
+      },
+      "minmax": {
+        "avg_reasoning_length": 96.6,
+        "avg_opponent_modeling": 3.67,
+        "dominance_recognition_rate": 0.89,
+        "avg_hedge_count": 1.06,
+        "avg_comparison_count": 1.78,
+        "hardest_subgame": "PS",
+        "easiest_subgame": "SP"
+      }
+    },
+    "v2_bounded_satisficing": {
+      "maxmin": {
+        "avg_reasoning_length": 81.9,
+        "avg_opponent_modeling": 2.0,
+        "dominance_recognition_rate": 0.33,
+        "avg_hedge_count": 1.89,
+        "avg_comparison_count": 1.94,
+        "hardest_subgame": "CS",
+        "easiest_subgame": "CP"
+      },
+      "minmax": {
+        "avg_reasoning_length": 86.4,
+        "avg_opponent_modeling": 1.94,
+        "dominance_recognition_rate": 0.5,
+        "avg_hedge_count": 1.72,
+        "avg_comparison_count": 1.89,
+        "hardest_subgame": "SS",
+        "easiest_subgame": "CS"
+      }
+    },
+    "v3_bounded_prospect_theory": {
+      "maxmin": {
+        "avg_reasoning_length": 98.3,
+        "avg_opponent_modeling": 2.56,
+        "dominance_recognition_rate": 0.28,
+        "avg_hedge_count": 2.28,
+        "avg_comparison_count": 1.5,
+        "hardest_subgame": "PP",
+        "easiest_subgame": "CC"
+      },
+      "minmax": {
+        "avg_reasoning_length": 98.5,
+        "avg_opponent_modeling": 2.28,
+        "dominance_recognition_rate": 0.17,
+        "avg_hedge_count": 1.5,
+        "avg_comparison_count": 0.83,
+        "hardest_subgame": "SP",
+        "easiest_subgame": "CP"
+      }
+    },
+    "v4_irrational_hawkish": {
+      "maxmin": {
+        "avg_reasoning_length": 97.9,
+        "avg_opponent_modeling": 2.67,
+        "dominance_recognition_rate": 0.11,
+        "avg_hedge_count": 1.22,
+        "avg_comparison_count": 1.06,
+        "hardest_subgame": "PS",
+        "easiest_subgame": "SC"
+      },
+      "minmax": {
+        "avg_reasoning_length": 94.6,
+        "avg_opponent_modeling": 3.28,
+        "dominance_recognition_rate": 0.11,
+        "avg_hedge_count": 1.17,
+        "avg_comparison_count": 1.0,
+        "hardest_subgame": "PP",
+        "easiest_subgame": "PC"
+      }
+    },
+    "v5_irrational_retaliatory": {
+      "maxmin": {
+        "avg_reasoning_length": 95.3,
+        "avg_opponent_modeling": 4.11,
+        "dominance_recognition_rate": 0.0,
+        "avg_hedge_count": 0.33,
+        "avg_comparison_count": 0.89,
+        "hardest_subgame": "SS",
+        "easiest_subgame": "PC"
+      },
+      "minmax": {
+        "avg_reasoning_length": 103.2,
+        "avg_opponent_modeling": 4.83,
+        "dominance_recognition_rate": 0.06,
+        "avg_hedge_count": 0.56,
+        "avg_comparison_count": 1.39,
+        "hardest_subgame": "PC",
+        "easiest_subgame": "CC"
+      }
+    }
+  }
+}

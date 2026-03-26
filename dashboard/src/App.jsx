@@ -5,7 +5,8 @@ import Overview from './pages/Overview'
 import ConfigDetail from './pages/ConfigDetail'
 import CompareView from './pages/CompareView'
 import CotComparison from './pages/CotComparison'
-import { BarChart3, GitCompare, Brain } from 'lucide-react'
+import CotComplexity from './pages/CotComplexity'
+import { BarChart3, GitCompare, Brain, Microscope } from 'lucide-react'
 
 const NAV_BASE = 'flex items-center gap-1.5 px-3 py-2 rounded text-sm transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900'
 const NAV_ACTIVE = `${NAV_BASE} bg-gray-100 text-gray-900 font-medium`
@@ -80,6 +81,9 @@ function App() {
                 <NavLink to="/cot" className={({ isActive }) => isActive ? NAV_ACTIVE : NAV_INACTIVE}>
                   <Brain className="w-4 h-4" aria-hidden="true" /> CoT Analysis
                 </NavLink>
+                <NavLink to="/cot-complexity" className={({ isActive }) => isActive ? NAV_ACTIVE : NAV_INACTIVE}>
+                  <Microscope className="w-4 h-4" aria-hidden="true" /> Reasoning Complexity
+                </NavLink>
               </div>
             </div>
           </div>
@@ -91,6 +95,7 @@ function App() {
             <Route path="/config/:configId" element={<ConfigDetail data={data} />} />
             <Route path="/compare" element={<CompareView data={data} />} />
             <Route path="/cot" element={<CotComparison data={data} />} />
+            <Route path="/cot-complexity" element={<CotComplexity cotAnalysis={data.__cotAnalysis} />} />
           </Routes>
         </main>
 
