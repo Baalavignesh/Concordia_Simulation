@@ -32,8 +32,9 @@ class CyberWargameController:
     Stage 1: Plays 9 subgames (one per mode combination).
     Stage 2: Builds meta-game and asks agents to choose overall mode.
 
-    If a PromptConfig is supplied, its templates override the defaults from
-    src/constants.py.
+    Supports asymmetric configs via ``prompt_config_b``: agent A uses
+    ``prompt_config`` templates while agent B uses ``prompt_config_b``.
+    If only ``prompt_config`` is given, both agents share it (original behavior).
     """
 
     def __init__(
@@ -43,6 +44,7 @@ class CyberWargameController:
         matrices: dict,
         solution_concept: str = "maxmin",
         prompt_config: PromptConfig | None = None,
+        prompt_config_b: PromptConfig | None = None,
     ):
         self.agent_a = agent_a
         self.agent_b = agent_b
@@ -51,26 +53,42 @@ class CyberWargameController:
         self.subgame_results: dict = {}
         self.meta_game_result: dict = {}
 
-        # Prompt templates — use config if given, otherwise fall back to defaults
-        if prompt_config is not None:
-            self._game_context_tpl = prompt_config.game_context_template
-            self._sub_obs_a = prompt_config.subgame_observation_a
-            self._sub_obs_b = prompt_config.subgame_observation_b
-            self._sub_cta = prompt_config.subgame_call_to_action
-            self._sub_outcome = prompt_config.subgame_outcome
-            self._meta_header = prompt_config.meta_game_header
-            self._meta_cta = prompt_config.meta_game_call_to_action
+        cfg_a = prompt_config
+        cfg_b = prompt_config_b if prompt_config_b is not None else prompt_config
+
+        # Per-agent prompt templates — fall back to defaults from constants
+        if cfg_a is not None:
+            self._game_context_tpl_a = cfg_a.game_context_template
+            self._sub_obs_a = cfg_a.subgame_observation_a
+            self._sub_cta_a = cfg_a.subgame_call_to_action
+            self._sub_outcome_a = cfg_a.subgame_outcome
+            self._meta_header_a = cfg_a.meta_game_header
+            self._meta_cta_a = cfg_a.meta_game_call_to_action
         else:
-            self._game_context_tpl = GAME_CONTEXT_TEMPLATE
+            self._game_context_tpl_a = GAME_CONTEXT_TEMPLATE
             self._sub_obs_a = SUBGAME_OBSERVATION_A
+            self._sub_cta_a = SUBGAME_CALL_TO_ACTION
+            self._sub_outcome_a = SUBGAME_OUTCOME
+            self._meta_header_a = META_GAME_HEADER
+            self._meta_cta_a = META_GAME_CALL_TO_ACTION
+
+        if cfg_b is not None:
+            self._game_context_tpl_b = cfg_b.game_context_template
+            self._sub_obs_b = cfg_b.subgame_observation_b
+            self._sub_cta_b = cfg_b.subgame_call_to_action
+            self._sub_outcome_b = cfg_b.subgame_outcome
+            self._meta_header_b = cfg_b.meta_game_header
+            self._meta_cta_b = cfg_b.meta_game_call_to_action
+        else:
+            self._game_context_tpl_b = GAME_CONTEXT_TEMPLATE
             self._sub_obs_b = SUBGAME_OBSERVATION_B
-            self._sub_cta = SUBGAME_CALL_TO_ACTION
-            self._sub_outcome = SUBGAME_OUTCOME
-            self._meta_header = META_GAME_HEADER
-            self._meta_cta = META_GAME_CALL_TO_ACTION
+            self._sub_cta_b = SUBGAME_CALL_TO_ACTION
+            self._sub_outcome_b = SUBGAME_OUTCOME
+            self._meta_header_b = META_GAME_HEADER
+            self._meta_cta_b = META_GAME_CALL_TO_ACTION
 
     def _send_game_context(self):
-        """Send initial game context to both agents."""
+        """Send initial game context to both agents (per-agent templates)."""
         mode_desc_str = "".join(f"  {desc}\n" for desc in MODE_DESCRIPTIONS.values())
         action_desc_str = "".join(f"  {desc}\n" for desc in ACTION_DESCRIPTIONS.values())
 
@@ -79,14 +97,14 @@ class CyberWargameController:
             else "Aggressive/Best-case"
         )
 
-        context = self._game_context_tpl.format(
+        fmt_kwargs = dict(
             solution_concept=self.solution_concept.upper(),
             concept_description=concept_description,
             mode_descriptions=mode_desc_str,
             action_descriptions=action_desc_str,
         )
-        self.agent_a.observe(context)
-        self.agent_b.observe(context)
+        self.agent_a.observe(self._game_context_tpl_a.format(**fmt_kwargs))
+        self.agent_b.observe(self._game_context_tpl_b.format(**fmt_kwargs))
 
     def play_subgame(self, mode_a: str, mode_b: str) -> dict:
         """Play a single 2x2 subgame for a given mode combination."""
@@ -117,16 +135,20 @@ class CyberWargameController:
             )
         )
 
-        action_spec = entity_lib.ActionSpec(
-            call_to_action=self._sub_cta.format(
-                mode_a=mode_a, mode_b=mode_b,
-            ),
+        cta_kwargs = dict(mode_a=mode_a, mode_b=mode_b)
+        spec_a = entity_lib.ActionSpec(
+            call_to_action=self._sub_cta_a.format(**cta_kwargs),
+            output_type=entity_lib.OutputType.CHOICE,
+            options=tuple(ACTIONS),
+        )
+        spec_b = entity_lib.ActionSpec(
+            call_to_action=self._sub_cta_b.format(**cta_kwargs),
             output_type=entity_lib.OutputType.CHOICE,
             options=tuple(ACTIONS),
         )
 
-        action_a = self.agent_a.act(action_spec)
-        action_b = self.agent_b.act(action_spec)
+        action_a = self.agent_a.act(spec_a)
+        action_b = self.agent_b.act(spec_b)
 
         row_a = ACTIONS.index(action_a)
         col_b = ACTIONS.index(action_b)
@@ -150,13 +172,17 @@ class CyberWargameController:
         if log_b and log_b[-1].get("info", {}).get("reasoning"):
             result["reasoning_b"] = log_b[-1]["info"]["reasoning"]
 
-        outcome_msg = self._sub_outcome.format(
+        outcome_kwargs = dict(
             mode_a=mode_a, mode_b=mode_b,
             action_a=ACTION_NAMES[action_a],
             action_b=ACTION_NAMES[action_b],
         )
-        self.agent_a.observe(outcome_msg + f"Your payoff: {payoff_a:.4f}")
-        self.agent_b.observe(outcome_msg + f"Your payoff: {payoff_b:.4f}")
+        self.agent_a.observe(
+            self._sub_outcome_a.format(**outcome_kwargs) + f"Your payoff: {payoff_a:.4f}"
+        )
+        self.agent_b.observe(
+            self._sub_outcome_b.format(**outcome_kwargs) + f"Your payoff: {payoff_b:.4f}"
+        )
 
         return result
 
@@ -193,7 +219,7 @@ class CyberWargameController:
         """Stage 2: Ask agents to choose their overall attack mode."""
         meta_a, meta_b = self.build_meta_game_matrix()
 
-        meta_info_a = self._meta_header.format(player_label="Country A")
+        meta_info_a = self._meta_header_a.format(player_label="Country A")
         meta_info_a += f"{'':>20} B=P        B=S        B=C\n"
         for i, mode_a in enumerate(MODES):
             meta_info_a += f"  A={mode_a:>2}:       "
@@ -201,7 +227,7 @@ class CyberWargameController:
                 meta_info_a += f"{meta_a[i,j]:>10.4f} "
             meta_info_a += "\n"
 
-        meta_info_b = self._meta_header.format(player_label="Country B")
+        meta_info_b = self._meta_header_b.format(player_label="Country B")
         meta_info_b += f"{'':>20} B=P        B=S        B=C\n"
         for i, mode_a in enumerate(MODES):
             meta_info_b += f"  A={mode_a:>2}:       "
@@ -212,14 +238,19 @@ class CyberWargameController:
         self.agent_a.observe(meta_info_a)
         self.agent_b.observe(meta_info_b)
 
-        mode_spec = entity_lib.ActionSpec(
-            call_to_action=self._meta_cta,
+        mode_spec_a = entity_lib.ActionSpec(
+            call_to_action=self._meta_cta_a,
+            output_type=entity_lib.OutputType.CHOICE,
+            options=tuple(MODES),
+        )
+        mode_spec_b = entity_lib.ActionSpec(
+            call_to_action=self._meta_cta_b,
             output_type=entity_lib.OutputType.CHOICE,
             options=tuple(MODES),
         )
 
-        mode_a = self.agent_a.act(mode_spec)
-        mode_b = self.agent_b.act(mode_spec)
+        mode_a = self.agent_a.act(mode_spec_a)
+        mode_b = self.agent_b.act(mode_spec_b)
 
         i = MODES.index(mode_a)
         j = MODES.index(mode_b)

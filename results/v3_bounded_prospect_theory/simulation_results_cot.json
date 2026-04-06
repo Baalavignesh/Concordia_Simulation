@@ -1,0 +1,849 @@
+{
+  "prompt_config": "v3_bounded_prospect_theory",
+  "backend": "ollama",
+  "num_runs": 1,
+  "chain_of_thought": true,
+  "timestamp": "2026-03-20T02:20:15.216284",
+  "maxmin": {
+    "runs": [
+      {
+        "subgames": {
+          "PP": {
+            "mode_a": "P",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.705882352941177,
+            "payoff_b": 0.0,
+            "reasoning_a": "In the subgame where both Country A and B use Private Actor (P vs P), the decision is between Attack (R) and Threaten (Th). The payoffs are as follows:\n\n- Choosing R results in 0.7059 regardless of B's action.\n- Choosing Th results in 0.9000 regardless of B's action.\n\nSince all outcomes are gains above the reference point, Prospect Theory dictates being risk-averse and preferring the sure thing. Threatening (Th) offers a higher guaranteed payoff (0.9000) compared to Attacking (R), which yields 0.7059. Therefore, the optimal choice is to Threaten.\n\n**Choice:** Th  \n**Reasoning:** Threatening provides a higher and certain payoff, aligning with risk-averse behavior towards gains in Prospect Theory.",
+            "reasoning_b": "**Step-by-Step Explanation:**\n\n1. **Understanding the Subgame (P vs P):**\n   - Both Country A and Country B are using Private Actor mode.\n   - The payoff matrix for Country B shows that regardless of whether Country B chooses Attack (R) or Threaten (Th), the payoff is 0.\n\n2. **Applying Prospect Theory:**\n   - Since all payoffs equal 0, neither action results in a gain nor a loss relative to the reference point.\n   - Loss aversion doesn't influence the decision here as there are no negative outcomes.\n\n3. **Considering Risk Orientation:**\n   - As a risk-averse player in gains and risk-seeking in losses, but since both actions yield 0, risk orientation doesn't affect the choice.\n\n4. **Decision Making:**\n   - Both R and Th lead to the same payoff of 0.\n   - Choosing either is indifferent, but Threaten (Th) might be seen as safer regarding future interactions.\n\n**Conclusion:**\n\nCountry B should choose **'Threaten (Th)'** in this subgame because both actions yield the same payoff, and Threaten may be perceived as less risky for future considerations. \n\n**Answer:** Choose 'Th'"
+          },
+          "PS": {
+            "mode_a": "P",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.705882352941177,
+            "payoff_b": -2.66666666666667,
+            "reasoning_a": "In the subgame where Country A uses Private Actor (P) against Country B's State Unit (S), the decision is between attacking (R) or threatening (Th). The payoffs for Country A are:\n\n- **Attack (R)**: 0.7059 regardless of B's action.\n- **Threaten (Th)**: 0.9000 regardless of B's action.\n\nGiven that all outcomes are gains, and following Prospect Theory principles, the risk-averse nature in gains leads to preferring the higher and more certain payoff. Threatening yields a guaranteed 0.9000, which is superior to Attacking's 0.7059. \n\n**Choice**: Threaten (Th)\n\n**Reasoning**: Threatening provides a higher and certain gain compared to attacking, aligning with risk aversion in the domain of gains.",
+            "reasoning_b": "In this subgame where Country B uses State Unit (S) against Country A's Private Actor (P), both actions result in losses. However, Threatening (Th) yields a smaller loss (-1.5000) compared to Attacking (R), which results in a more significant loss (-2.6667). Given the psychological framework of loss aversion and risk-seeking behavior when facing losses, choosing the less severe option is preferable.\n\n**Choice:** Threaten (Th)\n\n**Reasoning:** Both actions lead to losses, but Threatening results in a smaller loss, which is less painful given the loss-averse nature of the decision-making process."
+          },
+          "PC": {
+            "mode_a": "P",
+            "mode_b": "C",
+            "action_a": "Th",
+            "action_b": "Th",
+            "payoff_a": 0.9,
+            "payoff_b": -0.85,
+            "reasoning_a": "In this subgame, Country A should choose **Threaten (Th)**. \n\n**Reasoning:**\n- All payoffs for Country A are positive, meaning they're all gains above the reference point of 0.\n- According to Prospect Theory, when faced with gains, a risk-averse decision-maker prefers the safer option that guarantees a higher payoff.\n- Threatening yields a guaranteed payoff of 0.9000, which is higher than the 0.7059 from attacking and offers no downside risk.\n\n**Choice:** **Threaten (Th)**",
+            "reasoning_b": "In this subgame where Country A uses a Private Actor and Country B uses Coalition, both actions lead to losses for Country B. However, choosing to Threaten results in a smaller loss compared to Attacking. Given the principles of Prospect Theory and being risk-averse in gains but risk-seeking in losses (though here it's deterministic), the optimal choice is to minimize the loss by selecting Threaten.\n\n**Choice:** Th (Threaten)\n\n**Reasoning:** Both actions result in losses, but Threatening leads to a smaller loss (-0.8500) compared to Attacking (-2.2857). As a loss-averse decision-maker, minimizing the magnitude of the loss is preferable."
+          },
+          "SP": {
+            "mode_a": "S",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.0,
+            "payoff_b": 0.0,
+            "reasoning_a": "In the subgame where Country A uses State Unit (S) against Country B's Private Actor (P), both actions\u2014Attack (R) and Threaten (Th)\u2014result in a payoff of 0 for Country A. Since all outcomes are exactly at the reference point with no gains or losses, there is no incentive to prefer one action over the other based on Prospect Theory principles. Therefore, Country A can choose either option as both lead to the same neutral outcome.\n\n**Answer:** Choose either 'R' or 'Th'. Both actions result in a payoff of 0, so there's no advantage in terms of payoff.",
+            "reasoning_b": "In this subgame (S vs P), both actions\u2014attacking (R) and threatening (Th)\u2014result in a payoff of 0.0000 for Country B. Since the reference point is neutral, neither action constitutes a gain nor a loss. However, considering past experiences where attacking led to negative payoffs, there might be a psychological bias towards preferring threatening as it avoids potential future risks. \n\n**Choice: 'Th'**\n\nI choose to threaten (Th) because, despite both actions leading to the same payoff in this subgame, threatening aligns with a risk-averse strategy and avoids any association with past negative outcomes from attacking."
+          },
+          "SS": {
+            "mode_a": "S",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.0,
+            "payoff_b": -2.66666666666667,
+            "reasoning_a": "In the subgame where both countries are using State Units (S vs S), Country A's payoffs for both actions\u2014Attack (R) and Threaten (Th)\u2014are 0. This means neither action results in a gain or loss for Country A. However, considering strategic implications and risk averseness towards losses, choosing to Threaten is preferable as it avoids the higher costs and risks associated with attacking. \n\n**Choice:** Threaten (Th)\n\n**Reasoning:** Both actions yield the same payoff of 0, but threatening avoids potential negative outcomes and aligns with a cautious strategy given the high risks of using State Units.",
+            "reasoning_b": "In the subgame where both countries are using State Units (S vs S), I must choose between attacking (R) or threatening (Th). All possible outcomes result in losses for me. Considering symmetry and wanting to minimize my maximum loss, choosing Th leads to a smaller potential loss compared to R if both players mirror each other's choices.\n\n**Option Chosen: 'Th'**\n\n**Reasoning:** By selecting 'Th', I aim to mitigate the extent of my loss, aligning with my loss-averse nature. Assuming symmetry, this choice results in a lesser loss than attacking."
+          },
+          "SC": {
+            "mode_a": "S",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.0,
+            "payoff_b": -2.28571428571429,
+            "reasoning_a": "In the subgame where Country A uses a State Unit against Country B's Coalition (S vs C), all possible outcomes result in a payoff of 0.0000 for Country A, regardless of whether it chooses to Attack (R) or Threaten (Th). Since there are no gains or losses relative to the reference point of 0, and considering the risk-averse orientation, both actions lead to the same neutral outcome. Therefore, either choice is equally valid.\n\n**Choice:** Either 'R' or 'Th'\n\n**Reasoning:** Both actions result in a payoff of 0.0000 with no gains or losses, so neither option carries more risk or reward than the other.",
+            "reasoning_b": "In subgame (S vs C), both actions (Attack 'R' and Threaten 'Th') result in identical payoff distributions due to the simultaneous move nature of the game and the symmetric outcomes based on Country A's choices. Since all payoffs are losses, they are weighted twice as heavily under Prospect Theory. Both options lead to the same expected utility calculation, making it indifferent between choosing 'R' or 'Th'. Therefore, either action is equally viable.\n\n**Choice: Either 'R' or 'Th'**\n\nBoth actions yield the same expected utility due to symmetric outcomes, so either choice is acceptable without affecting the outcome's expected value."
+          },
+          "CP": {
+            "mode_a": "C",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.666666666666667,
+            "payoff_b": 0.0,
+            "reasoning_a": "In the subgame where Country A uses Coalition (C) against Country B's Private Actor (P), both actions lead to positive payoffs. However, attacking (R) yields a marginally higher and consistent payoff compared to threatening (Th). Given the risk-averse nature in gains, choosing R is preferable as it offers a more certain and higher reward.\n\n**Choice:** Attack (R)\n\n**Reasoning:** Selecting R provides a consistently higher payoff of 0.6667 regardless of B's action, aligning with risk aversion by preferring certainty over a slightly lower but equally certain payoff from Th.",
+            "reasoning_b": "In the subgame where Country A uses Coalition (C) and Country B uses Private Actor (P), both actions\u2014Attack (R) and Threaten (Th)\u2014result in a payoff of 0.0000 for Country B. Since all outcomes are neutral relative to the reference point, there is no gain or loss to influence the decision. Therefore, Country B can choose either action without affecting the outcome.\n\n**Choice:** Either 'R' or 'Th'\n\n**Reasoning:** Both actions result in a payoff of 0, which is neutral and does not affect Country B's loss-averse decision-making framework."
+          },
+          "CS": {
+            "mode_a": "C",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.666666666666667,
+            "payoff_b": -2.66666666666667,
+            "reasoning_a": "In the subgame where Country A uses Coalition (C) against Country B's State Unit (S), both actions (Attack R or Threaten Th) yield positive payoffs. However, choosing Attack (R) guarantees a higher minimum payoff of 0.6667 compared to Threaten (Th), which yields 0.6600 in all scenarios. Given the risk-averse nature towards gains under Prospect Theory, the safer and more certain choice is to Attack (R).\n\n**Choice:** R  \n**Reasoning:** Selecting Attack (R) provides a higher guaranteed payoff with less risk, aligning with risk aversion in the gain domain.",
+            "reasoning_b": "In the subgame where Country A uses Coalition (C) and Country B uses State Unit (S), both actions\u2014Attack (R) and Threaten (Th)\u2014result in negative payoffs for Country B. Specifically, choosing R leads to either -2.6667 or -1.5000, while Th also results in the same possible outcomes. \n\nGiven that all payoffs are losses, and both actions have identical potential outcomes, there is no distinction between R and Th in terms of payoff magnitude. Therefore, Country B is indifferent between the two actions.\n\n**Choice: Either 'R' or 'Th'**\n\n**Reasoning:** Both actions result in the same possible payoffs, making them equally disadvantageous. Without differing probabilities for each outcome, there's no preference based on risk averseness or seeking behavior under loss conditions."
+          },
+          "CC": {
+            "mode_a": "C",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.666666666666667,
+            "payoff_b": -2.28571428571429,
+            "reasoning_a": "In the (C vs C) subgame, all payoffs for Country A are positive gains without any losses. Since there's no uncertainty involved and both actions lead to certain outcomes, I choose the action with the higher payoff.\n\n**Choice:** R (Attack)\n\n**Reasoning:** Both actions result in fixed payoffs, but choosing Attack (R) yields a slightly higher payoff of 0.6667 compared to Threaten (Th) which gives 0.6600. As a risk-averse decision-maker in the domain of gains, I prefer the higher certain payoff.",
+            "reasoning_b": "In the (C vs C) subgame, both actions (Attack and Threaten) result in the same payoffs for Country B: -2.2857 if Country A chooses Attack, and -0.8500 if Country A chooses Threaten. Since all outcomes are losses and both actions lead to identical results, there is no difference in expected payoff or risk between choosing R or Th. Therefore, either action can be chosen without affecting the outcome.\n\n**Choice:** Either 'R' or 'Th'\n\n**Reasoning:** Both actions yield the same payoffs, so either choice is equally valid."
+          }
+        },
+        "meta_game": {
+          "mode_a": "P",
+          "mode_b": "P",
+          "payoff_a": 0.705882352941177,
+          "payoff_b": 0.0,
+          "meta_matrix_a": [
+            [
+              0.705882352941177,
+              0.705882352941177,
+              0.9
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.666666666666667,
+              0.666666666666667,
+              0.666666666666667
+            ]
+          ],
+          "meta_matrix_b": [
+            [
+              0.0,
+              -2.66666666666667,
+              -0.85
+            ],
+            [
+              0.0,
+              -2.66666666666667,
+              -2.28571428571429
+            ],
+            [
+              0.0,
+              -2.66666666666667,
+              -2.28571428571429
+            ]
+          ],
+          "reasoning_a": "Country A should choose mode 'P' (Private Actor) because it offers a higher minimum payoff compared to mode 'C' (Coalition), ensuring a more favorable outcome in the worst-case scenario. \n\n**Step-by-Step Explanation:**\n\n1. **Understand the Payoffs:**\n   - Mode P: 0.7059 against B=P and B=S; 0.9 against B=C.\n   - Mode C: Consistent 0.6667 across all opponents.\n   - Mode S: All payoffs are 0.\n\n2. **Reference Point and Loss Aversion:**\n   - Reference point is 0, so any positive payoff is a gain.\n   - In gains, risk aversion leads to preferring the highest minimum payoff.\n\n3. **Evaluate Minimum Payoffs:**\n   - P's minimum is 0.7059 (against B=P/S).\n   - C's minimum is 0.6667 across all opponents.\n   - S offers no gain, so it's the worst option.\n\n4. **Decision Based on Risk Aversion:**\n   - Choose the mode with the highest minimum payoff to avoid lower outcomes.\n   - P has a higher minimum than C, making it preferable.\n\n**Answer:**\n\nCountry A should choose 'P' because it provides a higher minimum payoff compared to 'C', aligning with their risk-averse approach in the gain domain. \n\n**Choice:** P",
+          "reasoning_b": "Country B should choose **C (Coalition)** as their mode. \n\n**Reasoning:**\n- **Loss Aversion:** Country B prioritizes minimizing the severity of potential losses due to being risk-averse in gains and willing to take risks to avoid significant losses.\n- **Worst-Case Analysis:** Mode C has a less severe worst-case loss (-2.2857) compared to Modes P and S, which have a worst-case loss of -2.6667. This makes Mode C preferable as it avoids more catastrophic outcomes.\n\n**Conclusion:**\nChoosing Coalition (C) minimizes the maximum potential loss, aligning with Country B's loss-averse decision-making under Prospect Theory. \n\n**Final Answer:** C"
+        },
+        "world_state": "Mutual Conflict",
+        "run_number": 1
+      }
+    ],
+    "summary": {
+      "subgames": {
+        "PP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "PS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "PC": {
+          "action_counts": {
+            "A": {
+              "R": 0,
+              "Th": 1
+            },
+            "B": {
+              "R": 0,
+              "Th": 1
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "SP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ],
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "SS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ],
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "SC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ],
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "CP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "CS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "CC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        }
+      },
+      "meta_game": {
+        "mode_counts": {
+          "A": {
+            "P": 1,
+            "S": 0,
+            "C": 0
+          },
+          "B": {
+            "P": 1,
+            "S": 0,
+            "C": 0
+          }
+        },
+        "payoffs": {
+          "A": {
+            "mean": 0.7059,
+            "std": 0.0
+          },
+          "B": {
+            "mean": 0.0,
+            "std": 0.0
+          }
+        }
+      },
+      "world_states": {
+        "Mutual Conflict": 1
+      }
+    }
+  },
+  "minmax": {
+    "runs": [
+      {
+        "subgames": {
+          "PP": {
+            "mode_a": "P",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -18.2857142857143,
+            "payoff_b": -8.90909090909091,
+            "reasoning_a": "In the subgame where both countries use Private Actor (P vs P), Country A must choose between attacking (R) or threatening (Th). The payoffs are:\n\n- Attack (R): -18.2857\n- Threaten (Th): -3.6000\n\nBoth options result in losses, but threatening leads to a less severe loss. Given the principles of Prospect Theory, particularly loss aversion and risk-seeking in the domain of losses, Country A should prefer the action that minimizes loss. Therefore, threatening is the better choice as it results in a smaller loss compared to attacking.\n\n**Choice:** Threaten (Th)  \n**Reasoning:** Threatening leads to a less severe loss (-3.6000) than attacking (-18.2857), aligning with the preference for minimizing losses under Prospect Theory.",
+            "reasoning_b": "In the subgame where both countries use Private Actor (P) mode, Country B must choose between Attack (R) and Threaten (Th). Both actions result in losses: -8.9091 for R and -4.5500 for Th. \n\nGiven Prospect Theory's emphasis on loss aversion, where losses are weighted twice as heavily as gains, the smaller loss is preferable to minimize pain. Therefore, choosing Threaten (Th) results in a less severe loss compared to attacking.\n\n**Choice:** Threaten (Th)\n\n**Reasoning:** Both actions lead to certain losses, but Threaten results in a smaller loss (-4.5500 vs -8.9091), which is less aversive under loss aversion principles."
+          },
+          "PS": {
+            "mode_a": "P",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "Th",
+            "payoff_a": -18.2857142857143,
+            "payoff_b": -6.66666666666667,
+            "reasoning_a": "In this subgame where Country A uses a Private Actor (P) against Country B's State Unit (S), both actions (Attack R and Threaten Th) result in losses. However, choosing to Threaten (Th) results in a less severe loss (-3.6000) compared to attacking (R), which leads to a much larger loss (-18.2857). Given the principles of Prospect Theory\u2014where losses are weighted twice as heavily as gains and I am risk-seeking when facing losses\u2014I prefer the smaller, certain loss over the larger one. \n\n**Choice: Threaten (Th)**\n\n**Reasoning:** Both actions result in losses, but Threatening leads to a less severe outcome. As a loss-averse decision-maker, minimizing the extent of the loss is prioritized, making Th the better choice.",
+            "reasoning_b": "Country B should choose **Threaten (Th)** in the subgame where Country A is using Private Actor and Country B is using State Unit. \n\n**Reasoning:**\n- All payoffs are losses, so they are weighted more heavily according to Prospect Theory.\n- Choosing Threaten offers a chance to reduce the loss further if both countries threaten, despite the risk of still incurring a significant loss if A attacks.\n- As a loss-averse but risk-seeking player in the domain of losses, B prefers the gamble that could lead to a smaller loss over a certain moderate loss.\n\n**Choice:** Th"
+          },
+          "PC": {
+            "mode_a": "P",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -18.2857142857143,
+            "payoff_b": -13.7142857142857,
+            "reasoning_a": "In the subgame where Country A uses a Private Actor (P) against Country B's Coalition (C), both actions result in losses. However, choosing to Threaten (Th) leads to a smaller loss (-3.6000) compared to Attacking (R), which results in a significant loss (-18.2857). Given the risk-seeking nature when facing losses and the desire to minimize loss magnitude, the optimal choice is to Threaten.\n\n**Answer:** Choose 'Th' because it results in a smaller loss, aligning with the risk-seeking behavior aimed at minimizing loss severity.",
+            "reasoning_b": "In the subgame where Country B uses Coalition (C) against Country A's Private Actor (P), both actions result in losses. However, choosing to Threaten (Th) results in a smaller loss (-5.1000) compared to Attacking (R), which leads to a more significant loss (-13.7143). Given the loss aversion and the reference-dependent evaluation, minimizing the loss is preferable.\n\n**Choice:** Th (Threaten)\n\n**Reasoning:** Both options result in losses, but Threatening yields a less severe loss, which is better under loss aversion principles."
+          },
+          "SP": {
+            "mode_a": "S",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -14.4,
+            "payoff_b": -8.90909090909091,
+            "reasoning_a": "In this subgame where Country A uses State Unit (S) against Country B's Private Actor (P), both actions lead to losses but with different magnitudes. Choosing Attack (R) results in a guaranteed loss of -14.4, while Threatening (Th) leads to a smaller loss of -3.3. Given the loss-averse nature and the reference-dependent evaluation under Prospect Theory, preferring the smaller loss is optimal.\n\n**Choice:** Th (Threaten)\n\n**Reasoning:**\n- Both actions result in losses.\n- Threatening results in a smaller loss (-3.3) compared to attacking (-14.4).\n- As a loss-averse decision-maker, minimizing the magnitude of the loss is preferable.",
+            "reasoning_b": "In this subgame where Country A uses State Unit (S) and Country B uses Private Actor (P), both actions by Country B\u2014Attack (R) or Threaten (Th)\u2014result in the same possible payoffs. Regardless of whether Country B chooses R or Th, if Country A chooses to Attack (R), the payoff is -8.9091, and if Country A chooses to Threaten (Th), the payoff is -4.5500. Since all outcomes are losses and under Prospect Theory, when faced with losses, players tend to be risk-seeking. However, in this case, both actions lead to identical potential outcomes.\n\nGiven that choosing either action results in the same worst-case scenario (-8.9091) from a minimax perspective, there is no incentive to prefer one over the other based purely on payoff. Therefore, Country B can choose either R or Th arbitrarily. \n\n**Choice:** 'R' (Attack)\n\n**Reasoning:** Both actions lead to identical outcomes, so choosing Attack (R) is selected as it may be seen as a proactive strategy."
+          },
+          "SS": {
+            "mode_a": "S",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -14.4,
+            "payoff_b": -6.66666666666667,
+            "reasoning_a": "In the (S vs S) subgame, where both countries use State Units, Country A must choose between Attack (R) with a payoff of -14.4000 or Threaten (Th) with a payoff of -3.3000. Both options result in losses, but Threatening leads to a smaller loss (-3.3 vs -14.4). Under Prospect Theory, losses are weighted twice as heavily, making the smaller loss less painful. Therefore, Country A should choose **Threaten (Th)** to minimize the perceived loss.\n\n**Choice:** 'Th'",
+            "reasoning_b": "In the subgame where both countries are using State Unit (S vs S), all payoffs for Country B are negative, meaning they're all losses relative to a reference point of 0. According to Prospect Theory, losses weigh twice as heavily on decision-making, making smaller losses preferable.\n\nAnalyzing the options:\n- Choosing Attack (R) leads to either -6.6667 or -3.7500.\n- Choosing Threaten (Th) also leads to either -6.6667 or -3.7500.\n\nBoth actions result in the same possible payoffs, making their expected utilities equal. However, considering previous subgames where choosing Th led to a less severe loss (-6.6667), it might be preferable here as well for consistency and to avoid the more significant loss of -6.6667 if possible.\n\n**Choice: 'Th'**\n\nCountry B chooses Threaten (Th) because, in similar situations, this action has led to a less severe loss, aligning with the strategy of minimizing potential losses despite the symmetric payoffs."
+          },
+          "SC": {
+            "mode_a": "S",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -14.4,
+            "payoff_b": -13.7142857142857,
+            "reasoning_a": "In the subgame (S vs C), Country A must decide between attacking (R) or threatening (Th). The payoffs for each action are:\n\n- **Attack (R):** -14.4 (loss)\n- **Threaten (Th):** -3.3 (loss)\n\nApplying Prospect Theory, losses are weighted twice as much. Thus, the perceived utility is:\n\n- R: (-14.4) * 2 = -28.8\n- Th: (-3.3) * 2 = -6.6\n\nChoosing Th results in a smaller loss and thus higher utility. Therefore, Country A should choose **Th** to minimize the severity of the loss.\n\n**Choice:** 'Th'",
+            "reasoning_b": "In subgame (S vs C), both actions\u2014Attack (R) and Threaten (Th)\u2014result in identical payoffs based on Country A's decision. Choosing either action leads to the same outcomes: -13.7143 if A Attacks, and -5.1000 if A Threatens. Since there's no difference in expected utility or outcome between the two actions, I can choose arbitrarily.\n\n**Choice:** R\n\n**Reasoning:** Both actions yield the same payoffs regardless of Country A's choice, so either action is equally valid. Choosing 'R' as a default option."
+          },
+          "CP": {
+            "mode_a": "C",
+            "mode_b": "P",
+            "action_a": "Th",
+            "action_b": "R",
+            "payoff_a": -4.62,
+            "payoff_b": -4.55,
+            "reasoning_a": "In this subgame where Country A uses Coalition and Country B uses Private Actor, both actions (Attack and Threaten) result in certain losses. However, choosing to Threaten results in a significantly smaller loss (-4.62) compared to attacking, which leads to a much larger loss (-63). As a loss-averse player following Prospect Theory, the rational choice is to minimize the loss by selecting the less severe option.\n\n**Choice: Th (Threaten)**\n\n**Reasoning:** Both actions result in losses, but Threatening yields a smaller loss than Attacking. Therefore, to minimize the negative payoff and align with loss aversion principles, Threatening is the preferred action.",
+            "reasoning_b": "In the (C vs P) subgame, both actions for Country B result in identical payoffs regardless of choice. Therefore, choosing between R and Th has no impact on the outcome. However, considering strategic signaling and potential future interactions, Threaten (Th) might be preferable.\n\n**Choice:** 'Th'"
+          },
+          "CS": {
+            "mode_a": "C",
+            "mode_b": "S",
+            "action_a": "Th",
+            "action_b": "R",
+            "payoff_a": -4.62,
+            "payoff_b": -3.75,
+            "reasoning_a": "In the subgame (C vs S), Country A should choose **Threaten (Th)** because it results in a less severe loss (-4.62) compared to attacking, which leads to a much larger loss (-63). By selecting Th, Country A minimizes its losses, aligning with the loss-averse nature of Prospect Theory.\n\n**Option Chosen:** 'Th'",
+            "reasoning_b": "In this subgame where Country A is using Coalition (C) and Country B is using State Unit (S), both actions\u2014Attack (R) and Threaten (Th)\u2014result in the same possible payoffs: either -6.6667 or -3.7500, depending on Country A's choice. Since all outcomes are losses and weighted twice as heavily under Prospect Theory, there is no difference in expected utility between choosing R or Th. Therefore, either action can be chosen without affecting the outcome.\n\n**Option Chosen: 'R' (Attack)**  \nChoosing Attack is selected as it aligns with a straightforward strategy and does not disadvantageously differ from Threaten in this context."
+          },
+          "CC": {
+            "mode_a": "C",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -63.0,
+            "payoff_b": -13.7142857142857,
+            "reasoning_a": "In the (C vs C) subgame where both players use Coalition units, choosing Threaten (Th) results in a smaller loss (-4.62) compared to attacking (R), which leads to a significant loss of -63. Given that both options are certain losses and there's no probabilistic gamble involved, the rational choice under Prospect Theory is to minimize the loss by selecting Th.\n\n**Step-by-Step Explanation:**\n\n1. **Identify Payoffs:** \n   - Choosing R results in a guaranteed loss of 63.\n   - Choosing Th results in a guaranteed loss of 4.62.\n\n2. **Apply Prospect Theory:** \n   - Both options are losses (below reference point).\n   - In the domain of losses, being risk-seeking implies preferring actions that minimize severity when certain outcomes are known.\n\n3. **Decision Making:**\n   - Since both choices lead to fixed losses, choose the action with the lesser loss to mitigate damage.\n\n**Conclusion:** Choose 'Th' because it results in a smaller loss compared to 'R'. \n\n**Answer:** Th",
+            "reasoning_b": "In the (C vs C) subgame, all possible outcomes for Country B are losses. Both actions, R (Attack) and Th (Threaten), result in the same potential payoffs: -13.7143 if A plays R and -5.1000 if A plays Th. Since both options yield identical outcomes, there's no difference in expected utility under Prospect Theory. Therefore, the choice is indifferent. However, as a strategic decision, I will choose 'Th' (Threaten) based on potential future interactions, even though it doesn't affect current payoffs.\n\n**Choice: 'Th'**\n\n**Reasoning:** Both actions yield the same payoffs, making them indifferent. Choosing 'Th' is strategic without impacting current outcomes."
+          }
+        },
+        "meta_game": {
+          "mode_a": "P",
+          "mode_b": "P",
+          "payoff_a": -18.2857142857143,
+          "payoff_b": -8.90909090909091,
+          "meta_matrix_a": [
+            [
+              -18.2857142857143,
+              -18.2857142857143,
+              -18.2857142857143
+            ],
+            [
+              -14.4,
+              -14.4,
+              -14.4
+            ],
+            [
+              -4.62,
+              -4.62,
+              -63.0
+            ]
+          ],
+          "meta_matrix_b": [
+            [
+              -8.90909090909091,
+              -6.66666666666667,
+              -13.7142857142857
+            ],
+            [
+              -8.90909090909091,
+              -6.66666666666667,
+              -13.7142857142857
+            ],
+            [
+              -4.55,
+              -3.75,
+              -13.7142857142857
+            ]
+          ],
+          "reasoning_a": "**Step-by-Step Explanation:**\n\n1. **Understanding Modes and Payoffs**: Country A can choose between three modes (P, S, C), each leading to different payoffs based on Country B's mode.\n\n2. **Prospect Theory Application**: Since all outcomes are losses, they are weighted twice as heavily. Larger losses have a more significant impact on decision-making.\n\n3. **Evaluating Each Mode**:\n   - **Mode P**: Consistent loss of -18.29 across all scenarios.\n   - **Mode S**: Consistent loss of -14.40, better than P but still a loss.\n   - **Mode C**: Two smaller losses (-4.62) and one catastrophic loss (-63).\n\n4. **Risk Orientation**: As a loss-averse decision-maker, the potential for a massive loss in Mode C is unacceptable despite possible smaller gains.\n\n5. **Decision Making**: Choosing between P and S based on minimizing worst-case scenarios. Mode S offers a better (less negative) consistent payoff without the risk of a catastrophic loss.\n\n**Conclusion:**\n\nCountry A should choose **S** as their mode because it provides the least severe losses across all scenarios, avoiding the high-risk outcome associated with Mode C. \n\n**Answer:** S",
+          "reasoning_b": "Country B should choose **S** (State Unit) as their overall attack mode in the meta-game. \n\n**Reasoning:**\n- Evaluating each mode based on worst-case payoffs under loss aversion:\n  - **P (Private Actor):** Worst case is -8.9091\n  - **S (State Unit):** Worst case is -6.6667\n  - **C (Coalition):** Worst case is -13.7143\n\n- S offers the least severe worst-case loss, making it preferable to minimize potential losses and align with risk-seeking behavior in the domain of losses.\n\n**Choice:** S"
+        },
+        "world_state": "Mutual Conflict",
+        "run_number": 1
+      }
+    ],
+    "summary": {
+      "subgames": {
+        "PP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "PS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 0,
+              "Th": 1
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "PC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "SP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "SS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "SC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "CP": {
+          "action_counts": {
+            "A": {
+              "R": 0,
+              "Th": 1
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "CS": {
+          "action_counts": {
+            "A": {
+              "R": 0,
+              "Th": 1
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "CC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        }
+      },
+      "meta_game": {
+        "mode_counts": {
+          "A": {
+            "P": 1,
+            "S": 0,
+            "C": 0
+          },
+          "B": {
+            "P": 1,
+            "S": 0,
+            "C": 0
+          }
+        },
+        "payoffs": {
+          "A": {
+            "mean": -18.2857,
+            "std": 0.0
+          },
+          "B": {
+            "mean": -8.9091,
+            "std": 0.0
+          }
+        }
+      },
+      "world_states": {
+        "Mutual Conflict": 1
+      }
+    }
+  },
+  "price_of_aggression": {
+    "A": -0.0386,
+    "B": -0.0
+  }
+}

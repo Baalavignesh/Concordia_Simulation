@@ -1,4 +1,4 @@
-import { CONFIGS, SUBGAME_KEYS } from './constants';
+import { CONFIGS, CROSSPLAY_MATCHUPS, SUBGAME_KEYS } from './constants';
 
 let dataCache = null;
 
@@ -20,7 +20,19 @@ export async function loadAllData() {
     results[config.id] = { base, cot };
   }
 
-  if (Object.values(results).every(r => !r.base && !r.cot)) {
+  // Load cross-play (asymmetric matchup) data
+  const crossplay = {};
+  for (const matchup of CROSSPLAY_MATCHUPS) {
+    const data = await fetch(`/data/crossplay/${matchup.id}.json`)
+      .then(r => { if (!r.ok) throw new Error(`crossplay ${matchup.id}: ${r.status}`); return r.json() })
+      .catch(() => null);
+    if (data) {
+      crossplay[matchup.id] = data;
+    }
+  }
+  results.__crossplay = crossplay;
+
+  if (Object.values(results).every(r => !r.base && !r.cot) && Object.keys(crossplay).length === 0) {
     throw new Error(`Failed to load any data. Errors: ${errors.join(', ')}`);
   }
 

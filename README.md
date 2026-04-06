@@ -94,11 +94,14 @@ Each config defines all prompt templates (game context, subgame observations, ca
 +-------+   +-------+
 | Agent |   | Agent |
 |   A   |   |   B   |
+| cfg_a |   | cfg_b |   <-- can be different personas (cross-play)
 +-------+   +-------+
 (LLM-backed Concordia Entities)
 ```
 
-**Key design decision:** Game rules are enforced by a deterministic Python controller, not an LLM Game Master. Turn order, payoff lookup, and termination are all fixed -- LLM calls are reserved only for the agents' strategic decisions. This avoids wasting API calls on predetermined answers.
+**Key design decisions:**
+- Game rules are enforced by a deterministic Python controller, not an LLM Game Master. Turn order, payoff lookup, and termination are all fixed -- LLM calls are reserved only for the agents' strategic decisions.
+- **Cross-play support:** The controller accepts separate prompt configs per agent. Each agent receives its own persona-appropriate game context, observations, call-to-action framing, and outcome messaging. This lets a "rational maximizer" agent play against a "hawkish aggressor" agent, each seeing the game through their own cognitive lens.
 
 The project uses three pieces from Concordia:
 1. **`LanguageModel`** -- abstract interface for swapping LLM backends
@@ -142,38 +145,89 @@ pip install ollama            # Python client
 
 ## Usage
 
+### Symmetric Mode (same persona for both agents)
+
 ```bash
-# Run all 5 prompt configs, both concepts, 5 runs each
+# Run all 5 prompt configs, both concepts
 python3 main.py
 
-# Quick test: single config, 1 run, one concept
-python3 main.py --config v1_rational_eut --runs 1 --concept maxmin
+# Quick test: single config, one concept
+python3 main.py --config v1_rational_eut --concept maxmin
 
 # Use Ollama instead of Gemini
 python3 main.py --backend ollama
 
 # Run specific configs
 python3 main.py --config v1_rational_eut v4_irrational_hawkish
-
-# Only aggressive equilibrium
-python3 main.py --concept minmax
 ```
+
+### Cross-Play Mode (different persona per agent)
+
+Pit different cognitive profiles against each other. Country A uses one persona, Country B uses another.
+
+```bash
+# One specific matchup: Satisficing (A) vs Rational EUT (B)
+python3 main.py --config-a v2_bounded_satisficing --config-b v1_rational_eut
+
+# All 20 asymmetric matchups (skip mirror pairs)
+python3 main.py --cross-play-asymmetric
+
+# All 25 matchups (including mirrors as controls)
+python3 main.py --cross-play
+
+# Cross-play with specific concept
+python3 main.py --config-a v4_irrational_hawkish --config-b v5_irrational_retaliatory --concept maxmin
+```
+
+Cross-play results are saved to `results/crossplay/<configA>_vs_<configB>/`.
+
+### All 20 Asymmetric Matchup Combinations
+
+| # | Country A (Persona) | Country B (Persona) |
+|---|---------------------|---------------------|
+| 1 | Rational (EUT) | Bounded Satisficing |
+| 2 | Rational (EUT) | Prospect Theory |
+| 3 | Rational (EUT) | Hawkish |
+| 4 | Rational (EUT) | Retaliatory |
+| 5 | Bounded Satisficing | Rational (EUT) |
+| 6 | Bounded Satisficing | Prospect Theory |
+| 7 | Bounded Satisficing | Hawkish |
+| 8 | Bounded Satisficing | Retaliatory |
+| 9 | Prospect Theory | Rational (EUT) |
+| 10 | Prospect Theory | Bounded Satisficing |
+| 11 | Prospect Theory | Hawkish |
+| 12 | Prospect Theory | Retaliatory |
+| 13 | Hawkish | Rational (EUT) |
+| 14 | Hawkish | Bounded Satisficing |
+| 15 | Hawkish | Prospect Theory |
+| 16 | Hawkish | Retaliatory |
+| 17 | Retaliatory | Rational (EUT) |
+| 18 | Retaliatory | Bounded Satisficing |
+| 19 | Retaliatory | Prospect Theory |
+| 20 | Retaliatory | Hawkish |
+
+Note: "A=EUT vs B=Hawkish" is **not** the same as "A=Hawkish vs B=EUT" because the payoff matrices are asymmetric between Country A and Country B.
 
 ### CLI Arguments
 
 | Argument | Default | Description |
 |----------|---------|-------------|
-| `--backend` | `gemini` | LLM backend: `gemini` or `ollama` |
-| `--runs` | `5` | Number of independent runs per solution concept |
+| `--backend` | `ollama` | LLM backend: `gemini` or `ollama` |
+| `--runs` | `1` | Number of independent runs per solution concept |
 | `--concept` | `maxmin minmax` | Solution concepts to simulate (space-separated) |
-| `--config` | all | Specific config names to run (omit to run all) |
+| `--config` | all | Specific config names to run in symmetric mode |
+| `--config-a` | -- | Config for Country A (cross-play; requires `--config-b`) |
+| `--config-b` | -- | Config for Country B (cross-play; requires `--config-a`) |
+| `--cross-play` | -- | Run all 25 matchups (including mirror controls) |
+| `--cross-play-asymmetric` | -- | Run only 20 asymmetric matchups |
+| `--cot` | -- | Enable Chain-of-Thought reasoning |
 
 ### Environment Variables
 
 | Variable | Backend | Purpose |
 |----------|---------|---------|
 | `GEMINI_API_KEY` | gemini | API key (also read from `.env`) |
-| `OLLAMA_MODEL` | ollama | Override default model (default: `llama3.2`) |
+| `OLLAMA_MODEL` | ollama | Override default model (default: `deepseek-r1:14b`) |
 
 ---
 
@@ -181,11 +235,23 @@ python3 main.py --concept minmax
 
 ### Results
 
-Each prompt config saves results to `results/<config_name>/simulation_results.json` containing:
+**Symmetric runs** save to `results/<config_name>/simulation_results.json`.
+
+**Cross-play runs** save to `results/crossplay/<configA>_vs_<configB>/simulation_results.json` with additional metadata:
+```json
+{
+  "cross_play": true,
+  "prompt_config_a": "v2_bounded_satisficing",
+  "prompt_config_b": "v1_rational_eut",
+  ...
+}
+```
+
+Both formats contain:
 - Per-run subgame choices and payoffs
 - Meta-game mode selections and final payoffs
 - World state classification
-- Analysis text comparing LLM behavior to analytical equilibria
+- Summary with analytical equilibria comparison
 
 ### Logs
 
@@ -226,7 +292,9 @@ Concordia_Simulation/
             Sim 1 - Maxmin/          # 18 CSVs (defensive equilibrium)
             Sim1 - Minmax/           # 18 CSVs (aggressive equilibrium)
     results/                         # Simulation output (per config)
+        crossplay/                   # Cross-play asymmetric matchup results
     logs/                            # Timestamped log files
+    dashboard/                       # React dashboard for visualization
     docs/
         README.md                    # Detailed technical documentation
         CONCORDIA_USAGE.md           # How Concordia is used in this project

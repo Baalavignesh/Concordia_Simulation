@@ -4,9 +4,10 @@ import { loadAllData } from './utils/dataLoader'
 import Overview from './pages/Overview'
 import ConfigDetail from './pages/ConfigDetail'
 import CompareView from './pages/CompareView'
+import CrossPlay from './pages/CrossPlay'
 import CotComparison from './pages/CotComparison'
 import CotComplexity from './pages/CotComplexity'
-import { BarChart3, GitCompare, Brain, Microscope } from 'lucide-react'
+import { BarChart3, GitCompare, Swords, Brain, Microscope } from 'lucide-react'
 
 const NAV_BASE = 'flex items-center gap-1.5 px-3 py-2 rounded text-sm transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900'
 const NAV_ACTIVE = `${NAV_BASE} bg-gray-100 text-gray-900 font-medium`
@@ -78,6 +79,9 @@ function App() {
                 <NavLink to="/compare" className={({ isActive }) => isActive ? NAV_ACTIVE : NAV_INACTIVE}>
                   <GitCompare className="w-4 h-4" aria-hidden="true" /> Compare
                 </NavLink>
+                <NavLink to="/cross-play" className={({ isActive }) => isActive ? NAV_ACTIVE : NAV_INACTIVE}>
+                  <Swords className="w-4 h-4" aria-hidden="true" /> Cross-Play
+                </NavLink>
                 <NavLink to="/cot" className={({ isActive }) => isActive ? NAV_ACTIVE : NAV_INACTIVE}>
                   <Brain className="w-4 h-4" aria-hidden="true" /> CoT Analysis
                 </NavLink>
@@ -94,6 +98,7 @@ function App() {
             <Route path="/" element={<Overview data={data} />} />
             <Route path="/config/:configId" element={<ConfigDetail data={data} />} />
             <Route path="/compare" element={<CompareView data={data} />} />
+            <Route path="/cross-play" element={<CrossPlay data={data} />} />
             <Route path="/cot" element={<CotComparison data={data} />} />
             <Route path="/cot-complexity" element={<CotComplexity cotAnalysis={data.__cotAnalysis} />} />
           </Routes>

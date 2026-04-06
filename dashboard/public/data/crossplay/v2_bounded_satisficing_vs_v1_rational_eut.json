@@ -1,0 +1,811 @@
+{
+  "cross_play": true,
+  "prompt_config_a": "v2_bounded_satisficing",
+  "prompt_config_b": "v1_rational_eut",
+  "backend": "ollama",
+  "num_runs": 1,
+  "chain_of_thought": false,
+  "timestamp": "2026-04-06T13:24:22.108670",
+  "maxmin": {
+    "runs": [
+      {
+        "subgames": {
+          "PP": {
+            "mode_a": "P",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.705882352941177,
+            "payoff_b": 0.0
+          },
+          "PS": {
+            "mode_a": "P",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.705882352941177,
+            "payoff_b": -2.66666666666667
+          },
+          "PC": {
+            "mode_a": "P",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.705882352941177,
+            "payoff_b": -2.28571428571429
+          },
+          "SP": {
+            "mode_a": "S",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.0,
+            "payoff_b": 0.0
+          },
+          "SS": {
+            "mode_a": "S",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.0,
+            "payoff_b": -2.66666666666667
+          },
+          "SC": {
+            "mode_a": "S",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.0,
+            "payoff_b": -2.28571428571429
+          },
+          "CP": {
+            "mode_a": "C",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.666666666666667,
+            "payoff_b": 0.0
+          },
+          "CS": {
+            "mode_a": "C",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.666666666666667,
+            "payoff_b": -2.66666666666667
+          },
+          "CC": {
+            "mode_a": "C",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": 0.666666666666667,
+            "payoff_b": -2.28571428571429
+          }
+        },
+        "meta_game": {
+          "mode_a": "P",
+          "mode_b": "P",
+          "payoff_a": 0.705882352941177,
+          "payoff_b": 0.0,
+          "meta_matrix_a": [
+            [
+              0.705882352941177,
+              0.705882352941177,
+              0.705882352941177
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.666666666666667,
+              0.666666666666667,
+              0.666666666666667
+            ]
+          ],
+          "meta_matrix_b": [
+            [
+              0.0,
+              -2.66666666666667,
+              -2.28571428571429
+            ],
+            [
+              0.0,
+              -2.66666666666667,
+              -2.28571428571429
+            ],
+            [
+              0.0,
+              -2.66666666666667,
+              -2.28571428571429
+            ]
+          ]
+        },
+        "world_state": "Mutual Conflict",
+        "run_number": 1
+      }
+    ],
+    "summary": {
+      "subgames": {
+        "PP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "PS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "PC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "SP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ],
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "SS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ],
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "SC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ],
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "CP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "CS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        },
+        "CC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ]
+            ],
+            "a_dominant": "R",
+            "b_dominant": "R"
+          }
+        }
+      },
+      "meta_game": {
+        "mode_counts": {
+          "A": {
+            "P": 1,
+            "S": 0,
+            "C": 0
+          },
+          "B": {
+            "P": 1,
+            "S": 0,
+            "C": 0
+          }
+        },
+        "payoffs": {
+          "A": {
+            "mean": 0.7059,
+            "std": 0.0
+          },
+          "B": {
+            "mean": 0.0,
+            "std": 0.0
+          }
+        }
+      },
+      "world_states": {
+        "Mutual Conflict": 1
+      }
+    }
+  },
+  "minmax": {
+    "runs": [
+      {
+        "subgames": {
+          "PP": {
+            "mode_a": "P",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -18.2857142857143,
+            "payoff_b": -8.90909090909091
+          },
+          "PS": {
+            "mode_a": "P",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -18.2857142857143,
+            "payoff_b": -6.66666666666667
+          },
+          "PC": {
+            "mode_a": "P",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -18.2857142857143,
+            "payoff_b": -13.7142857142857
+          },
+          "SP": {
+            "mode_a": "S",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -14.4,
+            "payoff_b": -8.90909090909091
+          },
+          "SS": {
+            "mode_a": "S",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -14.4,
+            "payoff_b": -6.66666666666667
+          },
+          "SC": {
+            "mode_a": "S",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -14.4,
+            "payoff_b": -13.7142857142857
+          },
+          "CP": {
+            "mode_a": "C",
+            "mode_b": "P",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -63.0,
+            "payoff_b": -8.90909090909091
+          },
+          "CS": {
+            "mode_a": "C",
+            "mode_b": "S",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -63.0,
+            "payoff_b": -6.66666666666667
+          },
+          "CC": {
+            "mode_a": "C",
+            "mode_b": "C",
+            "action_a": "R",
+            "action_b": "R",
+            "payoff_a": -63.0,
+            "payoff_b": -13.7142857142857
+          }
+        },
+        "meta_game": {
+          "mode_a": "P",
+          "mode_b": "P",
+          "payoff_a": -18.2857142857143,
+          "payoff_b": -8.90909090909091,
+          "meta_matrix_a": [
+            [
+              -18.2857142857143,
+              -18.2857142857143,
+              -18.2857142857143
+            ],
+            [
+              -14.4,
+              -14.4,
+              -14.4
+            ],
+            [
+              -63.0,
+              -63.0,
+              -63.0
+            ]
+          ],
+          "meta_matrix_b": [
+            [
+              -8.90909090909091,
+              -6.66666666666667,
+              -13.7142857142857
+            ],
+            [
+              -8.90909090909091,
+              -6.66666666666667,
+              -13.7142857142857
+            ],
+            [
+              -8.90909090909091,
+              -6.66666666666667,
+              -13.7142857142857
+            ]
+          ]
+        },
+        "world_state": "Mutual Conflict",
+        "run_number": 1
+      }
+    ],
+    "summary": {
+      "subgames": {
+        "PP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "PS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "PC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "SP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "SS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "SC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "CP": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "CS": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        },
+        "CC": {
+          "action_counts": {
+            "A": {
+              "R": 1,
+              "Th": 0
+            },
+            "B": {
+              "R": 1,
+              "Th": 0
+            }
+          },
+          "analytical": {
+            "nash_equilibria": [
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
+            ],
+            "a_dominant": "Th",
+            "b_dominant": "R"
+          }
+        }
+      },
+      "meta_game": {
+        "mode_counts": {
+          "A": {
+            "P": 1,
+            "S": 0,
+            "C": 0
+          },
+          "B": {
+            "P": 1,
+            "S": 0,
+            "C": 0
+          }
+        },
+        "payoffs": {
+          "A": {
+            "mean": -18.2857,
+            "std": 0.0
+          },
+          "B": {
+            "mean": -8.9091,
+            "std": 0.0
+          }
+        }
+      },
+      "world_states": {
+        "Mutual Conflict": 1
+      }
+    }
+  },
+  "price_of_aggression": {
+    "A": -0.0386,
+    "B": -0.0
+  }
+}
