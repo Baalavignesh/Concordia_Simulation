@@ -1,9 +1,11 @@
 {
-  "prompt_config": "v4_irrational_hawkish",
+  "cross_play": true,
+  "prompt_config_a": "v4_irrational_hawkish",
+  "prompt_config_b": "v1_rational_eut",
   "backend": "ollama",
   "num_runs": 1,
   "chain_of_thought": false,
-  "timestamp": "2026-04-12T07:16:31.507666",
+  "timestamp": "2026-04-14T12:19:48.402873",
   "maxmin": {
     "runs": [
       {
@@ -493,10 +495,10 @@
           }
         },
         "meta_game": {
-          "mode_a": "P",
-          "mode_b": "P",
-          "payoff_a": -18.2857142857143,
-          "payoff_b": -8.90909090909091,
+          "mode_a": "C",
+          "mode_b": "S",
+          "payoff_a": -63.0,
+          "payoff_b": -6.66666666666667,
           "meta_matrix_a": [
             [
               -18.2857142857143,
@@ -776,23 +778,23 @@
       "meta_game": {
         "mode_counts": {
           "A": {
-            "P": 1,
+            "P": 0,
             "S": 0,
-            "C": 0
+            "C": 1
           },
           "B": {
-            "P": 1,
-            "S": 0,
+            "P": 0,
+            "S": 1,
             "C": 0
           }
         },
         "payoffs": {
           "A": {
-            "mean": -18.2857,
+            "mean": -63.0,
             "std": 0.0
           },
           "B": {
-            "mean": -8.9091,
+            "mean": -6.6667,
             "std": 0.0
           }
         }
@@ -803,7 +805,7 @@
     }
   },
   "price_of_aggression": {
-    "A": -0.0386,
+    "A": -0.0112,
     "B": -0.0
   }
 }

@@ -105,14 +105,38 @@
           "payoff_a": 0.705882352941177,
           "payoff_b": 0.0,
           "meta_matrix_a": [
-            [0.705882352941177, 0.705882352941177, 0.705882352941177],
-            [0.0, 0.0, 0.0],
-            [0.666666666666667, 0.666666666666667, 0.666666666666667]
+            [
+              0.705882352941177,
+              0.705882352941177,
+              0.705882352941177
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.666666666666667,
+              0.666666666666667,
+              0.666666666666667
+            ]
           ],
           "meta_matrix_b": [
-            [0.0, -2.66666666666667, -2.28571428571429],
-            [0.0, -2.66666666666667, -2.28571428571429],
-            [0.0, -2.66666666666667, -2.28571428571429]
+            [
+              0.0,
+              -2.66666666666667,
+              -2.28571428571429
+            ],
+            [
+              0.0,
+              -2.66666666666667,
+              -2.28571428571429
+            ],
+            [
+              0.0,
+              -2.66666666666667,
+              -2.28571428571429
+            ]
           ],
           "reasoning_a": "Country A should choose mode P because it provides the highest payoff in all scenarios, making it the strictly dominant strategy.\n\n**Answer:** Choose option 'P'.",
           "reasoning_b": "Country B's optimal choice is to use the Private Actor (P) mode. This is because choosing P guarantees a payoff of 0, which is higher than the negative payoffs associated with S (-2.6667) and C (-2.2857). Since P is strictly dominant over both S and C, it maximizes Country B's expected utility regardless of Country A's strategy.\n\n**Answer:** P"
@@ -136,8 +160,14 @@
           },
           "analytical": {
             "nash_equilibria": [
-              ["Th", "R"],
-              ["Th", "Th"]
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
             ],
             "a_dominant": "Th",
             "b_dominant": "R"
@@ -156,8 +186,14 @@
           },
           "analytical": {
             "nash_equilibria": [
-              ["Th", "R"],
-              ["Th", "Th"]
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
             ],
             "a_dominant": "Th",
             "b_dominant": "R"
@@ -176,8 +212,14 @@
           },
           "analytical": {
             "nash_equilibria": [
-              ["Th", "R"],
-              ["Th", "Th"]
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
             ],
             "a_dominant": "Th",
             "b_dominant": "R"
@@ -196,10 +238,22 @@
           },
           "analytical": {
             "nash_equilibria": [
-              ["R", "R"],
-              ["R", "Th"],
-              ["Th", "R"],
-              ["Th", "Th"]
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ],
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
             ],
             "a_dominant": "R",
             "b_dominant": "R"
@@ -218,10 +272,22 @@
           },
           "analytical": {
             "nash_equilibria": [
-              ["R", "R"],
-              ["R", "Th"],
-              ["Th", "R"],
-              ["Th", "Th"]
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ],
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
             ],
             "a_dominant": "R",
             "b_dominant": "R"
@@ -240,10 +306,22 @@
           },
           "analytical": {
             "nash_equilibria": [
-              ["R", "R"],
-              ["R", "Th"],
-              ["Th", "R"],
-              ["Th", "Th"]
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ],
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
             ],
             "a_dominant": "R",
             "b_dominant": "R"
@@ -262,8 +340,14 @@
           },
           "analytical": {
             "nash_equilibria": [
-              ["R", "R"],
-              ["R", "Th"]
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ]
             ],
             "a_dominant": "R",
             "b_dominant": "R"
@@ -282,8 +366,14 @@
           },
           "analytical": {
             "nash_equilibria": [
-              ["R", "R"],
-              ["R", "Th"]
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ]
             ],
             "a_dominant": "R",
             "b_dominant": "R"
@@ -302,8 +392,14 @@
           },
           "analytical": {
             "nash_equilibria": [
-              ["R", "R"],
-              ["R", "Th"]
+              [
+                "R",
+                "R"
+              ],
+              [
+                "R",
+                "Th"
+              ]
             ],
             "a_dominant": "R",
             "b_dominant": "R"
@@ -440,14 +536,38 @@
           "payoff_a": -14.4,
           "payoff_b": -8.90909090909091,
           "meta_matrix_a": [
-            [-18.2857142857143, -18.2857142857143, -18.2857142857143],
-            [-14.4, -14.4, -14.4],
-            [-63.0, -63.0, -63.0]
+            [
+              -18.2857142857143,
+              -18.2857142857143,
+              -18.2857142857143
+            ],
+            [
+              -14.4,
+              -14.4,
+              -14.4
+            ],
+            [
+              -63.0,
+              -63.0,
+              -63.0
+            ]
           ],
           "meta_matrix_b": [
-            [-8.90909090909091, -6.66666666666667, -13.7142857142857],
-            [-8.90909090909091, -6.66666666666667, -13.7142857142857],
-            [-8.90909090909091, -6.66666666666667, -13.7142857142857]
+            [
+              -8.90909090909091,
+              -6.66666666666667,
+              -13.7142857142857
+            ],
+            [
+              -8.90909090909091,
+              -6.66666666666667,
+              -13.7142857142857
+            ],
+            [
+              -8.90909090909091,
+              -6.66666666666667,
+              -13.7142857142857
+            ]
           ],
           "reasoning_a": "Country_A should choose 'S' (State Unit) as their overall attack mode because it provides the highest expected utility of -14.4000, which is better than the other options available.\n\n**Answer:**\n\nChoose option **'S'**.",
           "reasoning_b": "Country B should choose mode **S** as it provides the highest expected utility with a payoff of -6.6667, which is better than the other options available.\n\n**Step-by-Step Explanation:**\n\n1. **Understanding the Meta-GAME Matrix:**\n   - The matrix shows that regardless of Country A's choice (P, S, C), the payoffs for Country B are fixed based on its own mode selection.\n   \n2. **Analyzing Payoffs:**\n   - Choosing P results in a payoff of -8.9091.\n   - Choosing S yields a payoff of -6.6667.\n   - Selecting C leads to a payoff of -13.7143.\n\n3. **Determining the Optimal Strategy:**\n   - Since all payoffs are fixed and independent of Country A's choice, Country B should select the mode with the highest payoff.\n   - Among the three options, S offers the least negative (highest) payoff.\n\n**Conclusion:**\nCountry B will choose **S** to maximize its expected utility."
@@ -471,8 +591,14 @@
           },
           "analytical": {
             "nash_equilibria": [
-              ["Th", "R"],
-              ["Th", "Th"]
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
             ],
             "a_dominant": "Th",
             "b_dominant": "R"
@@ -491,8 +617,14 @@
           },
           "analytical": {
             "nash_equilibria": [
-              ["Th", "R"],
-              ["Th", "Th"]
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
             ],
             "a_dominant": "Th",
             "b_dominant": "R"
@@ -511,8 +643,14 @@
           },
           "analytical": {
             "nash_equilibria": [
-              ["Th", "R"],
-              ["Th", "Th"]
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
             ],
             "a_dominant": "Th",
             "b_dominant": "R"
@@ -531,8 +669,14 @@
           },
           "analytical": {
             "nash_equilibria": [
-              ["Th", "R"],
-              ["Th", "Th"]
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
             ],
             "a_dominant": "Th",
             "b_dominant": "R"
@@ -551,8 +695,14 @@
           },
           "analytical": {
             "nash_equilibria": [
-              ["Th", "R"],
-              ["Th", "Th"]
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
             ],
             "a_dominant": "Th",
             "b_dominant": "R"
@@ -571,8 +721,14 @@
           },
           "analytical": {
             "nash_equilibria": [
-              ["Th", "R"],
-              ["Th", "Th"]
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
             ],
             "a_dominant": "Th",
             "b_dominant": "R"
@@ -591,8 +747,14 @@
           },
           "analytical": {
             "nash_equilibria": [
-              ["Th", "R"],
-              ["Th", "Th"]
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
             ],
             "a_dominant": "Th",
             "b_dominant": "R"
@@ -611,8 +773,14 @@
           },
           "analytical": {
             "nash_equilibria": [
-              ["Th", "R"],
-              ["Th", "Th"]
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
             ],
             "a_dominant": "Th",
             "b_dominant": "R"
@@ -631,8 +799,14 @@
           },
           "analytical": {
             "nash_equilibria": [
-              ["Th", "R"],
-              ["Th", "Th"]
+              [
+                "Th",
+                "R"
+              ],
+              [
+                "Th",
+                "Th"
+              ]
             ],
             "a_dominant": "Th",
             "b_dominant": "R"

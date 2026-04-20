@@ -1,9 +1,11 @@
 {
-  "prompt_config": "v4_irrational_hawkish",
+  "cross_play": true,
+  "prompt_config_a": "v4_irrational_hawkish",
+  "prompt_config_b": "v2_bounded_satisficing",
   "backend": "ollama",
   "num_runs": 1,
   "chain_of_thought": false,
-  "timestamp": "2026-04-12T07:16:31.507666",
+  "timestamp": "2026-04-14T15:05:11.278463",
   "maxmin": {
     "runs": [
       {
@@ -12,7 +14,7 @@
             "mode_a": "P",
             "mode_b": "P",
             "action_a": "R",
-            "action_b": "R",
+            "action_b": "Th",
             "payoff_a": 0.705882352941177,
             "payoff_b": 0.0
           },
@@ -20,7 +22,7 @@
             "mode_a": "P",
             "mode_b": "S",
             "action_a": "R",
-            "action_b": "R",
+            "action_b": "Th",
             "payoff_a": 0.705882352941177,
             "payoff_b": -2.66666666666667
           },
@@ -28,7 +30,7 @@
             "mode_a": "P",
             "mode_b": "C",
             "action_a": "R",
-            "action_b": "R",
+            "action_b": "Th",
             "payoff_a": 0.705882352941177,
             "payoff_b": -2.28571428571429
           },
@@ -36,7 +38,7 @@
             "mode_a": "S",
             "mode_b": "P",
             "action_a": "R",
-            "action_b": "R",
+            "action_b": "Th",
             "payoff_a": 0.0,
             "payoff_b": 0.0
           },
@@ -44,7 +46,7 @@
             "mode_a": "S",
             "mode_b": "S",
             "action_a": "R",
-            "action_b": "R",
+            "action_b": "Th",
             "payoff_a": 0.0,
             "payoff_b": -2.66666666666667
           },
@@ -52,7 +54,7 @@
             "mode_a": "S",
             "mode_b": "C",
             "action_a": "R",
-            "action_b": "R",
+            "action_b": "Th",
             "payoff_a": 0.0,
             "payoff_b": -2.28571428571429
           },
@@ -60,7 +62,7 @@
             "mode_a": "C",
             "mode_b": "P",
             "action_a": "R",
-            "action_b": "R",
+            "action_b": "Th",
             "payoff_a": 0.666666666666667,
             "payoff_b": 0.0
           },
@@ -68,7 +70,7 @@
             "mode_a": "C",
             "mode_b": "S",
             "action_a": "R",
-            "action_b": "R",
+            "action_b": "Th",
             "payoff_a": 0.666666666666667,
             "payoff_b": -2.66666666666667
           },
@@ -76,16 +78,16 @@
             "mode_a": "C",
             "mode_b": "C",
             "action_a": "R",
-            "action_b": "R",
+            "action_b": "Th",
             "payoff_a": 0.666666666666667,
             "payoff_b": -2.28571428571429
           }
         },
         "meta_game": {
           "mode_a": "P",
-          "mode_b": "P",
+          "mode_b": "C",
           "payoff_a": 0.705882352941177,
-          "payoff_b": 0.0,
+          "payoff_b": -2.28571428571429,
           "meta_matrix_a": [
             [
               0.705882352941177,
@@ -121,7 +123,7 @@
             ]
           ]
         },
-        "world_state": "Mutual Conflict",
+        "world_state": "Asymmetric (A attacks, B threatens)",
         "run_number": 1
       }
     ],
@@ -134,8 +136,8 @@
               "Th": 0
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -160,8 +162,8 @@
               "Th": 0
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -186,8 +188,8 @@
               "Th": 0
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -212,8 +214,8 @@
               "Th": 0
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -246,8 +248,8 @@
               "Th": 0
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -280,8 +282,8 @@
               "Th": 0
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -314,8 +316,8 @@
               "Th": 0
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -340,8 +342,8 @@
               "Th": 0
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -366,8 +368,8 @@
               "Th": 0
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -394,9 +396,9 @@
             "C": 0
           },
           "B": {
-            "P": 1,
+            "P": 0,
             "S": 0,
-            "C": 0
+            "C": 1
           }
         },
         "payoffs": {
@@ -405,13 +407,13 @@
             "std": 0.0
           },
           "B": {
-            "mean": 0.0,
+            "mean": -2.2857,
             "std": 0.0
           }
         }
       },
       "world_states": {
-        "Mutual Conflict": 1
+        "Asymmetric (A attacks, B threatens)": 1
       }
     }
   },
@@ -493,10 +495,10 @@
           }
         },
         "meta_game": {
-          "mode_a": "P",
-          "mode_b": "P",
-          "payoff_a": -18.2857142857143,
-          "payoff_b": -8.90909090909091,
+          "mode_a": "C",
+          "mode_b": "C",
+          "payoff_a": -63.0,
+          "payoff_b": -13.7142857142857,
           "meta_matrix_a": [
             [
               -18.2857142857143,
@@ -776,23 +778,23 @@
       "meta_game": {
         "mode_counts": {
           "A": {
-            "P": 1,
+            "P": 0,
             "S": 0,
-            "C": 0
+            "C": 1
           },
           "B": {
-            "P": 1,
+            "P": 0,
             "S": 0,
-            "C": 0
+            "C": 1
           }
         },
         "payoffs": {
           "A": {
-            "mean": -18.2857,
+            "mean": -63.0,
             "std": 0.0
           },
           "B": {
-            "mean": -8.9091,
+            "mean": -13.7143,
             "std": 0.0
           }
         }
@@ -803,7 +805,7 @@
     }
   },
   "price_of_aggression": {
-    "A": -0.0386,
-    "B": -0.0
+    "A": -0.0112,
+    "B": 0.1667
   }
 }

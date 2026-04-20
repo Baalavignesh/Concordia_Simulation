@@ -1,0 +1,59 @@
+Backend: ollama | Runs: 1 | Concepts: ['maxmin', 'minmax']
+Cross-play: 20 matchups
+
+--- [1/20] v1_rational_eut_vs_v2_bounded_satisficing --- [SKIPPED, already done]
+
+--- [2/20] v1_rational_eut_vs_v3_bounded_prospect_theory --- [SKIPPED, already done]
+
+--- [3/20] v1_rational_eut_vs_v4_irrational_hawkish --- [SKIPPED, already done]
+
+--- [4/20] v1_rational_eut_vs_v5_irrational_retaliatory --- [SKIPPED, already done]
+
+--- [5/20] v2_bounded_satisficing_vs_v1_rational_eut --- [SKIPPED, already done]
+
+--- [6/20] v2_bounded_satisficing_vs_v3_bounded_prospect_theory --- [SKIPPED, already done]
+
+--- [7/20] v2_bounded_satisficing_vs_v4_irrational_hawkish --- [SKIPPED, already done]
+
+--- [8/20] v2_bounded_satisficing_vs_v5_irrational_retaliatory --- [SKIPPED, already done]
+
+--- [9/20] v3_bounded_prospect_theory_vs_v1_rational_eut --- [SKIPPED, already done]
+
+--- [10/20] v3_bounded_prospect_theory_vs_v2_bounded_satisficing --- [SKIPPED, already done]
+
+--- [11/20] v3_bounded_prospect_theory_vs_v4_irrational_hawkish --- [SKIPPED, already done]
+
+--- [12/20] v3_bounded_prospect_theory_vs_v5_irrational_retaliatory --- [SKIPPED, already done]
+
+--- [13/20] v4_irrational_hawkish_vs_v1_rational_eut --- [SKIPPED, already done]
+
+--- [14/20] v4_irrational_hawkish_vs_v2_bounded_satisficing --- [SKIPPED, already done]
+
+--- [15/20] v4_irrational_hawkish_vs_v3_bounded_prospect_theory --- [SKIPPED, already done]
+
+--- [16/20] v4_irrational_hawkish_vs_v5_irrational_retaliatory --- [SKIPPED, already done]
+
+--- [17/20] v5_irrational_retaliatory_vs_v1_rational_eut --- [SKIPPED, already done]
+
+--- [18/20] v5_irrational_retaliatory_vs_v2_bounded_satisficing ---
+[Ollama] Connected. Using model: deepseek-r1:14b
+[Ollama] Model already in memory, skipping warmup.
+  v5_irrational_retaliatory vs v2_bounded_satisficing | maxmin | run 1/1
+  v5_irrational_retaliatory vs v2_bounded_satisficing | minmax | run 1/1
+  -> C:\Users\baala\OneDrive\Desktop\Concordia_Simulation\results\crossplay\v5_irrational_retaliatory_vs_v2_bounded_satisficing\simulation_results.json
+
+--- [19/20] v5_irrational_retaliatory_vs_v3_bounded_prospect_theory ---
+[Ollama] Connected. Using model: deepseek-r1:14b
+[Ollama] Model already in memory, skipping warmup.
+  v5_irrational_retaliatory vs v3_bounded_prospect_theory | maxmin | run 1/1
+  v5_irrational_retaliatory vs v3_bounded_prospect_theory | minmax | run 1/1
+  -> C:\Users\baala\OneDrive\Desktop\Concordia_Simulation\results\crossplay\v5_irrational_retaliatory_vs_v3_bounded_prospect_theory\simulation_results.json
+
+--- [20/20] v5_irrational_retaliatory_vs_v4_irrational_hawkish ---
+[Ollama] Connected. Using model: deepseek-r1:14b
+[Ollama] Model already in memory, skipping warmup.
+  v5_irrational_retaliatory vs v4_irrational_hawkish | maxmin | run 1/1
+  v5_irrational_retaliatory vs v4_irrational_hawkish | minmax | run 1/1
+  -> C:\Users\baala\OneDrive\Desktop\Concordia_Simulation\results\crossplay\v5_irrational_retaliatory_vs_v4_irrational_hawkish\simulation_results.json
+
+Done.

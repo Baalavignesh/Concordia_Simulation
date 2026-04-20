@@ -1,9 +1,11 @@
 {
-  "prompt_config": "v4_irrational_hawkish",
+  "cross_play": true,
+  "prompt_config_a": "v5_irrational_retaliatory",
+  "prompt_config_b": "v3_bounded_prospect_theory",
   "backend": "ollama",
   "num_runs": 1,
   "chain_of_thought": false,
-  "timestamp": "2026-04-12T07:16:31.507666",
+  "timestamp": "2026-04-15T13:10:36.608910",
   "maxmin": {
     "runs": [
       {
@@ -11,32 +13,32 @@
           "PP": {
             "mode_a": "P",
             "mode_b": "P",
-            "action_a": "R",
+            "action_a": "Th",
             "action_b": "R",
-            "payoff_a": 0.705882352941177,
+            "payoff_a": 0.9,
             "payoff_b": 0.0
           },
           "PS": {
             "mode_a": "P",
             "mode_b": "S",
-            "action_a": "R",
-            "action_b": "R",
-            "payoff_a": 0.705882352941177,
-            "payoff_b": -2.66666666666667
+            "action_a": "Th",
+            "action_b": "Th",
+            "payoff_a": 0.9,
+            "payoff_b": -1.5
           },
           "PC": {
             "mode_a": "P",
             "mode_b": "C",
-            "action_a": "R",
+            "action_a": "Th",
             "action_b": "R",
-            "payoff_a": 0.705882352941177,
-            "payoff_b": -2.28571428571429
+            "payoff_a": 0.9,
+            "payoff_b": -0.85
           },
           "SP": {
             "mode_a": "S",
             "mode_b": "P",
-            "action_a": "R",
-            "action_b": "R",
+            "action_a": "Th",
+            "action_b": "Th",
             "payoff_a": 0.0,
             "payoff_b": 0.0
           },
@@ -44,53 +46,53 @@
             "mode_a": "S",
             "mode_b": "S",
             "action_a": "R",
-            "action_b": "R",
+            "action_b": "Th",
             "payoff_a": 0.0,
             "payoff_b": -2.66666666666667
           },
           "SC": {
             "mode_a": "S",
             "mode_b": "C",
-            "action_a": "R",
-            "action_b": "R",
+            "action_a": "Th",
+            "action_b": "Th",
             "payoff_a": 0.0,
-            "payoff_b": -2.28571428571429
+            "payoff_b": -0.85
           },
           "CP": {
             "mode_a": "C",
             "mode_b": "P",
-            "action_a": "R",
-            "action_b": "R",
-            "payoff_a": 0.666666666666667,
+            "action_a": "Th",
+            "action_b": "Th",
+            "payoff_a": 0.66,
             "payoff_b": 0.0
           },
           "CS": {
             "mode_a": "C",
             "mode_b": "S",
-            "action_a": "R",
-            "action_b": "R",
-            "payoff_a": 0.666666666666667,
-            "payoff_b": -2.66666666666667
+            "action_a": "Th",
+            "action_b": "Th",
+            "payoff_a": 0.66,
+            "payoff_b": -1.5
           },
           "CC": {
             "mode_a": "C",
             "mode_b": "C",
-            "action_a": "R",
-            "action_b": "R",
-            "payoff_a": 0.666666666666667,
-            "payoff_b": -2.28571428571429
+            "action_a": "Th",
+            "action_b": "Th",
+            "payoff_a": 0.66,
+            "payoff_b": -0.85
           }
         },
         "meta_game": {
-          "mode_a": "P",
-          "mode_b": "P",
-          "payoff_a": 0.705882352941177,
-          "payoff_b": 0.0,
+          "mode_a": "C",
+          "mode_b": "S",
+          "payoff_a": 0.66,
+          "payoff_b": -1.5,
           "meta_matrix_a": [
             [
-              0.705882352941177,
-              0.705882352941177,
-              0.705882352941177
+              0.9,
+              0.9,
+              0.9
             ],
             [
               0.0,
@@ -98,30 +100,30 @@
               0.0
             ],
             [
-              0.666666666666667,
-              0.666666666666667,
-              0.666666666666667
+              0.66,
+              0.66,
+              0.66
             ]
           ],
           "meta_matrix_b": [
             [
               0.0,
-              -2.66666666666667,
-              -2.28571428571429
+              -1.5,
+              -0.85
             ],
             [
               0.0,
               -2.66666666666667,
-              -2.28571428571429
+              -0.85
             ],
             [
               0.0,
-              -2.66666666666667,
-              -2.28571428571429
+              -1.5,
+              -0.85
             ]
           ]
         },
-        "world_state": "Mutual Conflict",
+        "world_state": "Mutual Deterrence",
         "run_number": 1
       }
     ],
@@ -130,8 +132,8 @@
         "PP": {
           "action_counts": {
             "A": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             },
             "B": {
               "R": 1,
@@ -156,12 +158,12 @@
         "PS": {
           "action_counts": {
             "A": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -182,8 +184,8 @@
         "PC": {
           "action_counts": {
             "A": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             },
             "B": {
               "R": 1,
@@ -208,12 +210,12 @@
         "SP": {
           "action_counts": {
             "A": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -246,8 +248,8 @@
               "Th": 0
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -276,12 +278,12 @@
         "SC": {
           "action_counts": {
             "A": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -310,12 +312,12 @@
         "CP": {
           "action_counts": {
             "A": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -336,12 +338,12 @@
         "CS": {
           "action_counts": {
             "A": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -362,12 +364,12 @@
         "CC": {
           "action_counts": {
             "A": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -389,29 +391,29 @@
       "meta_game": {
         "mode_counts": {
           "A": {
-            "P": 1,
+            "P": 0,
             "S": 0,
-            "C": 0
+            "C": 1
           },
           "B": {
-            "P": 1,
-            "S": 0,
+            "P": 0,
+            "S": 1,
             "C": 0
           }
         },
         "payoffs": {
           "A": {
-            "mean": 0.7059,
+            "mean": 0.66,
             "std": 0.0
           },
           "B": {
-            "mean": 0.0,
+            "mean": -1.5,
             "std": 0.0
           }
         }
       },
       "world_states": {
-        "Mutual Conflict": 1
+        "Mutual Deterrence": 1
       }
     }
   },
@@ -422,117 +424,117 @@
           "PP": {
             "mode_a": "P",
             "mode_b": "P",
-            "action_a": "R",
+            "action_a": "Th",
             "action_b": "R",
-            "payoff_a": -18.2857142857143,
-            "payoff_b": -8.90909090909091
+            "payoff_a": -3.6,
+            "payoff_b": -4.55
           },
           "PS": {
             "mode_a": "P",
             "mode_b": "S",
-            "action_a": "R",
-            "action_b": "R",
-            "payoff_a": -18.2857142857143,
-            "payoff_b": -6.66666666666667
+            "action_a": "Th",
+            "action_b": "Th",
+            "payoff_a": -3.6,
+            "payoff_b": -3.75
           },
           "PC": {
             "mode_a": "P",
             "mode_b": "C",
-            "action_a": "R",
+            "action_a": "Th",
             "action_b": "R",
-            "payoff_a": -18.2857142857143,
-            "payoff_b": -13.7142857142857
+            "payoff_a": -3.6,
+            "payoff_b": -5.1
           },
           "SP": {
             "mode_a": "S",
             "mode_b": "P",
-            "action_a": "R",
+            "action_a": "Th",
             "action_b": "R",
-            "payoff_a": -14.4,
-            "payoff_b": -8.90909090909091
+            "payoff_a": -3.3,
+            "payoff_b": -4.55
           },
           "SS": {
             "mode_a": "S",
             "mode_b": "S",
-            "action_a": "R",
-            "action_b": "R",
-            "payoff_a": -14.4,
-            "payoff_b": -6.66666666666667
+            "action_a": "Th",
+            "action_b": "Th",
+            "payoff_a": -3.3,
+            "payoff_b": -3.75
           },
           "SC": {
             "mode_a": "S",
             "mode_b": "C",
-            "action_a": "R",
-            "action_b": "R",
-            "payoff_a": -14.4,
-            "payoff_b": -13.7142857142857
+            "action_a": "Th",
+            "action_b": "Th",
+            "payoff_a": -3.3,
+            "payoff_b": -5.1
           },
           "CP": {
             "mode_a": "C",
             "mode_b": "P",
-            "action_a": "R",
-            "action_b": "R",
-            "payoff_a": -63.0,
-            "payoff_b": -8.90909090909091
+            "action_a": "Th",
+            "action_b": "Th",
+            "payoff_a": -4.62,
+            "payoff_b": -4.55
           },
           "CS": {
             "mode_a": "C",
             "mode_b": "S",
-            "action_a": "R",
-            "action_b": "R",
-            "payoff_a": -63.0,
-            "payoff_b": -6.66666666666667
+            "action_a": "Th",
+            "action_b": "Th",
+            "payoff_a": -4.62,
+            "payoff_b": -3.75
           },
           "CC": {
             "mode_a": "C",
             "mode_b": "C",
-            "action_a": "R",
-            "action_b": "R",
-            "payoff_a": -63.0,
-            "payoff_b": -13.7142857142857
+            "action_a": "Th",
+            "action_b": "Th",
+            "payoff_a": -4.62,
+            "payoff_b": -5.1
           }
         },
         "meta_game": {
-          "mode_a": "P",
-          "mode_b": "P",
-          "payoff_a": -18.2857142857143,
-          "payoff_b": -8.90909090909091,
+          "mode_a": "C",
+          "mode_b": "S",
+          "payoff_a": -4.62,
+          "payoff_b": -3.75,
           "meta_matrix_a": [
             [
-              -18.2857142857143,
-              -18.2857142857143,
-              -18.2857142857143
+              -3.6,
+              -3.6,
+              -3.6
             ],
             [
-              -14.4,
-              -14.4,
-              -14.4
+              -3.3,
+              -3.3,
+              -3.3
             ],
             [
-              -63.0,
-              -63.0,
-              -63.0
+              -4.62,
+              -4.62,
+              -4.62
             ]
           ],
           "meta_matrix_b": [
             [
-              -8.90909090909091,
-              -6.66666666666667,
-              -13.7142857142857
+              -4.55,
+              -3.75,
+              -5.1
             ],
             [
-              -8.90909090909091,
-              -6.66666666666667,
-              -13.7142857142857
+              -4.55,
+              -3.75,
+              -5.1
             ],
             [
-              -8.90909090909091,
-              -6.66666666666667,
-              -13.7142857142857
+              -4.55,
+              -3.75,
+              -5.1
             ]
           ]
         },
-        "world_state": "Mutual Conflict",
+        "world_state": "Mutual Deterrence",
         "run_number": 1
       }
     ],
@@ -541,8 +543,8 @@
         "PP": {
           "action_counts": {
             "A": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             },
             "B": {
               "R": 1,
@@ -567,12 +569,12 @@
         "PS": {
           "action_counts": {
             "A": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -593,8 +595,8 @@
         "PC": {
           "action_counts": {
             "A": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             },
             "B": {
               "R": 1,
@@ -619,8 +621,8 @@
         "SP": {
           "action_counts": {
             "A": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             },
             "B": {
               "R": 1,
@@ -645,12 +647,12 @@
         "SS": {
           "action_counts": {
             "A": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -671,12 +673,12 @@
         "SC": {
           "action_counts": {
             "A": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -697,12 +699,12 @@
         "CP": {
           "action_counts": {
             "A": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -723,12 +725,12 @@
         "CS": {
           "action_counts": {
             "A": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -749,12 +751,12 @@
         "CC": {
           "action_counts": {
             "A": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             },
             "B": {
-              "R": 1,
-              "Th": 0
+              "R": 0,
+              "Th": 1
             }
           },
           "analytical": {
@@ -776,34 +778,34 @@
       "meta_game": {
         "mode_counts": {
           "A": {
-            "P": 1,
+            "P": 0,
             "S": 0,
-            "C": 0
+            "C": 1
           },
           "B": {
-            "P": 1,
-            "S": 0,
+            "P": 0,
+            "S": 1,
             "C": 0
           }
         },
         "payoffs": {
           "A": {
-            "mean": -18.2857,
+            "mean": -4.62,
             "std": 0.0
           },
           "B": {
-            "mean": -8.9091,
+            "mean": -3.75,
             "std": 0.0
           }
         }
       },
       "world_states": {
-        "Mutual Conflict": 1
+        "Mutual Deterrence": 1
       }
     }
   },
   "price_of_aggression": {
-    "A": -0.0386,
-    "B": -0.0
+    "A": -0.1429,
+    "B": 0.4
   }
 }

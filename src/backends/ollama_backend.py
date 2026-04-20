@@ -97,12 +97,55 @@ class OllamaBackend(language_model.LanguageModel):
                 f"Error: {e}"
             )
 
+        # Warm up: force the model to load into memory now, before simulation
+        # begins. The 14B model takes ~90s to load and needs ~9GB of memory.
+        # Loading it here fails fast with a clear error rather than crashing
+        # mid-simulation. keep_alive=-1 keeps it pinned in memory indefinitely.
+        # Skip warmup if the model is already loaded (e.g. from previous config).
+        try:
+            import requests
+            ps_resp = requests.get(f"{self._base_url}/api/ps", timeout=5)
+            loaded = [m["name"] for m in ps_resp.json().get("models", [])]
+            model_base = self._model.split(":")[0]
+            already_loaded = any(model_base in m for m in loaded)
+        except Exception:
+            already_loaded = False
+
+        if already_loaded:
+            print(f"[Ollama] Model already in memory, skipping warmup.")
+        else:
+            print(f"[Ollama] Warming up model (this may take ~90s on first load)...")
+            try:
+                import requests
+                warmup_payload = {
+                    "model": self._model,
+                    "prompt": "Ready.",
+                    "stream": False,
+                    "keep_alive": -1,
+                    "think": False,
+                    "options": {"num_predict": 1, "temperature": 0.0, "num_gpu": 0},
+                }
+                resp = requests.post(
+                    f"{self._base_url}/api/generate",
+                    json=warmup_payload,
+                    timeout=300,
+                )
+                resp.raise_for_status()
+                print(f"[Ollama] Model loaded and ready.")
+            except Exception as e:
+                raise RuntimeError(
+                    f"[Ollama] Model failed to load during warmup. "
+                    f"Close other applications to free RAM and try again.\n"
+                    f"Error: {e}"
+                )
+
     def _generate(
         self,
         prompt: str,
         *,
         max_tokens: int = 2000,
         temperature: float = 0.7,
+        think: bool = False,
     ) -> str:
         """Call the Ollama generate API."""
         import requests
@@ -111,19 +154,22 @@ class OllamaBackend(language_model.LanguageModel):
             "model": self._model,
             "prompt": prompt,
             "stream": False,
+            "keep_alive": -1,  # Keep model pinned in memory between calls
+            "think": think,    # False = skip DeepSeek-R1 reasoning chain for fast calls
             "options": {
                 "num_predict": max_tokens,
                 "temperature": temperature,
+                "num_gpu": 0,   # Force CPU-only: RTX 4050 (4GB) can't stage 9GB model reliably
             },
         }
 
-        max_retries = 3
+        max_retries = 5
         for attempt in range(max_retries):
             try:
                 resp = requests.post(
                     f"{self._base_url}/api/generate",
                     json=payload,
-                    timeout=300,  # Local inference can be slow
+                    timeout=600,  # 600s: CoT calls with max_tokens=4096 can be lengthy
                 )
                 resp.raise_for_status()
                 return resp.json().get("response", "")
@@ -137,11 +183,25 @@ class OllamaBackend(language_model.LanguageModel):
                         f"Ollama timed out after {max_retries} attempts. "
                         f"The model may be too large for your hardware."
                     )
+            except requests.exceptions.HTTPError as e:
+                if attempt < max_retries - 1:
+                    wait = 15 * (attempt + 1)
+                    print(f"  [Ollama] HTTP {e.response.status_code} error (runner may have crashed), retrying in {wait}s (attempt {attempt + 1}/{max_retries})...")
+                    time.sleep(wait)
+                else:
+                    raise RuntimeError(
+                        f"Ollama returned HTTP error after {max_retries} attempts: {e}"
+                    )
             except requests.exceptions.ConnectionError:
-                raise RuntimeError(
-                    f"Lost connection to Ollama at {self._base_url}. "
-                    f"Is it still running?"
-                )
+                if attempt < max_retries - 1:
+                    wait = 10 * (attempt + 1)
+                    print(f"  [Ollama] Connection lost, retrying in {wait}s (attempt {attempt + 1}/{max_retries})...")
+                    time.sleep(wait)
+                else:
+                    raise RuntimeError(
+                        f"Lost connection to Ollama at {self._base_url}. "
+                        f"Is it still running?"
+                    )
 
     @override
     def sample_text(
@@ -173,7 +233,7 @@ class OllamaBackend(language_model.LanguageModel):
             f"You must respond with EXACTLY one of these options: {list(responses)}\n"
             f"Respond with only the option, nothing else."
         )
-        raw = self._generate(full_prompt, max_tokens=100, temperature=0.2)
+        raw = self._generate(full_prompt, max_tokens=100, temperature=0.2, think=False)
         result = _strip_think_tags(raw)
 
         idx = _match_response(result, responses)
@@ -201,7 +261,7 @@ class OllamaBackend(language_model.LanguageModel):
             "consider your decision framework, and explain your reasoning. "
             "At the end, clearly state which option you choose and why."
         )
-        raw = self._generate(reasoning_prompt, max_tokens=4096, temperature=0.4)
+        raw = self._generate(reasoning_prompt, max_tokens=4096, temperature=0.4, think=True)
 
         # Extract reasoning: prefer <think> block if present (DeepSeek-R1),
         # otherwise the full response IS the reasoning
@@ -229,7 +289,7 @@ class OllamaBackend(language_model.LanguageModel):
             f"You must respond with EXACTLY one of these options: {list(responses)}\n"
             f"Respond with only the option, nothing else."
         )
-        extract_raw = self._generate(extraction_prompt, max_tokens=20, temperature=0.0)
+        extract_raw = self._generate(extraction_prompt, max_tokens=20, temperature=0.0, think=False)
         extract_result = _strip_think_tags(extract_raw)
 
         idx = _match_response(extract_result, responses)

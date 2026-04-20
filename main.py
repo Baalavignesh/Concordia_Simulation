@@ -351,6 +351,11 @@ def main():
         print(f"Cross-play: {len(pairs)} matchups")
         for idx, (ca, cb) in enumerate(pairs, 1):
             matchup_name = f"{ca.name}_vs_{cb.name}"
+            output_dir = RESULTS_DIR / "crossplay" / matchup_name
+            filename = "simulation_results_cot.json" if args.cot else "simulation_results.json"
+            if (output_dir / filename).exists():
+                print(f"\n--- [{idx}/{len(pairs)}] {matchup_name} --- [SKIPPED, already done]")
+                continue
             print(f"\n--- [{idx}/{len(pairs)}] {matchup_name} ---")
 
             results = run_crossplay_simulation(
@@ -358,7 +363,6 @@ def main():
                 backend_name=args.backend, num_runs=args.runs,
                 solution_concepts=args.concept, cot=args.cot,
             )
-            output_dir = RESULTS_DIR / "crossplay" / matchup_name
             saved = _save_results(results, output_dir, ca.name,
                                   args.backend, args.runs, cot=args.cot,
                                   config_name_b=cb.name)

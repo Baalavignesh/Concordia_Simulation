@@ -1,9 +1,11 @@
 {
-  "prompt_config": "v4_irrational_hawkish",
+  "cross_play": true,
+  "prompt_config_a": "v1_rational_eut",
+  "prompt_config_b": "v3_bounded_prospect_theory",
   "backend": "ollama",
   "num_runs": 1,
   "chain_of_thought": false,
-  "timestamp": "2026-04-12T07:16:31.507666",
+  "timestamp": "2026-04-12T18:38:42.227806",
   "maxmin": {
     "runs": [
       {
