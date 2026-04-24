@@ -91,9 +91,14 @@ def run_simulation_for_config(
         }
 
         if cot:
-            cot_analysis = analyze_cot_complexity(runs)
-            if cot_analysis:
-                concept_data["cot_complexity"] = cot_analysis
+            try:
+                cot_analysis = analyze_cot_complexity(runs)
+                if cot_analysis:
+                    concept_data["cot_complexity"] = cot_analysis
+            except Exception as e:
+                # CoT analysis is post-hoc; never let it discard simulation data.
+                print(f"  [WARN] CoT analysis failed for {concept}: {e!r}", flush=True)
+                concept_data["cot_complexity_error"] = repr(e)
 
         all_results[concept] = concept_data
 
@@ -172,9 +177,14 @@ def run_crossplay_simulation(
         }
 
         if cot:
-            cot_analysis = analyze_cot_complexity(runs)
-            if cot_analysis:
-                concept_data["cot_complexity"] = cot_analysis
+            try:
+                cot_analysis = analyze_cot_complexity(runs)
+                if cot_analysis:
+                    concept_data["cot_complexity"] = cot_analysis
+            except Exception as e:
+                # CoT analysis is post-hoc; never let it discard simulation data.
+                print(f"  [WARN] CoT analysis failed for {concept}: {e!r}", flush=True)
+                concept_data["cot_complexity_error"] = repr(e)
 
         all_results[concept] = concept_data
 

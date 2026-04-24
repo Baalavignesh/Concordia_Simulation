@@ -1,13 +1,10 @@
 import { useState, useEffect, Component } from 'react'
-import { Routes, Route, NavLink } from 'react-router-dom'
+import { Routes, Route, NavLink, Navigate, useParams } from 'react-router-dom'
 import { loadAllData } from './utils/dataLoader'
 import Overview from './pages/Overview'
-import ConfigDetail from './pages/ConfigDetail'
-import CompareView from './pages/CompareView'
-import CrossPlay from './pages/CrossPlay'
-import CotComparison from './pages/CotComparison'
-import CotComplexity from './pages/CotComplexity'
-import { BarChart3, GitCompare, Swords, Brain, Microscope } from 'lucide-react'
+import Matchups from './pages/Matchups'
+import Reasoning from './pages/Reasoning'
+import { BarChart3, Swords, Sparkles } from 'lucide-react'
 
 const NAV_BASE = 'flex items-center gap-1.5 px-3 py-2 rounded text-sm transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900'
 const NAV_ACTIVE = `${NAV_BASE} bg-gray-100 text-gray-900 font-medium`
@@ -33,6 +30,11 @@ class ErrorBoundary extends Component {
     }
     return this.props.children
   }
+}
+
+function ConfigRedirect() {
+  const { configId } = useParams()
+  return <Navigate to={`/matchups?a=${configId}&b=${configId}`} replace />
 }
 
 function App() {
@@ -68,7 +70,7 @@ function App() {
   return (
     <ErrorBoundary>
       <div className="min-h-screen flex flex-col">
-        <nav aria-label="Main navigation" className="border-b border-gray-200 bg-white sticky top-0 z-50">
+        <nav aria-label="Main navigation" className="border-b border-gray-200 bg-white sticky top-0 z-40">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-14">
               <span className="font-semibold text-sm tracking-wide text-gray-900">Cyber Wargame</span>
@@ -76,17 +78,11 @@ function App() {
                 <NavLink to="/" end className={({ isActive }) => isActive ? NAV_ACTIVE : NAV_INACTIVE}>
                   <BarChart3 className="w-4 h-4" aria-hidden="true" /> Overview
                 </NavLink>
-                <NavLink to="/compare" className={({ isActive }) => isActive ? NAV_ACTIVE : NAV_INACTIVE}>
-                  <GitCompare className="w-4 h-4" aria-hidden="true" /> Compare
+                <NavLink to="/matchups" className={({ isActive }) => isActive ? NAV_ACTIVE : NAV_INACTIVE}>
+                  <Swords className="w-4 h-4" aria-hidden="true" /> Matchups
                 </NavLink>
-                <NavLink to="/cross-play" className={({ isActive }) => isActive ? NAV_ACTIVE : NAV_INACTIVE}>
-                  <Swords className="w-4 h-4" aria-hidden="true" /> Cross-Play
-                </NavLink>
-                <NavLink to="/cot" className={({ isActive }) => isActive ? NAV_ACTIVE : NAV_INACTIVE}>
-                  <Brain className="w-4 h-4" aria-hidden="true" /> CoT Analysis
-                </NavLink>
-                <NavLink to="/cot-complexity" className={({ isActive }) => isActive ? NAV_ACTIVE : NAV_INACTIVE}>
-                  <Microscope className="w-4 h-4" aria-hidden="true" /> Reasoning Complexity
+                <NavLink to="/reasoning" className={({ isActive }) => isActive ? NAV_ACTIVE : NAV_INACTIVE}>
+                  <Sparkles className="w-4 h-4" aria-hidden="true" /> Reasoning
                 </NavLink>
               </div>
             </div>
@@ -96,11 +92,15 @@ function App() {
         <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <Routes>
             <Route path="/" element={<Overview data={data} />} />
-            <Route path="/config/:configId" element={<ConfigDetail data={data} />} />
-            <Route path="/compare" element={<CompareView data={data} />} />
-            <Route path="/cross-play" element={<CrossPlay data={data} />} />
-            <Route path="/cot" element={<CotComparison data={data} />} />
-            <Route path="/cot-complexity" element={<CotComplexity cotAnalysis={data.__cotAnalysis} />} />
+            <Route path="/matchups" element={<Matchups data={data} />} />
+            <Route path="/reasoning" element={<Reasoning data={data} />} />
+            {/* Back-compat redirects */}
+            <Route path="/config/:configId" element={<ConfigRedirect />} />
+            <Route path="/compare" element={<Navigate to="/matchups" replace />} />
+            <Route path="/cross-play" element={<Navigate to="/matchups" replace />} />
+            <Route path="/cot" element={<Navigate to="/reasoning" replace />} />
+            <Route path="/cot-complexity" element={<Navigate to="/reasoning" replace />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
 

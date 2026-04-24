@@ -145,6 +145,8 @@ pip install ollama            # Python client
 
 ## Usage
 
+> **Trial mode:** This project runs with `--runs 1` by default, and 1 run per (config, concept) is sufficient for the current trial. All on-disk results reflect this. The examples below assume trial-scale sampling.
+
 ### Symmetric Mode (same persona for both agents)
 
 ```bash
@@ -213,7 +215,7 @@ Note: "A=EUT vs B=Hawkish" is **not** the same as "A=Hawkish vs B=EUT" because t
 | Argument | Default | Description |
 |----------|---------|-------------|
 | `--backend` | `ollama` | LLM backend: `gemini` or `ollama` |
-| `--runs` | `1` | Number of independent runs per solution concept |
+| `--runs` | `1` | Number of independent runs per solution concept (trial mode: 1 is enough) |
 | `--concept` | `maxmin minmax` | Solution concepts to simulate (space-separated) |
 | `--config` | all | Specific config names to run in symmetric mode |
 | `--config-a` | -- | Config for Country A (cross-play; requires `--config-b`) |

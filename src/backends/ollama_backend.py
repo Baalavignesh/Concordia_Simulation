@@ -123,7 +123,7 @@ class OllamaBackend(language_model.LanguageModel):
                     "stream": False,
                     "keep_alive": -1,
                     "think": False,
-                    "options": {"num_predict": 1, "temperature": 0.0, "num_gpu": 0},
+                    "options": {"num_predict": 1, "temperature": 0.0},
                 }
                 resp = requests.post(
                     f"{self._base_url}/api/generate",
@@ -159,7 +159,6 @@ class OllamaBackend(language_model.LanguageModel):
             "options": {
                 "num_predict": max_tokens,
                 "temperature": temperature,
-                "num_gpu": 0,   # Force CPU-only: RTX 4050 (4GB) can't stage 9GB model reliably
             },
         }
 

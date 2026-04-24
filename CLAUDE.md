@@ -6,13 +6,26 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 A two-stage cyber warfare wargame simulation built on Google DeepMind's Concordia framework. Two LLM-backed agents (Country A and Country B) play a game-theoretic wargame based on the paper "Robust Cyber Warfare: Private Actors, States, or Coalitions?". The simulation observes whether LLM agents' strategic decisions align with analytical equilibria from formal game theory.
 
+## Run Count
+
+This project is in **trial mode**: 1 run per (config, concept) is sufficient. The CLI default (`--runs 1`) and every on-disk result reflect this. Do not treat single-run datasets as under-sampled — that is the intended setup. `src/constants.py:23` (`NUM_RUNS`) is only a fallback for non-CLI callers.
+
+## Break-Fix-Restart Policy
+
+If a simulation crashes mid-run (e.g., a bug in analysis, a backend hiccup, a Python traceback), **do not ask for permission**. Diagnose the root cause, apply the fix, and restart the same batch of matchups that was running when it broke. The user has explicitly authorized this loop. Only stop and surface the issue if:
+- The fix requires changing simulation semantics (payoffs, prompts, game logic, matchup list).
+- The crash is not actually in this project's code (e.g., Ollama server dead, disk full, network partition to Gemini).
+- Three restart attempts in a row fail.
+
+Log what broke and what you changed so the user can see the trail; don't wait for sign-off.
+
 ## Commands
 
 ```bash
 # Install dependencies
 pip install gdm-concordia google-genai
 
-# Run full simulation (default: Ollama backend, 1 run, both maxmin+minmax)
+# Run full simulation (default: Ollama backend, 1 run per concept — trial mode)
 python3 main.py
 
 # Quick test: single concept
@@ -98,6 +111,7 @@ File naming: `matrix_for_{A|B}_{modeA}{modeB}[_d].csv`. Each CSV is a 2×2 matri
 
 ### Key Design Decisions
 
+- **Trial-scale runs** — 1 run per (config, concept) is the intended sampling for this trial. Do not propose top-ups to `NUM_RUNS=5`; that value is a library default, not a target.
 - **Fresh agents per run** — no memory carryover between runs, ensuring independent observations.
 - **Full information** — agents see complete payoff matrices, matching the theoretical model's assumption.
 - **Risk orientation via prompting** — "risk-averse (defensive)" for maxmin, "risk-seeking (aggressive)" for minmax.

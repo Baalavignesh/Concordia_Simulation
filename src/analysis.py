@@ -204,12 +204,14 @@ def analyze_cot_complexity(all_runs: list[dict]) -> dict | None:
         for r in all_runs
     ]
 
-    # Compute overall complexity score per subgame (avg word count as proxy)
+    # Compute overall complexity score per subgame (avg word count as proxy).
+    # Guard against empty trace aggregations (occurs when an agent's reasoning
+    # string is empty for every run of that subgame).
     complexity_ranking = []
     for key, data in subgame_complexity.items():
-        avg_words = (
-            data["A"]["word_count"]["mean"] + data["B"]["word_count"]["mean"]
-        ) / 2
+        a_wc = data.get("A", {}).get("word_count", {}).get("mean", 0)
+        b_wc = data.get("B", {}).get("word_count", {}).get("mean", 0)
+        avg_words = (a_wc + b_wc) / 2
         complexity_ranking.append((key, round(avg_words, 1)))
     complexity_ranking.sort(key=lambda x: x[1], reverse=True)
 
