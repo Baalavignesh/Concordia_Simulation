@@ -105,17 +105,14 @@ def _analyze_reasoning_text(text: str) -> dict:
     words = text.split()
     sentences = [s.strip() for s in re.split(r'[.!?]+', text) if s.strip()]
 
-    # Step count: look for numbered steps, bullet points, or "Step N" patterns
     step_markers = re.findall(
         r'(?:^|\n)\s*(?:\d+[\.\):]|[-•*]|step\s+\d+)', text, re.IGNORECASE
     )
     step_count = len(step_markers)
 
-    # Numerical references: how often the agent grounds reasoning in payoff values
     numeric_refs = re.findall(r'-?\d+\.?\d*', text)
     numeric_ref_count = len(numeric_refs)
 
-    # Opponent modeling: does the agent consider what the other player does?
     opponent_keywords = [
         'opponent', 'other country', 'country a', 'country b',
         'they', 'their', 'adversary', 'rival',
@@ -125,7 +122,6 @@ def _analyze_reasoning_text(text: str) -> dict:
         for kw in opponent_keywords
     )
 
-    # Hedging / uncertainty language
     hedge_keywords = [
         'however', 'but', 'although', 'on the other hand',
         'uncertain', 'risk', 'might', 'could', 'possibly',
@@ -136,7 +132,6 @@ def _analyze_reasoning_text(text: str) -> dict:
         for kw in hedge_keywords
     )
 
-    # Dominant strategy recognition
     dominance_keywords = [
         'dominant', 'dominates', 'strictly dominant',
         'always better', 'regardless',
@@ -146,7 +141,6 @@ def _analyze_reasoning_text(text: str) -> dict:
         for kw in dominance_keywords
     )
 
-    # Comparison / deliberation: signs the agent weighed alternatives
     comparison_keywords = [
         'compare', 'versus', 'vs', 'better than', 'worse than',
         'higher', 'lower', 'prefer', 'alternative',
@@ -173,7 +167,6 @@ def analyze_cot_complexity(all_runs: list[dict]) -> dict | None:
 
     Returns None if no reasoning traces are found (non-CoT run).
     """
-    # Check if reasoning data exists
     sample_sg = list(all_runs[0]["subgames"].values())[0]
     if "reasoning_a" not in sample_sg:
         return None
@@ -204,9 +197,6 @@ def analyze_cot_complexity(all_runs: list[dict]) -> dict | None:
         for r in all_runs
     ]
 
-    # Compute overall complexity score per subgame (avg word count as proxy).
-    # Guard against empty trace aggregations (occurs when an agent's reasoning
-    # string is empty for every run of that subgame).
     complexity_ranking = []
     for key, data in subgame_complexity.items():
         a_wc = data.get("A", {}).get("word_count", {}).get("mean", 0)

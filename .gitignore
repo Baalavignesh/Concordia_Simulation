@@ -1,32 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
 # Environment
 .env
 
 # Logs
 logs/
+simulation_log.txt
+simulation_err.txt
+dashboard_log.txt
+dashboard_err.txt
 
-# Documentation and reference material
-docs/
-info/
-EXPLANATION.md
-FUTURE.md
-RESULTS.md
+# Node / dashboard build
+node_modules/
+dashboard/dist/
 
 # Backup / legacy code
 backup/
-
-# Old root-level results (per-config results in results/ are kept)
-simulation_results.json
-
-# Setup script
-setup_and_run.sh
+info/
 
 # macOS
 .DS_Store
 
-# Python
-__pycache__/
-*.pyc
-*.pyo
+# Old root-level results (per-config results in results/ are kept)
+/simulation_results.json
 
 # Claude Code
 .claude/

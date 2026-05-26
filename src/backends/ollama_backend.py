@@ -97,11 +97,8 @@ class OllamaBackend(language_model.LanguageModel):
                 f"Error: {e}"
             )
 
-        # Warm up: force the model to load into memory now, before simulation
-        # begins. The 14B model takes ~90s to load and needs ~9GB of memory.
-        # Loading it here fails fast with a clear error rather than crashing
-        # mid-simulation. keep_alive=-1 keeps it pinned in memory indefinitely.
-        # Skip warmup if the model is already loaded (e.g. from previous config).
+        # Warm up now so the model is in memory before simulation begins.
+        # Skip if already loaded (e.g. from a previous config in the same run).
         try:
             import requests
             ps_resp = requests.get(f"{self._base_url}/api/ps", timeout=5)
@@ -155,7 +152,7 @@ class OllamaBackend(language_model.LanguageModel):
             "prompt": prompt,
             "stream": False,
             "keep_alive": -1,  # Keep model pinned in memory between calls
-            "think": think,    # False = skip DeepSeek-R1 reasoning chain for fast calls
+            "think": think,
             "options": {
                 "num_predict": max_tokens,
                 "temperature": temperature,
@@ -216,7 +213,6 @@ class OllamaBackend(language_model.LanguageModel):
         seed: int | None = None,
     ) -> str:
         result = self._generate(prompt, max_tokens=max_tokens, temperature=temperature)
-        # Strip <think> tags for normal text output
         return _strip_think_tags(result)
 
     @override
@@ -276,12 +272,10 @@ class OllamaBackend(language_model.LanguageModel):
             reasoning = visible_response
             choice_text = visible_response
 
-        # Try to extract the choice from the visible response first
         idx = _match_response(choice_text, responses)
         if idx is not None:
             return idx, responses[idx], {"reasoning": reasoning}
 
-        # Fallback: ask a separate extraction call
         extraction_prompt = (
             f"Based on the following reasoning, what was the final choice?\n\n"
             f"Reasoning:\n{reasoning[-2000:]}\n\n"
@@ -295,7 +289,6 @@ class OllamaBackend(language_model.LanguageModel):
         if idx is not None:
             return idx, responses[idx], {"reasoning": reasoning}
 
-        # Last resort: try matching anywhere in the full reasoning
         idx = _match_response(reasoning, responses)
         if idx is not None:
             return idx, responses[idx], {"reasoning": reasoning, "warning": f"Extracted from reasoning (parse failed: {extract_result})"}

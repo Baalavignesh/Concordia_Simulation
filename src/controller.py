@@ -56,7 +56,6 @@ class CyberWargameController:
         cfg_a = prompt_config
         cfg_b = prompt_config_b if prompt_config_b is not None else prompt_config
 
-        # Per-agent prompt templates — fall back to defaults from constants
         if cfg_a is not None:
             self._game_context_tpl_a = cfg_a.game_context_template
             self._sub_obs_a = cfg_a.subgame_observation_a
@@ -164,7 +163,7 @@ class CyberWargameController:
             "payoff_b": payoff_b,
         }
 
-        # Capture reasoning from action logs (populated by CoT)
+        # CoT reasoning
         log_a = self.agent_a.get_action_log()
         log_b = self.agent_b.get_action_log()
         if log_a and log_a[-1].get("info", {}).get("reasoning"):
@@ -264,7 +263,7 @@ class CyberWargameController:
             "meta_matrix_b": meta_b.tolist(),
         }
 
-        # Capture reasoning from action logs (populated by CoT)
+        # CoT reasoning
         log_a = self.agent_a.get_action_log()
         log_b = self.agent_b.get_action_log()
         if log_a and log_a[-1].get("info", {}).get("reasoning"):
@@ -280,7 +279,6 @@ class CyberWargameController:
         subgame_results = self.play_all_subgames()
         meta_result = self.play_meta_game()
 
-        # Determine world state
         subgame_key = f"{meta_result['mode_a']}{meta_result['mode_b']}"
         if subgame_key in subgame_results:
             a_action = subgame_results[subgame_key]["action_a"]

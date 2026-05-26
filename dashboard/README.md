@@ -1,16 +1,36 @@
-# React + Vite
+# Simulation Results Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React/Vite application for visualising the Cyber Warfare Wargame simulation results.
 
-Currently, two official plugins are available:
+## Pages
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Symmetric Results** — per-config analysis: subgame choice distributions, meta-game mode selection, Nash equilibrium alignment, and Price of Aggression
+- **Cross-Play Matrix** — 5×5 heatmap of all asymmetric matchups; click any cell to drill into that matchup's subgame and meta-game results
+- **CoT Complexity** — Chain-of-Thought reasoning metrics (word count, opponent modelling, dominance recognition) across personas and solution concepts
 
-## React Compiler
+## Running
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# From the repo root
+cd dashboard
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Open http://localhost:5173 in your browser.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+> The dashboard reads pre-built JSON from `public/data/`. If you run new simulations, copy the updated results using `copy_results.sh` from the repo root before restarting the dev server.
+
+## Data Layout
+
+```
+public/data/
+├── v1_rational_eut.json              # Symmetric result, Rational EUT
+├── v1_rational_eut_cot.json          # Same run with Chain-of-Thought
+├── v2_bounded_satisficing.json
+├── ...
+├── crossplay/
+│   ├── v1_rational_eut_vs_v2_bounded_satisficing.json
+│   └── ... (20 asymmetric matchup files)
+└── cot_complexity_analysis.json      # Aggregated CoT metrics
+```

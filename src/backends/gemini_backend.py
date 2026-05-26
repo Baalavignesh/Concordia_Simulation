@@ -96,13 +96,7 @@ class GeminiBackend(language_model.LanguageModel):
         top_k: int = 64,
         thinking_budget: int | None = None,
     ) -> str:
-        """Core generation method shared by sample_text and no-thinking variant.
-
-        Args:
-            thinking_budget: If set, controls the thinking model's internal
-                reasoning budget. Use 0 to disable thinking entirely (all
-                tokens go to visible output). If None, uses the model default.
-        """
+        """Core generation method. thinking_budget=0 disables internal thinking."""
         from google.genai import types
         from google.genai.errors import ServerError
 
@@ -206,7 +200,6 @@ class GeminiBackend(language_model.LanguageModel):
         """
         from google.genai import types
 
-        # Step 1: Ask the LLM to reason through the decision
         reasoning_prompt = (
             f"{prompt}\n\n"
             f"Available options: {list(responses)}\n\n"
@@ -219,7 +212,6 @@ class GeminiBackend(language_model.LanguageModel):
         )
         reasoning = reasoning or ""
 
-        # Step 2: Extract the final choice from the reasoning
         extraction_prompt = (
             f"Based on the following reasoning, what was the final choice?\n\n"
             f"Reasoning:\n{reasoning}\n\n"
@@ -229,11 +221,9 @@ class GeminiBackend(language_model.LanguageModel):
         result = self.sample_text(extraction_prompt, max_tokens=10, temperature=0.0)
         result = (result or "").strip()
 
-        # Match from extraction result
         idx = _match_response(result, responses)
         if idx is not None:
             return idx, responses[idx], {"reasoning": reasoning}
-        # Fallback: try to find the choice directly in the reasoning
         idx = _match_response(reasoning, responses)
         if idx is not None:
             return idx, responses[idx], {"reasoning": reasoning, "warning": f"Extracted from reasoning (parse failed: {result})"}

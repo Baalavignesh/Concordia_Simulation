@@ -1,3 +1,6 @@
+# Stale legacy data files
+public/data/simulation_results.json
+
 # Logs
 logs
 *.log

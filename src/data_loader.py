@@ -30,7 +30,6 @@ def load_payoff_matrices(directory: Path, suffix: str = "") -> dict:
                     header = next(reader)  # Skip header ("", "V1", "V2")
                     rows = []
                     for row in reader:
-                        # row[0] is row index, row[1]=V1, row[2]=V2
                         rows.append([float(row[1]), float(row[2])])
                     matrices[(player, mode_a, mode_b)] = np.array(rows)
     return matrices
