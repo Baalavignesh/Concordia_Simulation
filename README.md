@@ -1,6 +1,6 @@
 # Cyber Warfare Wargame Simulation
 
-A two-stage strategic cyber conflict simulation built on [Google DeepMind's Concordia](https://github.com/google-deepmind/concordia) framework. Two LLM-backed agents (Country A and Country B) play a game-theoretic wargame derived from the academic paper *"Robust Cyber Warfare: Private Actors, States, or Coalitions?"*.
+A two-stage strategic cyber conflict simulation built on [Google DeepMind's Concordia](https://github.com/google-deepmind/concordia) framework. Two LLM-backed agents (Country A and Country B) play a game-theoretic wargame modelling strategic cyber conflict decisions.
 
 **Research question:** When LLM agents reason about strategic trade-offs, do their decisions align with the analytical equilibria predicted by formal game theory?
 
@@ -174,7 +174,7 @@ Concordia_Simulation/
 │   ├── src/                      # React source
 │   └── public/data/              # Pre-built JSON served to the app
 ├── docs/                         # Extended technical documentation
-└── info/                         # Reference papers
+└── docs/                         # Extended technical documentation
 ```
 
 ---
@@ -211,11 +211,3 @@ OLLAMA_MODEL=llama3.2 python3 main.py
 | `--cross-play` | — | All 25 matchups (including mirror controls) |
 | `--cross-play-asymmetric` | — | 20 asymmetric matchups only |
 | `--cot` | — | Enable Chain-of-Thought reasoning |
-
----
-
-## Academic Foundation
-
-Based on *"Robust Cyber Warfare: Private Actors, States, or Coalitions?"*, which models cyber conflict using game-theoretic payoff matrices parameterised by operational success, cost, escalation risk, attribution likelihood, and threat credibility. The payoff CSVs are pre-computed from these formulas — the simulation loads them directly.
-
-See `docs/` for extended theoretical background and CSV structure documentation.
